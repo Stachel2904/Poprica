@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Poprica
 {
-    public sealed class ItemManager
+    public sealed class AnimationManager
     {
         #region Singleton
-        private static ItemManager main;
+        private static AnimationManager main;
 
-        public static ItemManager Main
+        public static AnimationManager Main
         {
             get
             {
                 if (main == null)
                 {
-                    main = new ItemManager();
+                    main = new AnimationManager();
                 }
                 return main;
             }
         }
         #endregion
 
-        private ItemManager()
+        private AnimationManager()
         {
 
         }
