@@ -46,17 +46,36 @@
     <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Action.cs" />
+    <Compile Include="Scripts\Actions.cs" />
+    <Compile Include="Scripts\Animation.cs" />
+    <Compile Include="Scripts\Button.cs" />
+    <Compile Include="Scripts\DialogueEntity.cs" />
+    <Compile Include="Scripts\Image.cs" />
     <Compile Include="Scripts\InputManager.cs" />
     <Compile Include="Scripts\ItemManager.cs" />
+    <Compile Include="Scripts\Maps.cs" />
+    <Compile Include="Scripts\Memory.cs" />
+    <Compile Include="Scripts\Menu.cs" />
+    <Compile Include="Scripts\MiniGame.cs" />
+    <Compile Include="Scripts\Moment.cs" />
+    <Compile Include="Scripts\Place.cs" />
     <Compile Include="Scripts\Poprica.cs" />
     <Compile Include="Scripts\Program.cs" />
+    <Compile Include="Scripts\Progress.cs" />
     <Compile Include="Scripts\RessourcenManager.cs" />
+    <Compile Include="Scripts\Scene.cs" />
+    <Compile Include="Scripts\Shop.cs" />
+    <Compile Include="Scripts\UserInterface.cs" />
+    <Compile Include="Scripts\Waifu.cs" />
+    <Compile Include="Scripts\WaifuStats.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
