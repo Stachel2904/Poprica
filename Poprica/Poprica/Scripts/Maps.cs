@@ -20,7 +20,7 @@ namespace Poprica
         /// <summary>
         /// Maps DialogueEntityNames to SceneTypes.
         /// </summary>
-        public static Dictionary<DialogueEntityName, SceneType> sceneMap { get; } = new Dictionary<DialogueEntityName, SceneType>()
+        public static Dictionary<DialogueEntityName, SceneType> SceneMap { get; } = new Dictionary<DialogueEntityName, SceneType>()
         {
 
         };
@@ -28,7 +28,7 @@ namespace Poprica
         /// <summary>
         /// Maps MenuTypes to ButtonsTypes.
         /// </summary>
-        public static Dictionary<MenuType, ButtonType> menuButtonMap { get; } = new Dictionary<MenuType, ButtonType>()
+        public static Dictionary<MenuType, ButtonType> MenuButtonMap { get; } = new Dictionary<MenuType, ButtonType>()
         {
 
         };
@@ -36,9 +36,9 @@ namespace Poprica
         #region Poprica
 
         /// <summary>
-        /// Maps LocationNames to DialogueEntityNames.
+        /// Maps LocationTypes to DialogueEntityNames.
         /// </summary>
-        public static Dictionary<LocationName, DialogueEntityName[]> NSCLocationMap { get; } = new Dictionary<LocationName, DialogueEntityName[]>()
+        public static Dictionary<LocationType, DialogueEntityName[]> NSCLocationMap { get; } = new Dictionary<LocationType, DialogueEntityName[]>()
         {
 
         };

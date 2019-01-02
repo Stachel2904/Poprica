@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Poprica
 {
-    enum InputType
+    public enum InputType
     {
 
     }
 
-    enum GameState
+    public enum GameState
     {
         DEFAULT,
         PAUSED,
@@ -19,36 +19,36 @@ namespace Poprica
         START
     }
 
-    enum MusicType
+    public enum MusicType
     {
 
     }
 
-    enum SceneType
+    public enum SceneType
     {
         PLACE,
         MENU,
         SHOP
     }
 
-    enum ImageType
+    public enum ImageType
     {
 
     }
 
-    enum LocationType
+    public enum LocationType
     {
         LIVINGROOM,
         BEDROOM
     }
 
-    enum VoiceType
+    public enum VoiceType
     {
         MOAN1,
         SPEECH1
     }
 
-    enum DialogueEntityPositionType
+    public enum DialogueEntityPositionType
     {
         LEFT,
         MIDDLELEFT,
@@ -57,7 +57,7 @@ namespace Poprica
         RIGHT
     }
 
-    enum DialogueEntityType
+    public enum DialogueEntityType
     {
         NSC,
         WAIFU,
@@ -66,39 +66,44 @@ namespace Poprica
         OLDWOMAN
     }
 
-    enum DialogueEntityName
+    public enum DialogueEntityName
     {
         NARRATOR = -1,
         SELF,
         RICA
     }
 
-    enum ActionType
+    public enum ActionType
     {
         
     }
 
-    enum ButtonType
+    public enum ButtonType
     {
 
     }
 
-    enum AnimationState
+    public enum AnimationState
     {
 
     }
 
-    enum SoundType
+    public enum AnimationType
     {
 
     }
 
-    enum MemoryType
+    public enum SoundType
     {
 
     }
 
-    enum MenuType
+    public enum MemoryType
+    {
+
+    }
+
+    public enum MenuType
     {
 
     }
