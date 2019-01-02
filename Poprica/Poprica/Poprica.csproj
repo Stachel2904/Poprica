@@ -52,6 +52,10 @@
     <Compile Include="Scripts\Button.cs" />
     <Compile Include="Scripts\DialogueEntity.cs" />
     <Compile Include="Scripts\Image.cs" />
+    <Compile Include="Scripts\AnimationManager.cs" />
+    <Compile Include="Scripts\ButtonManager.cs" />
+    <Compile Include="Scripts\DialogueManager.cs" />
+    <Compile Include="Scripts\Enums.cs" />
     <Compile Include="Scripts\InputManager.cs" />
     <Compile Include="Scripts\ItemManager.cs" />
     <Compile Include="Scripts\Maps.cs" />
@@ -69,6 +73,10 @@
     <Compile Include="Scripts\UserInterface.cs" />
     <Compile Include="Scripts\Waifu.cs" />
     <Compile Include="Scripts\WaifuStats.cs" />
+    <Compile Include="Scripts\RessourceManager.cs" />
+    <Compile Include="Scripts\SceneManager.cs" />
+    <Compile Include="Scripts\SoundManager.cs" />
+    <Compile Include="Scripts\WaifuManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
