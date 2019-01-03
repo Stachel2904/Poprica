@@ -10,7 +10,6 @@ namespace Poprica
     public class PopricaGame : Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
 
         public PopricaGame()
         {
@@ -26,8 +25,6 @@ namespace Poprica
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -38,9 +35,10 @@ namespace Poprica
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+            SpriteBatch spriteBatch = new SpriteBatch(this.GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            //Give Spritebatch and ContentManager to RessourceManager
+            RessourceManager.Main.Init(this.Content, spriteBatch);
         }
 
         /// <summary>
@@ -49,7 +47,7 @@ namespace Poprica
         /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+
         }
 
         /// <summary>
@@ -59,10 +57,14 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            //Start the Frame
+            RessourceManager.Main.Start();
 
-            // TODO: Add your update logic here
+            //Check for input and call methods from there
+            InputManager.Main.CheckInput();
+
+            //Update Animations
+            AnimationManager.Main.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -73,9 +75,8 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            // TODO: Add your drawing code here
+            //End Frame
+            RessourceManager.Main.End();
 
             base.Draw(gameTime);
         }
