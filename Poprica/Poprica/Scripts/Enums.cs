@@ -38,6 +38,7 @@ namespace Poprica
 
     public enum LocationType
     {
+        NONE = 0,
         LIVINGROOM,
         BEDROOM
     }
