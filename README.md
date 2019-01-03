@@ -1,2 +1,2 @@
 # Poprica
-A new and inventive Pick-Up H-Game
+A new and innovative Pick-Up H-Game
