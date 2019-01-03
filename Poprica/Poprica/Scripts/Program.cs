@@ -14,7 +14,7 @@ namespace Poprica
         [STAThread]
         static void Main()
         {
-            using (var game = new Poprica())
+            using (var game = new PopricaGame())
                 game.Run();
         }
     }

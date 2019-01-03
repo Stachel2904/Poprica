@@ -7,12 +7,12 @@ namespace Poprica
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class Poprica : Game
+    public class PopricaGame : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Poprica()
+        public PopricaGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
