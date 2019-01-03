@@ -67,7 +67,6 @@
     <Compile Include="Scripts\Poprica.cs" />
     <Compile Include="Scripts\Program.cs" />
     <Compile Include="Scripts\Progress.cs" />
-    <Compile Include="Scripts\RessourcenManager.cs" />
     <Compile Include="Scripts\Scene.cs" />
     <Compile Include="Scripts\Shop.cs" />
     <Compile Include="Scripts\UserInterface.cs" />
