@@ -31,7 +31,7 @@ namespace DungeonCrawler
 
     }
 
-    public enum ItemType
+    public enum ItemCategory
     {
 
     }

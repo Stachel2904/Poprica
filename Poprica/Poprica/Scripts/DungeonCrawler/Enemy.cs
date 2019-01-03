@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
-    public sealed class DungeonCrawler : Poprica.MiniGame
+    public sealed class Enemy
     {
+        /// <summary>
+        /// Hold the type of this Enemy.
+        /// </summary>
+        public EnemyType Type { get; set; }
 
-        public GameStateType State { get; set; }
-
-        public DungeonCrawler() : base()
+        public Enemy()
         {
 
         }
