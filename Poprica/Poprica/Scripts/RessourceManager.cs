@@ -31,11 +31,17 @@ namespace Poprica
         /// <summary>
         /// You can access all ressources from here.
         /// </summary>
-        public GraphicsDeviceManager Ressources { get; }
+        public GraphicsDeviceManager Ressources { get; private set; }
 
         private RessourceManager()
         {
 
+        }
+
+        public void Init(GraphicsDeviceManager _ressources, SpriteBatch _renderer)
+        {
+            Ressources = _ressources;
+            renderer = _renderer;
         }
 
         /// <summary>
