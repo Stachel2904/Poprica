@@ -51,6 +51,8 @@
     <Compile Include="Scripts\Animation.cs" />
     <Compile Include="Scripts\Button.cs" />
     <Compile Include="Scripts\DialogueEntity.cs" />
+    <Compile Include="Scripts\DungeonCrawler\DungeonCrawler.cs" />
+    <Compile Include="Scripts\DungeonCrawler\Enums.cs" />
     <Compile Include="Scripts\Image.cs" />
     <Compile Include="Scripts\AnimationManager.cs" />
     <Compile Include="Scripts\ButtonManager.cs" />
@@ -64,7 +66,7 @@
     <Compile Include="Scripts\MiniGame.cs" />
     <Compile Include="Scripts\Moment.cs" />
     <Compile Include="Scripts\Place.cs" />
-    <Compile Include="Scripts\Poprica.cs" />
+    <Compile Include="Scripts\PopricaGame.cs" />
     <Compile Include="Scripts\Program.cs" />
     <Compile Include="Scripts\Progress.cs" />
     <Compile Include="Scripts\Scene.cs" />
