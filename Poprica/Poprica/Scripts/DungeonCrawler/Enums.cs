@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
-    public enum GameStatetype
+    public enum GameStateType
     {
 
     }
@@ -32,6 +32,26 @@ namespace DungeonCrawler
     }
 
     public enum ItemType
+    {
+
+    }
+
+    public enum WeaponType
+    {
+
+    }
+
+    public enum ArmorType
+    {
+
+    }
+
+    public enum PotionType
+    {
+
+    }
+
+    public enum BasicItemType
     {
 
     }
