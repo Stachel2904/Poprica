@@ -55,17 +55,21 @@ namespace Poprica
         /// Create a Button for each ButtonType.
         /// </summary>
         /// <param name="buttons">The ButtonTypes linked to the Buttons</param>
-        public void CreateButtons(ButtonType[] buttons)
+        public Button[] CreateButtons(ButtonType[] buttons)
         {
             List<Button> createdButtons = new List<Button>();
             for (int i = 0; i < buttons.Length; i += 10)
             {
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j < ((buttons.Length < 10) ? buttons.Length : 10); j++)
                 {
-                    Button newButton = new Button(buttons[i + j], new Rectangle(i * 250, j / 10 * 50, 250, 50));
+                    Rectangle desRect = new Rectangle(i * 200, j / 10 * 50, 200, 50);
+                    Button newButton = new Button(buttons[i + j], desRect);
                     createdButtons.Add(newButton);
                 }
             }
+
+            menuButtons = createdButtons.ToArray();
+            return menuButtons;
         }
 
         private void Call(ButtonType clickedButton)

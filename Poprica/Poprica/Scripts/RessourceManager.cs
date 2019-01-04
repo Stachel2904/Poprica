@@ -37,7 +37,7 @@ namespace Poprica
 
         private RessourceManager()
         {
-            cachedTextures = new Dictionary<string, Texture2D>();
+            cachedTextures = new Dictionary<string, Texture2D>();            
         }
 
         public void Init(ContentManager _ressources, SpriteBatch _renderer)
@@ -51,6 +51,11 @@ namespace Poprica
         /// </summary>
         public void Start()
         {
+            if (renderer.IsDisposed)
+            {
+                renderer.End();
+            }
+
             renderer.GraphicsDevice.Clear(Color.Black);
             renderer.Begin();
         }

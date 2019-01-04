@@ -17,7 +17,14 @@ namespace Poprica
         {
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
-            ButtonManager.Main.CreateButtons(menuButtons);
+            Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons);
+            Images = new List<Image>();
+
+            for (int i = 0; i < createdButtons.Length; i++)
+            {
+                this.Images.Add(new Image(ImageType.BUTTON, createdButtons[i].Rect));
+            }
+
         }
 
         /// <summary>
@@ -33,7 +40,7 @@ namespace Poprica
         /// </summary>
         public static void Exit()
         {
-            SceneManager.Main.State = GameState.EXIT;
+            PopricaGame.MainState = GameState.EXIT;
         }
 
         /// <summary>

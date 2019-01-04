@@ -50,7 +50,7 @@ namespace Poprica
         /// <returns>Returns the Waifu you want.</returns>
         public Waifu GetWaifu(DialogueEntityName name)
         {
-
+            return null;
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Poprica
         /// <returns>Returns the location of the given Waifu.</returns>
         public LocationType GetLocation (DialogueEntityName name)
         {
-
+            return (LocationType) 0;
         }
     }
 }

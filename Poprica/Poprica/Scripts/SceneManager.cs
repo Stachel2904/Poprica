@@ -40,18 +40,9 @@ namespace Poprica
         /// </summary>
         public Moment CurrentMoment { get; private set; }
 
-        /// <summary>
-        /// The State of the Game.
-        /// </summary>
-        public GameState State { get; set; }
-
         private SceneManager()
         {
             PreviousScenes = new List<Scene>();
-
-            State = GameState.DEFAULT;
-
-            LoadScene(SceneType.MENU, (int)MenuType.MAINMENU);
         }
 
         /// <summary>
@@ -109,8 +100,9 @@ namespace Poprica
             {
                 Image drawedImage = currentUserInterface.Images[i];
 
-                //TODO: Map ImageType to Path
-                RessourceManager.Main.Draw("", drawedImage.Rect, null, Color.White);
+                string pathToImage = Maps.PopricaImageMap[drawedImage.Type];
+
+                RessourceManager.Main.Draw(pathToImage, drawedImage.Rect, null, Color.White);
             }
         }
 

@@ -33,7 +33,7 @@ namespace Poprica
 
     public enum ImageType
     {
-
+        BUTTON
     }
 
     public enum LocationType
@@ -107,10 +107,5 @@ namespace Poprica
     public enum MenuType
     {
         MAINMENU
-    }
-
-    public enum ImageType
-    {
-
     }
 }

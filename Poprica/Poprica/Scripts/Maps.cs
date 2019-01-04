@@ -88,7 +88,7 @@ namespace Poprica
         /// </summary>
         public static Dictionary<ImageType, string> PopricaImageMap { get; } = new Dictionary<ImageType, string>()
         {
-
+            { ImageType.BUTTON, "Sprites/UI/UIButton" }
         };
 
         /// <summary>
