@@ -38,7 +38,7 @@ namespace Poprica
         private WaifuStats GetConsequences(ActionType action)
         {
 
-            return null;
+            return new WaifuStats();
         }
     }
 }

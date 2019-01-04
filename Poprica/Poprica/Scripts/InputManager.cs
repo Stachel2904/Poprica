@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework.Input;
 
 namespace Poprica
 {
@@ -36,7 +37,14 @@ namespace Poprica
         /// </summary>
         public void CheckInput()
         {
+            #region MouseInput
+            MouseState mouseState = Mouse.GetState();
 
+            if (mouseState.LeftButton == ButtonState.Pressed)
+            {
+                ButtonManager.Main.CheckButtonClick(mouseState.Position);
+            }
+            #endregion
         }
 
         /// <summary>

@@ -24,7 +24,7 @@ namespace Poprica
         }
         #endregion
 
-        private Statement[] dialogue;
+        //private Statement[] dialogue;
         private int index;
 
         private DialogueManager()

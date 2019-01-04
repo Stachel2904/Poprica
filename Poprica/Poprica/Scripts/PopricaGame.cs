@@ -11,6 +11,11 @@ namespace Poprica
     {
         GraphicsDeviceManager graphics;
 
+        /// <summary>
+        /// The State of the Game.
+        /// </summary>
+        public static GameState MainState { get; set; }
+
         public PopricaGame()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -25,6 +30,12 @@ namespace Poprica
         /// </summary>
         protected override void Initialize()
         {
+            this.IsMouseVisible = true;
+
+            SceneManager.Main.LoadScene(SceneType.MENU, (int)MenuType.MAINMENU);
+
+            MainState = GameState.DEFAULT;
+
             base.Initialize();
         }
 
@@ -57,14 +68,29 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            //Start the Frame
-            RessourceManager.Main.Start();
+            switch (PopricaGame.MainState)
+            {
+                case GameState.DEFAULT:
+                    //Start the Frame
+                    RessourceManager.Main.Start();
 
-            //Check for input and call methods from there
-            InputManager.Main.CheckInput();
+                    //Check for input and call methods from there
+                    InputManager.Main.CheckInput();
 
-            //Update Animations
-            AnimationManager.Main.Update(gameTime);
+                    //Update Animations
+                    AnimationManager.Main.Update(gameTime);
+
+                    //Render Scene
+                    SceneManager.Main.RenderScene();
+
+                    //End Frame
+                    RessourceManager.Main.End();
+                    break;
+                case GameState.EXIT:
+                    this.Exit();
+                    break;
+
+            }
 
             base.Update(gameTime);
         }
@@ -75,9 +101,6 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            //End Frame
-            RessourceManager.Main.End();
-
             base.Draw(gameTime);
         }
     }

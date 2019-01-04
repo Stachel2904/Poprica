@@ -12,9 +12,9 @@ namespace Poprica
         /// <summary>
         /// Maps Buttons to Actions.
         /// </summary>
-        public static Dictionary<Button, Action> ButtonMap { get; } = new Dictionary<Button, Action>()
+        public static Dictionary<ButtonType, System.Action> ButtonMap { get; } = new Dictionary<ButtonType, System.Action>()
         {
-
+            { ButtonType.EXIT, new System.Action(Menu.Exit)}
         };
 
         /// <summary>
@@ -22,15 +22,15 @@ namespace Poprica
         /// </summary>
         public static Dictionary<DialogueEntityName, SceneType> SceneMap { get; } = new Dictionary<DialogueEntityName, SceneType>()
         {
-
+            
         };
 
         /// <summary>
         /// Maps MenuTypes to ButtonsTypes.
         /// </summary>
-        public static Dictionary<MenuType, ButtonType> MenuButtonMap { get; } = new Dictionary<MenuType, ButtonType>()
+        public static Dictionary<MenuType, ButtonType[]> MenuButtonMap { get; } = new Dictionary<MenuType, ButtonType[]>()
         {
-
+            { MenuType.MAINMENU, new ButtonType[]{ ButtonType.EXIT} }
         };
 
         #region Poprica
@@ -88,7 +88,7 @@ namespace Poprica
         /// </summary>
         public static Dictionary<ImageType, string> PopricaImageMap { get; } = new Dictionary<ImageType, string>()
         {
-
+            { ImageType.BUTTON, "Sprites/UI/UIButton" }
         };
 
         /// <summary>

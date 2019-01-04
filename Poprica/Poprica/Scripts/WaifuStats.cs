@@ -30,10 +30,10 @@ namespace Poprica
 
         public WaifuStats(int affection, int obedience, int hornyness, int stamina)
         {
-            Affection = _affection;
-            Obedience = _obedience;
-            Hornyness = _hornyness;
-            Stamina = _stamina;
+            Affection = affection;
+            Obedience = obedience;
+            Hornyness = hornyness;
+            Stamina = stamina;
         }
     }
 }
