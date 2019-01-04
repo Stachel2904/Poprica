@@ -84,12 +84,22 @@ namespace Poprica
         };
 
         /// <summary>
+        /// Maps PopricaImageTypes to their save path (string)
+        /// </summary>
+        public static Dictionary<ImageType, string> PopricaImageMap { get; } = new Dictionary<ImageType, string>()
+        {
+
+        };
+
+        /// <summary>
         /// Maps AnimationTypes to Animations.
         /// </summary>
         public static Dictionary<AnimationType, Animation> PopricaAnimationMap { get; } = new Dictionary<AnimationType, Animation>()
         {
 
         };
+
+        public static string[] PopricaSpriteSheetPaths { get; }  //nötig?!?!?!
 
         #endregion
 
@@ -106,9 +116,24 @@ namespace Poprica
         /// <summary>
         /// Maps SoundTypes to strings.
         /// </summary>
-        public static Dictionary<SoundType, string> DungeonCrawler { get; } = new Dictionary<SoundType, string>()
+        public static Dictionary<SoundType, string> DungeonCrawlerSoundMap { get; } = new Dictionary<SoundType, string>()
         {
 
+        };
+
+        /// <summary>
+        /// Maps DungeonCrawlerImageTypes to their save path (string)
+        /// </summary>
+        public static Dictionary<DungeonCrawler.ImageType, string> DungeonCrawlerImageMap { get; } = new Dictionary<DungeonCrawler.ImageType, string>()
+        {
+            { DungeonCrawler.ImageType.STRAIGHT, "" },
+            { DungeonCrawler.ImageType.RIGHTTURN, "" },
+            { DungeonCrawler.ImageType.LEFTTURN, "" },
+            { DungeonCrawler.ImageType.TCROSS, "" },
+            { DungeonCrawler.ImageType.INTERSECTION, "" },
+            { DungeonCrawler.ImageType.ENTRY, "" },
+            { DungeonCrawler.ImageType.PRISONERROOM, "" },
+            { DungeonCrawler.ImageType.CONSTRUCTIONSIGN, "" }
         };
 
         /// <summary>

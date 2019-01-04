@@ -28,6 +28,11 @@ namespace DungeonCrawler
         /// </summary>
         public Dictionary<EnemyType, double> Enemies { get; set; }
 
+        public Tile()
+        {
+
+        }
+
         public Tile(TileType type, bool[] walls, EventType _event, Dictionary<EnemyType, double> enemies)
         {
             Type = type;
