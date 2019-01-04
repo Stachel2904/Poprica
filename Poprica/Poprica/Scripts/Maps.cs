@@ -105,12 +105,19 @@ namespace Poprica
 
         #region DungeonCrawler
 
+        //Keine Info über Input der nichts mit Movement zutun hat ...
+    
         /// <summary>
-        /// Maps InputTypes to Keys.
+        /// Maps Keys to InputType.
         /// </summary>
-        public static Dictionary<InputType, Keys> DungeonCrawlerInputMap { get; } = new Dictionary<InputType, Keys>()
+        public static Dictionary<Keys, DungeonCrawler.DirectionType> DungeonCrawlerInputMap { get; } = new Dictionary<Keys, DungeonCrawler.DirectionType>()
         {
-
+            {Keys.W, DungeonCrawler.DirectionType.FORWARD },
+            {Keys.S, DungeonCrawler.DirectionType.BACKWARD },
+            {Keys.D, DungeonCrawler.DirectionType.RIGHT },
+            {Keys.A, DungeonCrawler.DirectionType.LEFT },
+            {Keys.E, DungeonCrawler.DirectionType.TURNRIGHT },
+            {Keys.Q, DungeonCrawler.DirectionType.TURNLEFT }
         };
 
         /// <summary>

@@ -11,7 +11,7 @@ namespace Poprica
     {
 
         /// <summary>
-        /// Holds the type of this Image. Is element of ImageType enum.
+        /// Holds the type of this Image. Is element of ImageType enum of specific Namespace.
         /// </summary>
         public T Type { get;}
 

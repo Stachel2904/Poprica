@@ -20,9 +20,12 @@ namespace DungeonCrawler
         /// </summary>
         private Poprica.Image<T>[] AllImages { get; set; }
 
+        private bool moved;
+
         public DungeonCrawler() : base()
         {
-
+            AllImages = new Poprica.Image<T>[Poprica.Maps.DungeonCrawlerImageMap.Count()];
+            moved = false;
         }
 
         /// <summary>
@@ -30,13 +33,13 @@ namespace DungeonCrawler
         /// </summary>
         private void InitImages()
         {
-            Poprica.Image<ImageType> img;
+            Poprica.Image<T> img;
             Rectangle rect = new Rectangle(Point.Zero, Point.Zero);
 
             for(int i = 0; i < Poprica.Maps.DungeonCrawlerImageMap.Count(); i++)
             {
-                img = new Poprica.Image<ImageType>((ImageType)i, rect);
-
+                img = new Poprica.Image<T>((T)(object)i, rect);
+                AllImages[i] = img;
             }
         }
 
@@ -49,13 +52,14 @@ namespace DungeonCrawler
 
             this.Images = new List<Poprica.Image<T>>();
 
-            Point entryPoint = Dungeon.Main.Floor.DefaultEntryPoint;
+            Vector3 entryPoint = Player.Main.Location;
+            Vector3 orientation = Player.Main.Rotation;
 
             for (int i = 0; i < 6; i++)
             {
-                Tile current = Dungeon.Main.Floor.Tiles[entryPoint.X + i][entryPoint.Y + i];
+                Tile current = Dungeon.Main.Floor.Tiles[(int)(entryPoint.X + orientation.X*i)][(int)(entryPoint.Y + orientation.X*i)];
 
-                if (current.Type == TileType.STRAIGHT && (current.Orientation == Player.Main.Rotation || current.Orientation == -Player.Main.Rotation))
+                if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
                     this.Images.Add(AllImages[(int)ImageType.STRAIGHT]);
                 }
@@ -63,7 +67,7 @@ namespace DungeonCrawler
                 {
                     this.Images.Add(AllImages[(int)ImageType.INTERSECTION]);
                 }
-                else if (current.Type == TileType.TCROSS && current.Orientation == Player.Main.Rotation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
+                else if (current.Type == TileType.TCROSS && current.Orientation == orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
                 {
                     this.Images.Add(AllImages[(int)ImageType.TCROSS]);
                 }
@@ -72,6 +76,15 @@ namespace DungeonCrawler
                     this.Images.Add(AllImages[(int)current.Type]);
                 }
             }
+        }
+
+        public override void Update()
+        {
+            if (moved)
+            {
+                this.LoadImages();
+            }
+            
         }
 
 

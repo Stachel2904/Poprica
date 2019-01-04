@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace Poprica
 {
@@ -28,5 +29,8 @@ namespace Poprica
         {
             return false;
         }
+
+        public static Vector3 DungeonPos;
+        public static Vector3 DungeonRot;
     }
 }

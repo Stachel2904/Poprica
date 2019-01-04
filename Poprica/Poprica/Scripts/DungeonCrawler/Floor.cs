@@ -19,7 +19,7 @@ namespace DungeonCrawler
         /// </summary>
         public int FloorNum { get; set; }
 
-        public Point DefaultEntryPoint { get; set; }
+        public Vector3 DefaultEntryPoint { get; set; }
 
         public Floor()
         {

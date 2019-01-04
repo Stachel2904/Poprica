@@ -21,7 +21,7 @@ namespace Poprica
         /// <summary>
         /// Updates this Scene and its components.
         /// </summary>
-        public void Update()
+        public virtual void Update()
         {
 
         }

@@ -22,7 +22,7 @@ namespace DungeonCrawler
         /// <summary>
         /// Holds the orientation of this tile. (0, -1) - Up, (0, 1) - Down, (-1, 0) - Left, (1, 0) - Right
         /// </summary>
-        public Vector2 Orientation { get; set; }
+        public Vector3 Orientation { get; set; }
 
         /// <summary>
         /// Hold the type of event for this Tile.
