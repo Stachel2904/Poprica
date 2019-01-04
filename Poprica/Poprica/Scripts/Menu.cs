@@ -13,9 +13,11 @@ namespace Poprica
         /// </summary>
         public MenuType Type { get; set; }
 
-        public Menu() : base()
+        public Menu(MenuType type) : base()
         {
+            ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
+            ButtonManager.Main.CreateButtons(menuButtons);
         }
 
         /// <summary>
@@ -29,9 +31,9 @@ namespace Poprica
         /// <summary>
         /// Exits the actual Menu.
         /// </summary>
-        public void Exit()
+        public static void Exit()
         {
-
+            SceneManager.Main.State = GameState.EXIT;
         }
 
         /// <summary>

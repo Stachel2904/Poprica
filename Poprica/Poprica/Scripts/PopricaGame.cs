@@ -57,14 +57,23 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            //Start the Frame
-            RessourceManager.Main.Start();
+            switch (SceneManager.Main.State)
+            {
+                case GameState.DEFAULT:
+                    //Start the Frame
+                    RessourceManager.Main.Start();
 
-            //Check for input and call methods from there
-            InputManager.Main.CheckInput();
+                    //Check for input and call methods from there
+                    InputManager.Main.CheckInput();
 
-            //Update Animations
-            AnimationManager.Main.Update(gameTime);
+                    //Update Animations
+                    AnimationManager.Main.Update(gameTime);
+                    break;
+                case GameState.EXIT:
+                    this.Exit();
+                    break;
+
+            }
 
             base.Update(gameTime);
         }

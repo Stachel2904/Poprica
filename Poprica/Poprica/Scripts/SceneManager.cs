@@ -33,31 +33,40 @@ namespace Poprica
         /// <summary>
         /// The current Scene.
         /// </summary>
-        public Scene currentScene { get; private set; }
+        public Scene CurrentScene { get; private set; }
 
         /// <summary>
         /// The current time.
         /// </summary>
         public Moment CurrentMoment { get; private set; }
 
+        /// <summary>
+        /// The State of the Game.
+        /// </summary>
+        public GameState State { get; set; }
+
         private SceneManager()
         {
             PreviousScenes = new List<Scene>();
+
+            State = GameState.DEFAULT;
+
+            LoadScene(SceneType.MENU, (int)MenuType.MAINMENU);
         }
 
         /// <summary>
         /// Loads new Scene.
         /// </summary>
         /// <param name="newSceneType">The type of the Scene.</param>
-        /// <param name="cache">Set true if the old Scene should be cached.</param>
         /// <param name="newScene">The LocationType, MenuType or ShopType of the Scene as Integer.</param>
-        public void LoadScene(SceneType newSceneType, bool cache = false, int newScene = 0)
+        /// <param name="cache">Set true if the old Scene should be cached.</param>
+        public void LoadScene(SceneType newSceneType, int newScene = 0, bool cache = false)
         {
             RessourceManager.Main.UnloadCache();
 
             if (cache)
             {
-                PreviousScenes.Add(currentScene);
+                PreviousScenes.Add(CurrentScene);
             }
             else if (PreviousScenes.Count() > 0 && !cache)
             {
@@ -67,13 +76,13 @@ namespace Poprica
             switch (newSceneType)
             {
                 case SceneType.MENU:
-                    currentScene = new Menu();
+                    CurrentScene = new Menu((MenuType)newScene);
                     break;
                 case SceneType.SHOP:
-                    currentScene = new Shop();
+                    CurrentScene = new Shop();
                     break;
                 case SceneType.PLACE:
-                    currentScene = new Place((LocationType)newScene);
+                    CurrentScene = new Place((LocationType)newScene);
                     break;
             }
         }
@@ -84,17 +93,17 @@ namespace Poprica
 
             PreviousScenes = new List<Scene>();
 
-            currentScene = oldScene;
+            CurrentScene = oldScene;
         }
 
         public void RenderScene()
         {
-            if(currentScene.GetType() == typeof(MiniGame))
+            if(CurrentScene.GetType() == typeof(MiniGame))
             {
                 return;
             }
 
-            UserInterface currentUserInterface = currentScene as UserInterface;
+            UserInterface currentUserInterface = CurrentScene as UserInterface;
 
             for (int i = 0; i < currentUserInterface.Images.Count(); i++)
             {
