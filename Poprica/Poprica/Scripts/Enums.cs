@@ -108,4 +108,9 @@ namespace Poprica
     {
         MAINMENU
     }
+
+    public enum ImageType
+    {
+
+    }
 }

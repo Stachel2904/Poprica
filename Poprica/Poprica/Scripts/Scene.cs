@@ -8,6 +8,11 @@ namespace Poprica
 {
     public abstract class Scene
     {
+        /// <summary>
+        /// Holds an List of images, which should be displayed in the scene.
+        /// </summary>
+        public List<Image> Images { get; set; }
+
         public Scene()
         {
 
@@ -25,6 +30,14 @@ namespace Poprica
         /// Renders the displayed images.
         /// </summary>
         public void Render()
+        {
+
+        }
+
+        /// <summary>
+        /// Loads images which have to been displayed.
+        /// </summary>
+        public virtual void LoadImages()
         {
 
         }

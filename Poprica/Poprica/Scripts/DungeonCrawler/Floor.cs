@@ -19,6 +19,8 @@ namespace DungeonCrawler
         /// </summary>
         public int FloorNum { get; set; }
 
+        public Point DefaultEntryPoint { get; set; }
+
         public Floor()
         {
 

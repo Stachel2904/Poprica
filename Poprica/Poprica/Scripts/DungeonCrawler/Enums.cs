@@ -13,11 +13,24 @@ namespace DungeonCrawler
 
     public enum DirectionType
     {
-
+        FORWARD,
+        BACKWARD,
+        RIGHT,
+        LEFT,
+        TURNRIGHT,
+        TURNLEFT
     }
 
     public enum TileType
     {
+        STRAIGHT,
+        RIGHTTURN,
+        LEFTTURN,
+        TCROSS,
+        INTERSECTION,
+        ENTRY,
+        PRISONERROOM,
+        CONSTRUCTIONSIGN
 
     }
 
@@ -54,5 +67,17 @@ namespace DungeonCrawler
     public enum BasicItemType
     {
 
+    }
+
+    public enum ImageType
+    {
+        STRAIGHT,
+        RIGHTTURN,
+        LEFTTURN,
+        TCROSS,
+        INTERSECTION,
+        ENTRY,
+        PRISONERROOM,
+        CONSTRUCTIONSIGN
     }
 }
