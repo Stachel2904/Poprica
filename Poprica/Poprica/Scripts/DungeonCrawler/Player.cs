@@ -34,9 +34,9 @@ namespace DungeonCrawler
         public Vector3 Location { get; set; }
 
         /// <summary>
-        /// Holds the current rotation of the Player object. (0, -1) - Straight, (0, 1) - Back, (-1, 0) - Left, (1, 0) - Right
+        /// Holds the current rotation of the Player object. (0, -1) - Up, (0, 1) - Down, (-1, 0) - Left, (1, 0) - Right
         /// </summary>
-        public Point Rotation { get; set; }
+        public Vector2 Rotation { get; set; }
 
         /// <summary>
         /// Holds the amount of health for the Player object.

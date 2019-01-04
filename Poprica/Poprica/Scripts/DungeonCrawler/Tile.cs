@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace DungeonCrawler
 {
@@ -17,6 +18,11 @@ namespace DungeonCrawler
         /// Array of true and false values, which indicates if ther is a wall in a given direction.
         /// </summary>
         public bool[] Walls { get; set; }
+
+        /// <summary>
+        /// Holds the orientation of this tile. (0, -1) - Up, (0, 1) - Down, (-1, 0) - Left, (1, 0) - Right
+        /// </summary>
+        public Vector2 Orientation { get; set; }
 
         /// <summary>
         /// Hold the type of event for this Tile.
