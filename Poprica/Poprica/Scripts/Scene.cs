@@ -9,17 +9,17 @@ namespace Poprica
     public abstract class Scene
     {
         public SceneType SceneCategory;
-        public NamespaceType NameSpaceCategory;
         /// <summary>
         /// Holds an List of images, which should be displayed in the scene.
         /// </summary>
         public List<Image> Images { get; set; }
         public List<TextObject> Texts { get; set; }
 
-        public Scene(SceneType sceneType, NamespaceType namespaceType)
+        public Scene(SceneType sceneType)
         {
+            Images = new List<Image>();
+            Texts = new List<TextObject>();
             SceneCategory = sceneType;
-            NameSpaceCategory = namespaceType;
         }
 
         /// <summary>

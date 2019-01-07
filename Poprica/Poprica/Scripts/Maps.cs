@@ -58,6 +58,11 @@ namespace Poprica
             new string[]
             {
 
+            },
+            //Backgrounds
+            new string[]
+            {
+                "Sprites/BG/LivingRoom"
             }
         };
         

@@ -51,7 +51,7 @@ namespace Poprica
         /// <param name="newSceneType">The type of the Scene.</param>
         /// <param name="newScene">The LocationType, MenuType or ShopType of the Scene as Integer.</param>
         /// <param name="cache">Set true if the old Scene should be cached.</param>
-        public void LoadScene(SceneType newSceneType, NamespaceType namespaceType, int newScene = 0, bool cache = false)
+        public void LoadScene(SceneType newSceneType, int newScene = 0, bool cache = false)
         {
             RessourceManager.Main.UnloadCache();
 
@@ -67,21 +67,16 @@ namespace Poprica
             switch (newSceneType)
             {
                 case SceneType.MENU:
-                    CurrentScene = new Menu((MenuType)newScene, namespaceType);
+                    CurrentScene = new Menu((MenuType)newScene);
                     break;
                 case SceneType.SHOP:
-                    CurrentScene = new Shop(namespaceType);
+                    CurrentScene = new Shop();
                     break;
                 case SceneType.PLACE:
-                    CurrentScene = new Place((LocationType)newScene, namespaceType);
+                    CurrentScene = new Place((LocationType)newScene);
                     break;
-                case SceneType.MINIGAME:
-                    switch (namespaceType)
-                    {
-                        case NamespaceType.DUNGEONCRAWLER:
-                            CurrentScene = new DungeonCrawler.DungeonCrawler();
-                            break;
-                    }
+                case SceneType.DUNGEONCRAWLER:
+                    CurrentScene = new DungeonCrawler.DungeonCrawler();
                     break;
             }
         }
@@ -101,9 +96,13 @@ namespace Poprica
             {
                 Image drawedImage = CurrentScene.Images[i];
 
-                string pathToImage = Maps.ImageMap[(int)CurrentScene.NameSpaceCategory][drawedImage.Type];
+                string pathToImage = Maps.ImageMap[(int)drawedImage.Type][drawedImage.Index];
 
                 RessourceManager.Main.Draw(pathToImage, drawedImage.Rect, null, Color.White);
+            }
+            for (int i = 0; i < CurrentScene.Texts.Count(); i++)
+            {
+                RessourceManager.Main.DrawText(CurrentScene.Texts[i]);
             }
         }
 

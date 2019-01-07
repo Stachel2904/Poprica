@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,9 @@ namespace Poprica
 
         private List<DialogueEntity> dialogueEntities;
 
-        public Place(LocationType type, NamespaceType namespaceType) : base(SceneType.PLACE, namespaceType)
+        public Place(LocationType type) : base(SceneType.PLACE)
         {
-
+            Images.Add(new Image(ImageType.BACKGROUND, (int) type, (new Rectangle(0, 0, 1920, 1080))));
         }
 
         private DialogueEntityName[] GetAllWaifus()

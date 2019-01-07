@@ -25,18 +25,6 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/Icons/Icon.ico
 
-#begin Sprites/UI/Icons/Icon.ico
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/UI/Icons/Icon.ico
-
 #begin Sprites/UI/UIButton.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -49,15 +37,24 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/UIButton.png
 
-#begin Sprites/UI/UIButton.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
+#begin Font/FontDefault.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/UI/UIButton.png
+/processorParam:TextureFormat=Compressed
+/build:Font/FontDefault.spritefont
+
+#begin Font/FontBig.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/FontBig.spritefont
+
+#begin Font/FontSmall.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/FontSmall.spritefont
 

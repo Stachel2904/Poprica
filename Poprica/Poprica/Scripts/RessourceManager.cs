@@ -29,6 +29,7 @@ namespace Poprica
 
         private SpriteBatch renderer;
         private Dictionary<string, Texture2D> cachedTextures;
+        private SpriteFont[] fonts;
 
         /// <summary>
         /// You can access all ressources from here.
@@ -44,6 +45,12 @@ namespace Poprica
         {
             Ressources = _ressources;
             renderer = _renderer;
+            fonts = new SpriteFont[]
+            {
+                Ressources.Load<SpriteFont>("Font/FontSmall"),
+                Ressources.Load<SpriteFont>("Font/FontDefault"),
+                Ressources.Load<SpriteFont>("Font/FontBig")
+            };
         }
 
         /// <summary>
@@ -85,6 +92,23 @@ namespace Poprica
             }
 
             renderer.Draw(renderedTexture, destinationRect, sourceRect, color, rotation, Vector2.Zero, (flipped) ? SpriteEffects.FlipHorizontally : SpriteEffects.None, 0.0f);
+        }
+
+        public void DrawText(TextObject text, bool verticalCenter = true, bool horizontalCenter = true)
+        {
+            Vector2 addedPos = new Vector2();
+            Vector2 dimensions = fonts[text.Size].MeasureString(text.Text);
+
+            if (verticalCenter)
+            {
+                addedPos.Y = (text.Rect.Height / 2) - (dimensions.Y / 2);
+            }
+            if (horizontalCenter)
+            {
+                addedPos.X = (text.Rect.Width / 2) - (dimensions.X / 2);
+            }
+
+            renderer.DrawString(fonts[text.Size], text.Text, text.Rect.Location.ToVector2() + addedPos, text.color);
         }
 
         /// <summary>

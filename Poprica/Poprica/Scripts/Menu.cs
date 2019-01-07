@@ -13,7 +13,7 @@ namespace Poprica
         /// </summary>
         public MenuType Type { get; set; }
 
-        public Menu(MenuType type, NamespaceType namespaceType) : base(SceneType.MENU, namespaceType)
+        public Menu(MenuType type) : base(SceneType.MENU)
         {
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
@@ -21,7 +21,8 @@ namespace Poprica
 
             for (int i = 0; i < createdButtons.Length; i++)
             {
-                this.Images.Add(new Image((int)ImageType.BUTTON, createdButtons[i].Rect));
+                this.Images.Add(new Image(ImageType.UI, (int)UIImageType.BUTTON, createdButtons[i].Rect));
+                this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
             }
 
         }
@@ -47,7 +48,7 @@ namespace Poprica
         /// </summary>
         public static void LoadPoprica()
         {
-            SceneManager.Main.LoadScene(SceneType.PLACE, NamespaceType.POPRICA, (int)LocationType.LIVINGROOM);
+            SceneManager.Main.LoadScene(SceneType.PLACE, (int)LocationType.LIVINGROOM);
         }
 
         /// <summary>
@@ -55,7 +56,7 @@ namespace Poprica
         /// </summary>
         public static void LoadDungeonCrawler()
         {
-            SceneManager.Main.LoadScene(SceneType.MINIGAME, NamespaceType.DUNGEONCRAWLER);
+            SceneManager.Main.LoadScene(SceneType.DUNGEONCRAWLER);
         }
 
         /// <summary>
