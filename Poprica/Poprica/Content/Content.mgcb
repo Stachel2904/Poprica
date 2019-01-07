@@ -61,7 +61,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/STRAIGHT.png
 
-#begin Sprites/Poprica/e3bac6f0-e4eb-497d-b88f-ce59d19a9030.png
+#begin Sprites/UI/UIButton.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -71,7 +71,28 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/e3bac6f0-e4eb-497d-b88f-ce59d19a9030.png
+/build:Sprites/UI/UIButton.png
+
+#begin Font/FontDefault.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/FontDefault.spritefont
+
+#begin Font/FontBig.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/FontBig.spritefont
+
+#begin Font/FontSmall.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/FontSmall.spritefont
 
 #begin Sprites/Poprica/LIVINGROOM.png
 /importer:TextureImporter
@@ -97,7 +118,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/Icons/Icon.ico
 
-#begin Sprites/UI/UIButton.png
+#begin Sprites/Poprica/RICA.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -107,5 +128,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/UI/UIButton.png
+/build:Sprites/Poprica/RICA.png
 

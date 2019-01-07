@@ -13,13 +13,14 @@ namespace Poprica
         public string Text;
         public int Size;
         public Rectangle Rect;
-        public SpriteFont TextFont;
+        public Color color;
 
         public TextObject(string text, Rectangle rect, int size = 1)
         {
             Rect = rect;
             Text = text;
             Size = size;
+            color = Color.Black;
         }
     }
 }

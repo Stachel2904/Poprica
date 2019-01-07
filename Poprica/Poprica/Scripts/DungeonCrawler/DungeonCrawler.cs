@@ -21,9 +21,12 @@ namespace DungeonCrawler
         /// </summary>
         private Poprica.Image[] AllImages { get; set; }
 
-        public DungeonCrawler() : base(Poprica.NamespaceType.DUNGEONCRAWLER)
+        private bool moved;
+
+        public DungeonCrawler() : base(Poprica.SceneType.DUNGEONCRAWLER)
         {
-            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.NamespaceType.DUNGEONCRAWLER].Count()];
+            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.ImageType.DUNGEONCRAWLER].Count()];
+            moved = true;
 
             InitImages();
         }
@@ -36,9 +39,9 @@ namespace DungeonCrawler
             Poprica.Image img;
             Rectangle rect = new Rectangle(Point.Zero, Point.Zero);
 
-            for(int i = 0; i < Poprica.Maps.ImageMap[(int)Poprica.NamespaceType.DUNGEONCRAWLER].Count(); i++)
+            for(int i = 0; i < Poprica.Maps.ImageMap[(int)Poprica.ImageType.DUNGEONCRAWLER].Count(); i++)
             {
-                img = new Poprica.Image(i, rect);
+                img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, i, rect);
                 AllImages[i] = img;
             }
         }
@@ -55,9 +58,6 @@ namespace DungeonCrawler
 
             Vector3 entryPoint = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
-
-            System.Console.WriteLine(entryPoint);
-            System.Console.WriteLine(orientation);
 
             for (int i = 0; i < 6; i++)
             {
@@ -79,7 +79,7 @@ namespace DungeonCrawler
 
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
-                    img = new Poprica.Image((int)ImageType.STRAIGHT, rect);
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.STRAIGHT, new Rectangle(new Point(i*100, i*100), new Point(1920-960*i, 1080-540*i)));
                     this.Images.Add(img);
                 }
                 else if (current.Type == TileType.INTERSECTION)

@@ -9,7 +9,7 @@ namespace Poprica
     public sealed class Shop : UserInterface
     {
 
-        public Shop(NamespaceType namespaceType) : base(SceneType.SHOP, namespaceType)
+        public Shop() : base(SceneType.SHOP)
         {
 
         }

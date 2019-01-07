@@ -13,17 +13,24 @@ namespace Poprica
         /// <summary>
         /// Holds the type of this Image. Is element of ImageType enum of specific Namespace.
         /// </summary>
-        public int Type { get;}
+        public ImageType Type { get;}
+
+        /// <summary>
+        /// Holds a rectangle, which is from MonoGame
+        /// </summary>
+        public int Index { get; set; }
 
         /// <summary>
         /// Holds a rectangle, which is from MonoGame
         /// </summary>
         public Rectangle Rect { get; set; }
 
-        public Image(int type, Rectangle rect)
+        public Image(ImageType type, int index, Rectangle rect)
         {
             Type = type;
+            Index = index;
             Rect = rect;
+
         }
     }
 }

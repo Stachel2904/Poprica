@@ -29,25 +29,37 @@ namespace Poprica
         PLACE,
         MENU,
         SHOP,
-        MINIGAME
-    }
-
-    public enum NamespaceType
-    {
-        POPRICA,
         DUNGEONCRAWLER
     }
 
     public enum ImageType
     {
+        UI,
+        ICONS,
+        BACKGROUND,
+        WAIFU,
+        DUNGEONCRAWLER
+    }
+
+    public enum UIImageType
+    {
         BUTTON
+    }
+
+    public enum IconImageType
+    {
+
     }
 
     public enum LocationType
     {
-        NONE = 0,
         LIVINGROOM,
         BEDROOM
+    }
+
+    public enum DungeonCrawlerImageType
+    {
+
     }
 
     public enum VoiceType
