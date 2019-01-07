@@ -93,7 +93,7 @@ namespace Poprica
             {
                 Image drawedImage = CurrentScene.Images[i];
 
-                string pathToImage = Maps.PopricaImageMap[(ImageType)drawedImage.Type];
+                string pathToImage = Maps.ImageMap[(int)CurrentScene.NameSpaceCategory][drawedImage.Type];
 
                 RessourceManager.Main.Draw(pathToImage, drawedImage.Rect, null, Color.White);
             }
