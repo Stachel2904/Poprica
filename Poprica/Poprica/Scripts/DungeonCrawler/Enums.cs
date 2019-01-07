@@ -29,8 +29,13 @@ namespace DungeonCrawler
         TCROSS,
         INTERSECTION,
         ENTRY,
+
+        //Bitte diese als Block lassen!!
+        CONSTRUCTIONSIGN,
+        ROOM,
+        ROOMLEFT,
+        ROOMRIGHT,
         PRISONERROOM,
-        CONSTRUCTIONSIGN
 
     }
 

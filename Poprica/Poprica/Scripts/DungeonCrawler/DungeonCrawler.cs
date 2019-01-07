@@ -64,11 +64,23 @@ namespace DungeonCrawler
 
             for (int i = 0; i < 6; i++)
             {
-                Tile current = Dungeon.Main.Floor.Tiles[(int)(entryPoint.X + orientation.X*i)][(int)(entryPoint.Y + orientation.X*i)];
+                Tile current;
+                Tile[] currentRow = Dungeon.Main.Floor.Tiles.ElementAtOrDefault<Tile[]>((int)(entryPoint.X + orientation.X * i));
+                if (currentRow != null)
+                {
+                    current = currentRow.ElementAtOrDefault<Tile>((int)(entryPoint.Y + orientation.X * i));
+                }
+                else
+                {
+                    break;
+                }
+
+                //Poprica.Image img;
 
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
-                    this.Images.Add(AllImages[(int)ImageType.STRAIGHT]);
+
+                    this.Images.Add(new Poprica.Image((int)ImageType.STRAIGHT, new Rectangle(Point.Zero, new Point(1920, 1080))));
                 }
                 else if (current.Type == TileType.INTERSECTION)
                 {
@@ -77,6 +89,10 @@ namespace DungeonCrawler
                 else if (current.Type == TileType.TCROSS && current.Orientation == orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
                 {
                     this.Images.Add(AllImages[(int)ImageType.TCROSS]);
+                }
+                else if ((int) current.Type > (int)TileType.CONSTRUCTIONSIGN)
+                {
+                    AddImageField(new Vector2(entryPoint.X + orientation.X * i, entryPoint.Y + orientation.X * i));
                 }
                 else
                 {
@@ -95,6 +111,9 @@ namespace DungeonCrawler
             
         }
 
+        private void AddImageField(Vector2 startPos)
+        {
 
+        }
     }
 }

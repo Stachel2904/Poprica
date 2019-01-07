@@ -38,9 +38,10 @@ namespace DungeonCrawler
         /// </summary>
         public int FloorCount { get; set; }
 
-        private Dungeon()
+        private Dungeon(int floor = 0)
         {
-
+            FloorCount = floor;
+            Floor = new Floor();
         }
 
         /// <summary>

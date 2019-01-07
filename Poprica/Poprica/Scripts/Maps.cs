@@ -57,7 +57,11 @@ namespace Poprica
             //DungeonCrawler
             new string[]
             {
-
+                "Sprites/DC/STRAIGHT",
+                "Sprites/DC/RIGHTTURN",
+                "Sprites/DC/LEFTTRUN",
+                "Sprites/DC/TCROSS",
+                "Sprites/DC/INTERSECTION",
             }
         };
         

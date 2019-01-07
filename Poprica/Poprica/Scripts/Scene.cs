@@ -20,6 +20,8 @@ namespace Poprica
         {
             SceneCategory = sceneType;
             NameSpaceCategory = namespaceType;
+
+            Images = new List<Image>();
         }
 
         /// <summary>
