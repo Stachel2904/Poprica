@@ -33,6 +33,25 @@ namespace Poprica
             { MenuType.MAINMENU, new ButtonType[]{ ButtonType.EXIT} }
         };
 
+        /// <summary>
+        /// Stores the Text on a Button
+        /// </summary>
+        public static string[] MenuButtonText = new string[]
+        {
+            "Start Game",
+            "Exit"
+        };
+
+        /// <summary>
+        /// Stores the paths to different Size of Fonts
+        /// </summary>
+        public static string[] Fonts = new string[]
+        {
+            "FontSmall",
+            "FontDefault",
+            "FontBig"
+        };
+
         #region Poprica
 
         /// <summary>

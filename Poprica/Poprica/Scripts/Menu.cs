@@ -13,7 +13,7 @@ namespace Poprica
         /// </summary>
         public MenuType Type { get; set; }
 
-        public Menu(MenuType type) : base()
+        public Menu(MenuType type, NamespaceType namespaceType) : base(SceneType.MENU, namespaceType)
         {
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
@@ -22,7 +22,7 @@ namespace Poprica
 
             for (int i = 0; i < createdButtons.Length; i++)
             {
-                this.Images.Add(new Image(ImageType.BUTTON, createdButtons[i].Rect));
+                this.Images.Add(new Image((int)ImageType.BUTTON, createdButtons[i].Rect));
             }
 
         }
