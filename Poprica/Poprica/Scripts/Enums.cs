@@ -28,7 +28,8 @@ namespace Poprica
     {
         PLACE,
         MENU,
-        SHOP
+        SHOP,
+        MINIGAME
     }
 
     public enum NamespaceType

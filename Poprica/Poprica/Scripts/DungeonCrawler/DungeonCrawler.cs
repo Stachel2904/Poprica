@@ -22,9 +22,9 @@ namespace DungeonCrawler
 
         private bool moved;
 
-        public DungeonCrawler() : base()
+        public DungeonCrawler() : base(Poprica.NamespaceType.DUNGEONCRAWLER)
         {
-            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[Poprica.NamespaceType.DUNGEONCRAWLER].Count()];
+            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.NamespaceType.DUNGEONCRAWLER].Count()];
             moved = false;
 
             InitImages();
@@ -38,7 +38,7 @@ namespace DungeonCrawler
             Poprica.Image img;
             Rectangle rect = new Rectangle(Point.Zero, Point.Zero);
 
-            for(int i = 0; i < Poprica.Maps.ImageMap[Poprica.NamespaceType.DUNGEONCRAWLER].Count(); i++)
+            for(int i = 0; i < Poprica.Maps.ImageMap[(int)Poprica.NamespaceType.DUNGEONCRAWLER].Count(); i++)
             {
                 img = new Poprica.Image(i, rect);
                 AllImages[i] = img;

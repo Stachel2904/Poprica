@@ -9,7 +9,7 @@ namespace Poprica
     public abstract class MiniGame : Scene
     {
 
-        public MiniGame() : base()
+        public MiniGame(NamespaceType namespaceType) : base(SceneType.MINIGAME, namespaceType)
         {
          
         }
