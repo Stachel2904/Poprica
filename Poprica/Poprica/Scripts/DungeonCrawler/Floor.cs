@@ -44,6 +44,8 @@ namespace DungeonCrawler
                     new Tile(),
                 }
             };
+
+            DefaultEntryPoint = new Vector3(1, 2, 0);
         }
 
         /// <summary>

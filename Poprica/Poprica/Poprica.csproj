@@ -73,6 +73,7 @@
     <Compile Include="Scripts\InputManager.cs" />
     <Compile Include="Scripts\ItemManager.cs" />
     <Compile Include="Scripts\Maps.cs" />
+    <Compile Include="Scripts\MathFunctions.cs" />
     <Compile Include="Scripts\Memory.cs" />
     <Compile Include="Scripts\Menu.cs" />
     <Compile Include="Scripts\MiniGame.cs" />

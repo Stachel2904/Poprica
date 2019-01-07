@@ -36,8 +36,8 @@ namespace DungeonCrawler
 
         public Tile()
         {
-            Type = TileType.STRAIGHT;
-            Orientation = Vector3.Zero;
+            Type = TileType.ROOM;
+            Orientation = new Vector3(0, -1, 0);
         }
 
         public Tile(TileType type, bool[] walls, EventType _event, Dictionary<EnemyType, double> enemies)
@@ -46,6 +46,31 @@ namespace DungeonCrawler
             Walls = walls;
             Event = _event;
             Enemies = enemies;
+        }
+    }
+
+    public static class Extension
+    {
+        public static bool TryGetTiles(this Tile[][] array, int index, out Tile[] element)
+        {
+            if (index < array.Length && index >= 0)
+            {
+                element = array[index];
+                return true;
+            }
+            element = default(Tile[]);
+            return false;
+        }
+
+        public static bool TryGetTile(this Tile[] array, int index, out Tile element)
+        {
+            if (index < array.Length && index >= 0)
+            {
+                element = array[index];
+                return true;
+            }
+            element = default(Tile);
+            return false;
         }
     }
 }

@@ -62,6 +62,12 @@ namespace Poprica
                 "Sprites/DC/LEFTTRUN",
                 "Sprites/DC/TCROSS",
                 "Sprites/DC/INTERSECTION",
+                "Sprites/DC/ENTRY",
+                "Sprites/DC/CONSTRUCTIONSIGN",
+                "Sprites/DC/ROOM",
+                "Sprites/DC/ROOMLEFT",
+                "Sprites/DC/ROOMRIGHT",
+                "Sprites/DC/PRISONERROOM",
             }
         };
         

@@ -45,8 +45,8 @@ namespace DungeonCrawler
 
         private Player()
         {
-            Location = (Poprica.Progress.DungeonPos != null) ? Poprica.Progress.DungeonPos : Dungeon.Main.Floor.DefaultEntryPoint;
-            Rotation = (Poprica.Progress.DungeonRot != null) ? Poprica.Progress.DungeonRot : new Vector3(0, -1, 0);
+            Location = (Poprica.Progress.DungeonPos == null) ? Poprica.Progress.DungeonPos : Dungeon.Main.Floor.DefaultEntryPoint;
+            Rotation = (Poprica.Progress.DungeonRot == null) ? Poprica.Progress.DungeonRot : new Vector3(0, -1, 0);
 
         }
 
