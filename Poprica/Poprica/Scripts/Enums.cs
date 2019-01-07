@@ -31,6 +31,12 @@ namespace Poprica
         SHOP
     }
 
+    public enum NamespaceType
+    {
+        POPRICA,
+        DUNGEONCRAWLER
+    }
+
     public enum ImageType
     {
         BUTTON
@@ -81,6 +87,7 @@ namespace Poprica
 
     public enum ButtonType
     {
+        STARTGAME,
         EXIT
     }
 

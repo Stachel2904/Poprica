@@ -9,7 +9,7 @@ namespace Poprica
     public abstract class UserInterface : Scene
     {
 
-        public UserInterface() : base()
+        public UserInterface(SceneType sceneType, NamespaceType namespaceType) : base(sceneType, namespaceType)
         {
 
         }

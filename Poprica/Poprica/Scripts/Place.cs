@@ -16,7 +16,7 @@ namespace Poprica
 
         private List<DialogueEntity> dialogueEntities;
 
-        public Place(LocationType type) : base()
+        public Place(LocationType type, NamespaceType namespaceType) : base(SceneType.PLACE, namespaceType)
         {
 
         }

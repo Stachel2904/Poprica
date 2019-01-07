@@ -51,7 +51,7 @@ namespace Poprica
         /// <param name="newSceneType">The type of the Scene.</param>
         /// <param name="newScene">The LocationType, MenuType or ShopType of the Scene as Integer.</param>
         /// <param name="cache">Set true if the old Scene should be cached.</param>
-        public void LoadScene(SceneType newSceneType, int newScene = 0, bool cache = false)
+        public void LoadScene(SceneType newSceneType, NamespaceType namespaceType, int newScene = 0, bool cache = false)
         {
             RessourceManager.Main.UnloadCache();
 
@@ -67,13 +67,13 @@ namespace Poprica
             switch (newSceneType)
             {
                 case SceneType.MENU:
-                    CurrentScene = new Menu((MenuType)newScene);
+                    CurrentScene = new Menu((MenuType)newScene, namespaceType);
                     break;
                 case SceneType.SHOP:
                     CurrentScene = new Shop();
                     break;
                 case SceneType.PLACE:
-                    CurrentScene = new Place((LocationType)newScene);
+                    CurrentScene = new Place((LocationType)newScene, namespaceType);
                     break;
             }
         }
@@ -89,16 +89,9 @@ namespace Poprica
 
         public void RenderScene()
         {
-            if(CurrentScene.GetType() == typeof(MiniGame))
+            for (int i = 0; i < CurrentScene.Images.Count(); i++)
             {
-                return;
-            }
-
-            UserInterface currentUserInterface = CurrentScene as UserInterface;
-
-            for (int i = 0; i < currentUserInterface.Images.Count(); i++)
-            {
-                Image drawedImage = currentUserInterface.Images[i];
+                Image drawedImage = CurrentScene.Images[i];
 
                 string pathToImage = Maps.PopricaImageMap[(ImageType)drawedImage.Type];
 

@@ -84,6 +84,7 @@
     <Compile Include="Scripts\Scene.cs" />
     <Compile Include="Scripts\Shop.cs" />
     <Compile Include="Scripts\Statement.cs" />
+    <Compile Include="Scripts\TextObject.cs" />
     <Compile Include="Scripts\UserInterface.cs" />
     <Compile Include="Scripts\Waifu.cs" />
     <Compile Include="Scripts\WaifuStats.cs" />
