@@ -20,13 +20,10 @@ namespace DungeonCrawler
         /// Bib for all DC images.
         /// </summary>
         private Poprica.Image[] AllImages { get; set; }
-
-        private bool moved;
-
+        
         public DungeonCrawler() : base(Poprica.SceneType.DUNGEONCRAWLER)
         {
             AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.ImageType.DUNGEONCRAWLER].Count()];
-            moved = true;
 
             InitImages();
         }
@@ -79,17 +76,17 @@ namespace DungeonCrawler
 
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
-                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.STRAIGHT, new Rectangle(new Point(i*100, i*100), new Point(1920-960*i, 1080-540*i)));
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.STRAIGHT, rect);
                     this.Images.Add(img);
                 }
                 else if (current.Type == TileType.INTERSECTION)
                 {
-                    img = new Poprica.Image((int)ImageType.INTERSECTION, rect);
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.INTERSECTION, rect);
                     this.Images.Add(img);
                 }
                 else if (current.Type == TileType.TCROSS && current.Orientation == orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
                 {
-                    img = new Poprica.Image((int)ImageType.TCROSS, rect);
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.TCROSS, rect);
                     this.Images.Add(img);
                 }
                 else if ((int) current.Type > (int)TileType.CONSTRUCTIONSIGN)
@@ -121,9 +118,9 @@ namespace DungeonCrawler
             rect = new Rectangle(pos, new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step)))));
             rectRight = new Rectangle( new Point(pos.X + (int)(1920 / (Math.Pow(2, step))), pos.Y), new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step)))));
 
-            imgLeft = new Poprica.Image((int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X-1].Type, rectLeft);
-            img = new Poprica.Image((int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X].Type, rect);
-            imgRight = new Poprica.Image((int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X+1].Type, rectRight);
+            imgLeft = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X-1].Type, rectLeft);
+            img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X].Type, rect);
+            imgRight = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X+1].Type, rectRight);
 
             this.Images.Add(imgLeft);
             this.Images.Add(img);
