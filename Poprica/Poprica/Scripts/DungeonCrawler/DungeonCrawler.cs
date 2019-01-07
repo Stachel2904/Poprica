@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace DungeonCrawler
 {
-    public sealed class DungeonCrawler<T> : Poprica.MiniGame<T>
+    public sealed class DungeonCrawler : Poprica.MiniGame
     {
 
         /// <summary>
@@ -18,14 +18,16 @@ namespace DungeonCrawler
         /// <summary>
         /// Bib for all DC images.
         /// </summary>
-        private Poprica.Image<T>[] AllImages { get; set; }
+        private Poprica.Image[] AllImages { get; set; }
 
         private bool moved;
 
         public DungeonCrawler() : base()
         {
-            AllImages = new Poprica.Image<T>[Poprica.Maps.DungeonCrawlerImageMap.Count()];
+            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[Poprica.NamespaceType.DUNGEONCRAWLER].Count()];
             moved = false;
+
+            InitImages();
         }
 
         /// <summary>
@@ -33,12 +35,12 @@ namespace DungeonCrawler
         /// </summary>
         private void InitImages()
         {
-            Poprica.Image<T> img;
+            Poprica.Image img;
             Rectangle rect = new Rectangle(Point.Zero, Point.Zero);
 
-            for(int i = 0; i < Poprica.Maps.DungeonCrawlerImageMap.Count(); i++)
+            for(int i = 0; i < Poprica.Maps.ImageMap[Poprica.NamespaceType.DUNGEONCRAWLER].Count(); i++)
             {
-                img = new Poprica.Image<T>((T)(object)i, rect);
+                img = new Poprica.Image(i, rect);
                 AllImages[i] = img;
             }
         }
@@ -48,9 +50,14 @@ namespace DungeonCrawler
         /// </summary>
         public override void LoadImages()
         {
+            if (!moved)
+            {
+                return;
+            }
+
             //TODO: Find latest Location in Dungeon and load these, from Progess-Class
 
-            this.Images = new List<Poprica.Image<T>>();
+            this.Images = new List<Poprica.Image>();
 
             Vector3 entryPoint = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
@@ -77,6 +84,7 @@ namespace DungeonCrawler
                 }
             }
         }
+
 
         public override void Update()
         {

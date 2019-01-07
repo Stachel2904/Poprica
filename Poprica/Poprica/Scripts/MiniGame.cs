@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Poprica
 {
-    public abstract class MiniGame<T> : Scene<T>
+    public abstract class MiniGame : Scene
     {
 
         public MiniGame() : base()

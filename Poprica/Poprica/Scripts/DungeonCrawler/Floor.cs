@@ -45,5 +45,15 @@ namespace DungeonCrawler
         {
             return Vector3.Zero;
         }
+
+        /// <summary>
+        /// Calculates the Neighbours of a Tile with a given location.
+        /// </summary>
+        /// <param name="pos">Position of Tile which neighbours should be calculated.</param>
+        /// <returns>Array of Vector3, Positions of Neighbours.</returns>
+        public Vector3[] CalculateNeighbours(Vector3 pos)
+        {
+            return null;
+        }
     }
 }

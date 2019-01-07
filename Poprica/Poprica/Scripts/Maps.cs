@@ -33,6 +33,23 @@ namespace Poprica
             { MenuType.MAINMENU, new ButtonType[]{ ButtonType.EXIT} }
         };
 
+        /// <summary>
+        /// Maps string in 2D-array Minigame as x-Axis and ImageType as y-Axis  
+        /// </summary>
+        public static string[][] ImageMap { get; } = new string[][]
+        {
+            //Poprica
+            new string[]
+            {
+                "Sprites/UI/UIButton",
+            },
+            //DungeonCrawler
+            new string[]
+            {
+
+            }
+        };
+        
         #region Poprica
 
         /// <summary>
@@ -83,13 +100,7 @@ namespace Poprica
             }
         };
 
-        /// <summary>
-        /// Maps PopricaImageTypes to their save path (string)
-        /// </summary>
-        public static Dictionary<ImageType, string> PopricaImageMap { get; } = new Dictionary<ImageType, string>()
-        {
-            { ImageType.BUTTON, "Sprites/UI/UIButton" }
-        };
+        
 
         /// <summary>
         /// Maps AnimationTypes to Animations.
@@ -126,21 +137,6 @@ namespace Poprica
         public static Dictionary<SoundType, string> DungeonCrawlerSoundMap { get; } = new Dictionary<SoundType, string>()
         {
 
-        };
-
-        /// <summary>
-        /// Maps DungeonCrawlerImageTypes to their save path (string)
-        /// </summary>
-        public static Dictionary<DungeonCrawler.ImageType, string> DungeonCrawlerImageMap { get; } = new Dictionary<DungeonCrawler.ImageType, string>()
-        {
-            { DungeonCrawler.ImageType.STRAIGHT, "" },
-            { DungeonCrawler.ImageType.RIGHTTURN, "" },
-            { DungeonCrawler.ImageType.LEFTTURN, "" },
-            { DungeonCrawler.ImageType.TCROSS, "" },
-            { DungeonCrawler.ImageType.INTERSECTION, "" },
-            { DungeonCrawler.ImageType.ENTRY, "" },
-            { DungeonCrawler.ImageType.PRISONERROOM, "" },
-            { DungeonCrawler.ImageType.CONSTRUCTIONSIGN, "" }
         };
 
         /// <summary>

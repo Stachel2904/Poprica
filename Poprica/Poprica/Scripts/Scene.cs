@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Poprica
 {
-    public abstract class Scene<T>
+    public abstract class Scene
     {
         /// <summary>
         /// Holds an List of images, which should be displayed in the scene.
         /// </summary>
-        public List<Image<T>> Images { get; set; }
+        public List<Image> Images { get; set; }
 
         public Scene()
         {
