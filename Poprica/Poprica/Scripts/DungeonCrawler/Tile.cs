@@ -36,7 +36,8 @@ namespace DungeonCrawler
 
         public Tile()
         {
-
+            Type = TileType.STRAIGHT;
+            Orientation = Vector3.Zero;
         }
 
         public Tile(TileType type, bool[] walls, EventType _event, Dictionary<EnemyType, double> enemies)

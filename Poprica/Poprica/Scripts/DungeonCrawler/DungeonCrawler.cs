@@ -25,7 +25,7 @@ namespace DungeonCrawler
         public DungeonCrawler() : base(Poprica.SceneType.DUNGEONCRAWLER)
         {
             AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.ImageType.DUNGEONCRAWLER].Count()];
-            moved = false;
+            moved = true;
 
             InitImages();
         }
@@ -64,11 +64,23 @@ namespace DungeonCrawler
 
             for (int i = 0; i < 6; i++)
             {
-                Tile current = Dungeon.Main.Floor.Tiles[(int)(entryPoint.X + orientation.X*i)][(int)(entryPoint.Y + orientation.X*i)];
+                Tile current;
+                Tile[] currentRow = Dungeon.Main.Floor.Tiles.ElementAtOrDefault<Tile[]>((int)(entryPoint.X + orientation.X * i));
+                if (currentRow != null)
+                {
+                    current = currentRow.ElementAtOrDefault<Tile>((int)(entryPoint.Y + orientation.X * i));
+                }
+                else
+                {
+                    break;
+                }
+
+                Poprica.Image img;
 
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
-                    this.Images.Add(AllImages[(int)ImageType.STRAIGHT]);
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.STRAIGHT, new Rectangle(new Point(i*100, i*100), new Point(1920-960*i, 1080-540*i)));
+                    this.Images.Add(img);
                 }
                 else if (current.Type == TileType.INTERSECTION)
                 {
@@ -77,6 +89,10 @@ namespace DungeonCrawler
                 else if (current.Type == TileType.TCROSS && current.Orientation == orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
                 {
                     this.Images.Add(AllImages[(int)ImageType.TCROSS]);
+                }
+                else if ((int) current.Type > (int)TileType.CONSTRUCTIONSIGN)
+                {
+                    AddImageField(new Vector2(entryPoint.X + orientation.X * i, entryPoint.Y + orientation.X * i));
                 }
                 else
                 {
@@ -88,13 +104,12 @@ namespace DungeonCrawler
 
         public override void Update()
         {
-            if (moved)
-            {
-                this.LoadImages();
-            }
-            
+            this.LoadImages();
         }
 
+        private void AddImageField(Vector2 startPos)
+        {
 
+        }
     }
 }

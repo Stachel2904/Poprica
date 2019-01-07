@@ -23,7 +23,27 @@ namespace DungeonCrawler
 
         public Floor()
         {
-
+            Tiles = new Tile[][]
+            {
+                new Tile[]
+                {
+                    new Tile(),
+                    new Tile(),
+                    new Tile(),
+                },
+                new Tile[]
+                {
+                    new Tile(),
+                    new Tile(),
+                    new Tile(),
+                },
+                new Tile[]
+                {
+                    new Tile(),
+                    new Tile(),
+                    new Tile(),
+                }
+            };
         }
 
         /// <summary>

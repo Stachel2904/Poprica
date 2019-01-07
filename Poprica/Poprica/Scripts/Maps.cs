@@ -49,12 +49,12 @@ namespace Poprica
         /// </summary>
         public static string[][] ImageMap { get; } = new string[][]
         {
-            //Poprica
+            //UI
             new string[]
             {
                 "Sprites/UI/UIButton",
             },
-            //DungeonCrawler
+            //Icons
             new string[]
             {
 
@@ -62,7 +62,22 @@ namespace Poprica
             //Backgrounds
             new string[]
             {
-                "Sprites/BG/LivingRoom"
+                "Sprites/Poprica/LIVINGROOM"
+            },
+            //Waifus
+            new string[]
+            {
+                
+            },
+            //DungeonCrawler
+            new string[]
+            {
+                "Sprites/DC/STRAIGHT",
+                "Sprites/DC/RIGHTTURN",
+                "Sprites/DC/LEFTTRUN",
+                "Sprites/DC/TCROSS",
+                "Sprites/DC/INTERSECTION",
+
             }
         };
         
