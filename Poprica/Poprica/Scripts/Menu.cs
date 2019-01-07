@@ -18,7 +18,6 @@ namespace Poprica
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons);
-            Images = new List<Image>();
 
             for (int i = 0; i < createdButtons.Length; i++)
             {
@@ -36,11 +35,27 @@ namespace Poprica
         }
 
         /// <summary>
-        /// Exits the actual Menu.
+        /// Exits the Game.
         /// </summary>
         public static void Exit()
         {
             PopricaGame.MainState = GameState.EXIT;
+        }
+
+        /// <summary>
+        /// Start the Main Poprica Game
+        /// </summary>
+        public static void LoadPoprica()
+        {
+            SceneManager.Main.LoadScene(SceneType.PLACE, NamespaceType.POPRICA, (int)LocationType.LIVINGROOM);
+        }
+
+        /// <summary>
+        /// Start the Main DungeonCrawler Game
+        /// </summary>
+        public static void LoadDungeonCrawler()
+        {
+            SceneManager.Main.LoadScene(SceneType.MINIGAME, NamespaceType.DUNGEONCRAWLER);
         }
 
         /// <summary>

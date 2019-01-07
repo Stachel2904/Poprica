@@ -14,6 +14,8 @@ namespace Poprica
         /// </summary>
         public static Dictionary<ButtonType, System.Action> ButtonMap { get; } = new Dictionary<ButtonType, System.Action>()
         {
+            { ButtonType.STARTGAME, new System.Action(Menu.LoadPoprica)},
+            { ButtonType.STARTDUNGEONCRAWLER, new System.Action(Menu.LoadDungeonCrawler)},
             { ButtonType.EXIT, new System.Action(Menu.Exit)}
         };
 
@@ -30,7 +32,16 @@ namespace Poprica
         /// </summary>
         public static Dictionary<MenuType, ButtonType[]> MenuButtonMap { get; } = new Dictionary<MenuType, ButtonType[]>()
         {
-            { MenuType.MAINMENU, new ButtonType[]{ ButtonType.EXIT} }
+            //Main Menu
+            {
+                MenuType.MAINMENU,
+                new ButtonType[]
+                {
+                    ButtonType.STARTGAME,
+                    ButtonType.STARTDUNGEONCRAWLER,
+                    ButtonType.EXIT
+                }
+            }
         };
 
         /// <summary>
@@ -55,7 +66,8 @@ namespace Poprica
         /// </summary>
         public static string[] MenuButtonText = new string[]
         {
-            "Start Game",
+            "Start Poprica",
+            "Start Dungeon Crawler",
             "Exit"
         };
 

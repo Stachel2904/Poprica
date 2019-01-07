@@ -62,7 +62,7 @@ namespace Poprica
             {
                 for (int j = 0; j < ((buttons.Length < 10) ? buttons.Length : 10); j++)
                 {
-                    Rectangle desRect = new Rectangle(i * 200, j / 10 * 50, 200, 50);
+                    Rectangle desRect = new Rectangle(i * 200, j * 50, 200, 50);
                     Button newButton = new Button(buttons[i + j], desRect);
                     createdButtons.Add(newButton);
                 }

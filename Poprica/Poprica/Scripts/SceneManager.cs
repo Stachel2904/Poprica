@@ -75,6 +75,14 @@ namespace Poprica
                 case SceneType.PLACE:
                     CurrentScene = new Place((LocationType)newScene, namespaceType);
                     break;
+                case SceneType.MINIGAME:
+                    switch (namespaceType)
+                    {
+                        case NamespaceType.DUNGEONCRAWLER:
+                            CurrentScene = new DungeonCrawler.DungeonCrawler();
+                            break;
+                    }
+                    break;
             }
         }
         

@@ -89,6 +89,7 @@ namespace Poprica
     public enum ButtonType
     {
         STARTGAME,
+        STARTDUNGEONCRAWLER,
         EXIT
     }
 
