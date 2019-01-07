@@ -70,7 +70,7 @@ namespace Poprica
                     CurrentScene = new Menu((MenuType)newScene, namespaceType);
                     break;
                 case SceneType.SHOP:
-                    CurrentScene = new Shop();
+                    CurrentScene = new Shop(namespaceType);
                     break;
                 case SceneType.PLACE:
                     CurrentScene = new Place((LocationType)newScene, namespaceType);
