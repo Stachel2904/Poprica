@@ -36,7 +36,7 @@ namespace DungeonCrawler
 
         public Tile()
         {
-            Type = TileType.INTERSECTION;
+            Type = TileType.STRAIGHT;
             Orientation = Vector3.Zero;
         }
 

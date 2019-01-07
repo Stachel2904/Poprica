@@ -25,7 +25,7 @@ namespace DungeonCrawler
         public DungeonCrawler() : base(Poprica.NamespaceType.DUNGEONCRAWLER)
         {
             AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.NamespaceType.DUNGEONCRAWLER].Count()];
-            moved = false;
+            moved = true;
 
             InitImages();
         }
@@ -75,12 +75,12 @@ namespace DungeonCrawler
                     break;
                 }
 
-                //Poprica.Image img;
+                Poprica.Image img;
 
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
-
-                    this.Images.Add(new Poprica.Image((int)ImageType.STRAIGHT, new Rectangle(Point.Zero, new Point(1920, 1080))));
+                    img = new Poprica.Image((int)ImageType.STRAIGHT, new Rectangle(new Point(i*100, i*100), new Point(1920-960*i, 1080-540*i)));
+                    this.Images.Add(img);
                 }
                 else if (current.Type == TileType.INTERSECTION)
                 {
@@ -104,11 +104,7 @@ namespace DungeonCrawler
 
         public override void Update()
         {
-            if (moved)
-            {
-                this.LoadImages();
-            }
-            
+            this.LoadImages();
         }
 
         private void AddImageField(Vector2 startPos)

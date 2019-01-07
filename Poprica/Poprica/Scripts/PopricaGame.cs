@@ -36,6 +36,10 @@ namespace Poprica
 
             MainState = GameState.DEFAULT;
 
+            graphics.PreferredBackBufferHeight = 1080;
+            graphics.PreferredBackBufferWidth = 1920;
+            graphics.ApplyChanges();
+
             base.Initialize();
         }
 
@@ -79,6 +83,9 @@ namespace Poprica
 
                     //Update Animations
                     AnimationManager.Main.Update(gameTime);
+
+                    //Update Scene
+                    SceneManager.Main.CurrentScene.Update();
 
                     //Render Scene
                     SceneManager.Main.RenderScene();

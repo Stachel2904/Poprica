@@ -44,6 +44,7 @@ namespace Poprica
         {
             Ressources = _ressources;
             renderer = _renderer;
+
         }
 
         /// <summary>
