@@ -61,12 +61,12 @@ namespace DungeonCrawler
                 Tile current = null;
                 Tile[] currentRow = null;
                 
-                if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(entryPoint.Y + orientation.Y * i), out currentRow))
+                if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(entryPoint.Y + orientation.Y * (i+1)), out currentRow))
                 {
                     break;
                 }
 
-                if (!currentRow.TryGetTile((int)(entryPoint.X + orientation.X * i), out current))
+                if (!currentRow.TryGetTile((int)(entryPoint.X + orientation.X * (i+1)), out current))
                 {
                     break;
                 }
