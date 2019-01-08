@@ -74,7 +74,9 @@ namespace Poprica
 
         private void Call(ButtonType clickedButton)
         {
-            Maps.ButtonMap[clickedButton].Invoke();
+            ActionEvent triggeredEvent = Maps.ButtonMap[clickedButton];
+
+            triggeredEvent.method.Invoke(triggeredEvent.args);
         }
 
         /// <summary>

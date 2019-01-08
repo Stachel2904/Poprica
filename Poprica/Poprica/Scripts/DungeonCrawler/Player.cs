@@ -54,8 +54,10 @@ namespace DungeonCrawler
         /// Moves the Player into a given direction.
         /// </summary>
         /// <param name="direction">Direction to move to.</param>
-        public void Move(DirectionType direction)
+        public void Move(int[] eventArgs)
         {
+            DirectionType direction = (DirectionType)eventArgs[0];
+
             switch (direction)
             {
                 #region Move
