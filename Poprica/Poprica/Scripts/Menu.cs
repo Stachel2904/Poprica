@@ -38,25 +38,25 @@ namespace Poprica
         /// <summary>
         /// Exits the Game.
         /// </summary>
-        public static void Exit()
+        public static void Exit(int[] eventArgs)
         {
             PopricaGame.MainState = GameState.EXIT;
         }
 
         /// <summary>
-        /// Start the Main Poprica Game
+        /// Start a new Scene from ButtonClick
         /// </summary>
-        public static void LoadPoprica()
+        public static void LoadNewScene(int[] eventArgs)
         {
-            SceneManager.Main.LoadScene(SceneType.PLACE, (int)LocationType.LIVINGROOM);
-        }
-
-        /// <summary>
-        /// Start the Main DungeonCrawler Game
-        /// </summary>
-        public static void LoadDungeonCrawler()
-        {
-            SceneManager.Main.LoadScene(SceneType.DUNGEONCRAWLER);
+            switch ((SceneType)eventArgs[0])
+            {
+                case SceneType.DUNGEONCRAWLER:
+                    SceneManager.Main.LoadScene(SceneType.DUNGEONCRAWLER);
+                    break;
+                default:
+                    SceneManager.Main.LoadScene((SceneType)eventArgs[0], eventArgs[1]);
+                    break;
+            }
         }
 
         /// <summary>

@@ -45,6 +45,21 @@ namespace Poprica
                 ButtonManager.Main.CheckButtonClick(mouseState.Position);
             }
             #endregion
+
+            #region KeyboardInput
+            Keys[] pressedKeys = Keyboard.GetState().GetPressedKeys();
+            
+
+            for (int i = 0; i < pressedKeys.Length; i++)
+            {
+                if (Maps.InputMaps[(int)SceneManager.Main.CurrentScene.SceneCategory].ContainsKey(pressedKeys[i]))
+                {
+                    ActionEvent triggeredEvent = Maps.InputMaps[(int)SceneManager.Main.CurrentScene.SceneCategory][pressedKeys[i]];
+
+                    triggeredEvent.method.Invoke(triggeredEvent.args);
+                }
+            }
+            #endregion
         }
 
         /// <summary>

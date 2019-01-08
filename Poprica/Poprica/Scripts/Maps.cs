@@ -12,11 +12,11 @@ namespace Poprica
         /// <summary>
         /// Maps Buttons to Actions.
         /// </summary>
-        public static Dictionary<ButtonType, System.Action> ButtonMap { get; } = new Dictionary<ButtonType, System.Action>()
+        public static Dictionary<ButtonType, ActionEvent> ButtonMap { get; } = new Dictionary<ButtonType, ActionEvent>()
         {
-            { ButtonType.STARTGAME, new System.Action(Menu.LoadPoprica)},
-            { ButtonType.STARTDUNGEONCRAWLER, new System.Action(Menu.LoadDungeonCrawler)},
-            { ButtonType.EXIT, new System.Action(Menu.Exit)}
+            { ButtonType.STARTGAME, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM })},
+            { ButtonType.STARTDUNGEONCRAWLER, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER})},
+            { ButtonType.EXIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
         };
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace Poprica
                 "Sprites/DC/PRISONERROOM",
             }
         };
-        
+
         /// <summary>
         /// Stores the Text on a Button
         /// </summary>
@@ -116,8 +116,38 @@ namespace Poprica
 
         };
 
+        public static Dictionary<Keys, ActionEvent>[] InputMaps { get; } = new Dictionary<Keys, ActionEvent>[]
+        {
+            //Place Input
+            new Dictionary<Keys, ActionEvent>
+            {
+                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
+            },
 
-        //Wiklich nötig?!?!?!?!?!
+            //Menu Input
+            new Dictionary<Keys, ActionEvent>
+            {
+                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
+            },
+
+            //Shop Input
+            new Dictionary<Keys, ActionEvent>
+            {
+                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
+            },
+
+            //DungeonCrawler Input
+            new Dictionary<Keys, ActionEvent>
+            {
+                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})},
+                { Keys.W, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.FORWARD)})},
+                { Keys.A, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.TURNLEFT)})},
+                { Keys.S, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.BACKWARD)})},
+                { Keys.D, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.TURNRIGHT)})},
+                { Keys.Q, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.LEFT)})},
+                { Keys.E, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.RIGHT)})}
+            }
+        };
 
         /// <summary>
         /// Maps InputTypes to Keys.
