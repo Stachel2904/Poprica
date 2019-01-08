@@ -72,6 +72,7 @@ namespace Poprica
             //DungeonCrawler
             new string[]
             {
+                "Sprites/DC/CONSTRUCTIONSIGN",
                 "Sprites/DC/STRAIGHT",
                 "Sprites/DC/RIGHTTURN",
                 "Sprites/DC/LEFTTRUN",

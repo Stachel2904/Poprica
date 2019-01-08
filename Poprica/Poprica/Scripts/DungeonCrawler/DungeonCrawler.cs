@@ -109,18 +109,21 @@ namespace DungeonCrawler
 
         private void AddImageField(Vector2 startPos, int step)
         {
+            Vector3 playerRot = Player.Main.Rotation;
+
             Poprica.Image imgLeft, img, imgRight;
             Rectangle rectLeft, rect, rectRight;
 
             Point pos = ImagePos(step);
+            Point size = new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step))));
 
-            rectLeft = new Rectangle(new Point(pos.X - (int)(1920 / (Math.Pow(2, step))), pos.Y), new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step)))));
-            rect = new Rectangle(pos, new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step)))));
-            rectRight = new Rectangle( new Point(pos.X + (int)(1920 / (Math.Pow(2, step))), pos.Y), new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step)))));
+            rectLeft = new Rectangle(new Point(pos.X - (int)(1920 / (Math.Pow(2, step))), pos.Y), size);
+            rect = new Rectangle(pos, size);
+            rectRight = new Rectangle( new Point(pos.X + (int)(1920 / (Math.Pow(2, step))), pos.Y), size);
 
-            imgLeft = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X-1].Type, rectLeft);
+            imgLeft = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)(startPos.Y - playerRot.Y)][(int)(startPos.X - playerRot.X)].Type, rectLeft);
             img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X].Type, rect);
-            imgRight = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X+1].Type, rectRight);
+            imgRight = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)(startPos.Y + playerRot.Y)][(int)(startPos.X + playerRot.X)].Type, rectRight);
 
             this.Images.Add(imgLeft);
             this.Images.Add(img);

@@ -23,6 +23,7 @@ namespace DungeonCrawler
 
     public enum TileType
     {
+        NONE,
         STRAIGHT,
         RIGHTTURN,
         LEFTTURN,
