@@ -27,6 +27,8 @@ namespace Poprica
         
         private Dictionary<InputType, System.Action> inputMap;
 
+        private Keys[] lastPressedKeys = new Keys[] { };
+
         private InputManager()
         {
 
@@ -48,17 +50,32 @@ namespace Poprica
 
             #region KeyboardInput
             Keys[] pressedKeys = Keyboard.GetState().GetPressedKeys();
-            
+
+            bool keyAlreadyPressed;
 
             for (int i = 0; i < pressedKeys.Length; i++)
             {
-                if (Maps.InputMaps[(int)SceneManager.Main.CurrentScene.SceneCategory].ContainsKey(pressedKeys[i]))
-                {
-                    ActionEvent triggeredEvent = Maps.InputMaps[(int)SceneManager.Main.CurrentScene.SceneCategory][pressedKeys[i]];
+                keyAlreadyPressed = false;
 
-                    triggeredEvent.method.Invoke(triggeredEvent.args);
+                for (int j = 0; j < lastPressedKeys.Length; j++)
+                {
+                    if (pressedKeys[i] == lastPressedKeys[j])
+                    {
+                        keyAlreadyPressed = true;
+                    }
+                }
+                if (!keyAlreadyPressed)
+                {
+                    if (Maps.InputMaps[(int)SceneManager.Main.CurrentScene.SceneCategory].ContainsKey(pressedKeys[i]))
+                    {
+                        ActionEvent triggeredEvent = Maps.InputMaps[(int)SceneManager.Main.CurrentScene.SceneCategory][pressedKeys[i]];
+
+                        triggeredEvent.method.Invoke(triggeredEvent.args);
+                    }
                 }
             }
+
+            lastPressedKeys = pressedKeys;
             #endregion
         }
 
