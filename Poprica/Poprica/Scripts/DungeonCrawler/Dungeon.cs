@@ -38,10 +38,16 @@ namespace DungeonCrawler
         /// </summary>
         public int FloorCount { get; set; }
 
+        private Dictionary<int, string> FloorMap = new Dictionary<int, string>
+        {
+            { 0,  "Content/Json/DC/FloorTest.json"},
+
+        };
+
         private Dungeon(int floor = 0)
         {
             FloorCount = floor;
-            Floor = new Floor();
+            Floor = Poprica.DataManager.LoadJson<Floor>(new string[] { FloorMap[FloorCount]})[0];
         }
 
         /// <summary>

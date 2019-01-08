@@ -23,29 +23,29 @@ namespace DungeonCrawler
 
         public Floor()
         {
-            Tiles = new Tile[][]
-            {
-                new Tile[]
-                {
-                    new Tile(),
-                    new Tile(),
-                    new Tile(),
-                },
-                new Tile[]
-                {
-                    new Tile(),
-                    new Tile(),
-                    new Tile(),
-                },
-                new Tile[]
-                {
-                    new Tile(),
-                    new Tile(),
-                    new Tile(),
-                }
-            };
+            //Tiles = new Tile[][]
+            //{
+            //    new Tile[]
+            //    {
+            //        new Tile(),
+            //        new Tile(),
+            //        new Tile(),
+            //    },
+            //    new Tile[]
+            //    {
+            //        new Tile(),
+            //        new Tile(),
+            //        new Tile(),
+            //    },
+            //    new Tile[]
+            //    {
+            //        new Tile(),
+            //        new Tile(),
+            //        new Tile(),
+            //    }
+            //};
 
-            DefaultEntryPoint = new Vector3(1, 2, 0);
+            //DefaultEntryPoint = new Vector3(1, 2, 0);
         }
 
         /// <summary>

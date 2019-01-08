@@ -1,0 +1,76 @@
+{
+	"Tiles" : 
+		[
+			[
+				{
+					"Type" : 7,
+					"Walls" : null,
+					"Orientation" : "0, -1, 0",
+					"Event" : null,
+					"Enemies" : null
+				},
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        },
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        }
+			],
+			[
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        },
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        },
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        }
+			],
+			[
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        },
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        },
+        {
+          "Type": 7,
+          "Walls": null,
+          "Orientation": "0, -1, 0",
+          "Event": null,
+          "Enemies": null
+        }
+			]
+		],
+	"FloorNum" : 1,
+	"DefaultEntryPoint" : "1, 2, 0"
+}

@@ -50,6 +50,7 @@
     <Compile Include="Scripts\Actions.cs" />
     <Compile Include="Scripts\Animation.cs" />
     <Compile Include="Scripts\Button.cs" />
+    <Compile Include="Scripts\DataManager.cs" />
     <Compile Include="Scripts\DialogueEntity.cs" />
     <Compile Include="Scripts\DungeonCrawler\Armor.cs" />
     <Compile Include="Scripts\DungeonCrawler\BasicItem.cs" />
@@ -97,6 +98,9 @@
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\SRH\Programmieren II\Valkyrie Nyr\Dependencies\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />

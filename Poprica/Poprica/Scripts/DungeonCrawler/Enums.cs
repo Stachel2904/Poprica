@@ -41,7 +41,7 @@ namespace DungeonCrawler
 
     public enum EventType
     {
-
+        NONE
     }
 
     public enum EnemyType
