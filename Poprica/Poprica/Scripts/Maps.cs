@@ -72,18 +72,29 @@ namespace Poprica
             //DungeonCrawler
             new string[]
             {
-                "Sprites/DC/CONSTRUCTIONSIGN",
+                "Sprites/DC/WALL",
                 "Sprites/DC/STRAIGHT",
                 "Sprites/DC/RIGHTTURN",
-                "Sprites/DC/LEFTTRUN",
+                "Sprites/DC/LEFTTURN",
                 "Sprites/DC/TCROSS",
                 "Sprites/DC/INTERSECTION",
                 "Sprites/DC/ENTRY",
+
+                "Sprites/DC/STRAIGHTSIGN",
+                "Sprites/DC/RIGHTTURN",   //have to be changed to RIGHTTURNSIGN
+                "Sprites/DC/LEFTTURN",    //have to be changed to LEFTTURNSIGN
+                "Sprites/DC/TCROSSSIGNMAIN",
+
                 "Sprites/DC/CONSTRUCTIONSIGN",
                 "Sprites/DC/ROOM",
                 "Sprites/DC/ROOMLEFT",
                 "Sprites/DC/ROOMRIGHT",
                 "Sprites/DC/PRISONERROOM",
+
+
+                "Sprites/DC/TCROSSMAIN",
+                "Sprites/DC/TCROSSRIGHT",
+                "Sprites/DC/TCROSSLEFT"
             }
         };
 

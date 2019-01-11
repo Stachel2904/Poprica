@@ -84,9 +84,36 @@ namespace DungeonCrawler
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.INTERSECTION, rect);
                     this.Images.Add(img);
                 }
-                else if (current.Type == TileType.TCROSS && current.Orientation == orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
+                else if (current.Type == TileType.RIGHTTURN || current.Type == TileType.LEFTTURN)
                 {
-                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.TCROSS, rect);
+                    int imageNum = 0;
+
+                    if (orientation == current.Orientation)
+                    {
+                        imageNum = (int)ImageType.RIGHTTURN;
+                    }
+                    else
+                    {
+                        imageNum = (int)ImageType.LEFTTURN;
+                    }
+
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imageNum, rect);
+                    this.Images.Add(img);
+                }
+                else if (current.Type == TileType.TCROSS && current.Orientation != orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
+                {
+                    int imageNum = 0;
+
+                    if (orientation + current.Orientation == Vector3.Zero)
+                    {
+                        imageNum = (int) ImageType.TRCOSSMAIN;
+                    }
+                    else
+                    {
+                        imageNum = GetTcrossImageFromOrientation(orientation, current.Orientation);
+                    }
+
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imageNum, rect);
                     this.Images.Add(img);
                 }
                 else if ((int) current.Type > (int)TileType.CONSTRUCTIONSIGN)
@@ -95,8 +122,9 @@ namespace DungeonCrawler
                 }
                 else
                 {
-
-                    this.Images.Add(AllImages[(int)current.Type]);
+                    //img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
+                    //this.Images.Add(img);
+                    //this.Images.Add(AllImages[(int)current.Type]);
                 }
             }
         }
@@ -130,6 +158,48 @@ namespace DungeonCrawler
             this.Images.Add(imgRight);
         }
 
+        /// <summary>
+        /// Returns an int, which represents the orientation of the image of the TCross.
+        /// </summary>
+        /// <param name="player">Vector3 which represents the players rotation.</param>
+        /// <param name="tile">Vector3, which represents the tile orientation.</param>
+        /// <returns>Index for ImaageType enum.</returns>
+        private int GetTcrossImageFromOrientation(Vector3 player, Vector3 tile)
+        {
+            int num = 0;
+
+            if (player == Vector3.Down)
+            {
+                if (tile == Vector3.Left)
+                    num = 18;
+                else
+                    num = 17;
+            }
+            else if (player == Vector3.Right)
+            {
+                if (tile == Vector3.Up)
+                    num = 17;
+                else
+                    num = 18;
+            }
+            else if (player == Vector3.Up)
+            {
+                if (tile == Vector3.Left)
+                    num = 17;
+                else
+                    num = 18;
+            }
+            else if (player == Vector3.Left)
+            {
+                if (tile == Vector3.Down)
+                    num = 17;
+                else
+                    num = 18;
+            }
+
+            return num;
+        }
+      
         private Point ImagePos(int step)
         {
             return new Point(Poprica.MathFunctions.CalcPicturePosWidth(step), Poprica.MathFunctions.CalcPicturePosHeight(step));

@@ -31,6 +31,12 @@ namespace DungeonCrawler
         INTERSECTION,
         ENTRY,
 
+        STRAIGHTSIGN,
+        RIGHTTURNSIGN,
+        LEFTTURNSIGN,
+        TCROSSSIGNMAIN,
+        
+
         //Bitte diese als Block lassen!!
         CONSTRUCTIONSIGN,
         ROOM,
@@ -77,6 +83,7 @@ namespace DungeonCrawler
 
     public enum ImageType
     {
+        NONE,
         STRAIGHT,
         RIGHTTURN,
         LEFTTURN,
@@ -84,11 +91,21 @@ namespace DungeonCrawler
         INTERSECTION,
         ENTRY,
 
+        STRAIGHTSIGN,
+        RIGHTTURNSIGN,
+        LEFTTURNSIGN,
+        TCROSSSIGNMAIN,
+
+
         //Bitte diese als Block lassen!!
         CONSTRUCTIONSIGN,
         ROOM,
         ROOMLEFT,
         ROOMRIGHT,
         PRISONERROOM,
+
+        TRCOSSMAIN,
+        TCROSSRIGHT,
+        TRCOSSLEFT
     }
 }

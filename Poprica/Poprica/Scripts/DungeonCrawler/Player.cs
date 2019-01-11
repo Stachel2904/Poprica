@@ -58,6 +58,11 @@ namespace DungeonCrawler
         {
             DirectionType direction = (DirectionType)eventArgs[0];
 
+            System.Console.WriteLine(this.Rotation);
+
+            if (!Allowed(direction))
+                return;
+
             switch (direction)
             {
                 #region Move
@@ -108,38 +113,38 @@ namespace DungeonCrawler
                 case DirectionType.TURNRIGHT:
                     if (this.Rotation == Vector3.Down)
                     {
-                        this.Rotation += (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Right;
                     }
                     else if (this.Rotation == Vector3.Up)
                     {
-                        this.Rotation -= (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Left;
                     }
                     else if (this.Rotation == Vector3.Left)
                     {
-                        this.Rotation += (Vector3.Right + Vector3.Down);
+                        this.Rotation = Vector3.Down;
                     }
                     else if (this.Rotation == Vector3.Right)
                     {
-                        this.Rotation += (Vector3.Left + Vector3.Up);
+                        this.Rotation = Vector3.Up;
                     }
                     break;
                 case DirectionType.TURNLEFT:
-                    if (this.Rotation == Vector3.Down || this.Rotation == Vector3.Right)
+                    if(this.Rotation == Vector3.Down)
                     {
-                        this.Rotation -= (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Left;
                     }
-                    else if (this.Rotation == Vector3.Up || this.Rotation == Vector3.Left)
+                    else if(this.Rotation == Vector3.Up)
                     {
-                        this.Rotation += (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Right;
                     }
-                    //else if (this.Rotation == Vector3.Left)
-                    //{
-                    //    this.Rotation += (Vector3.One - Vector3.Backward);
-                    //}
-                    //else if (this.Rotation == Vector3.Right)
-                    //{
-                    //    this.Rotation -= (Vector3.One - Vector3.Backward);
-                    //}
+                    else if(this.Rotation == Vector3.Left)
+                    {
+                        this.Rotation = Vector3.Up;
+                    }
+                    else if(this.Rotation == Vector3.Right)
+                    {
+                        this.Rotation = Vector3.Down;
+                    }
                     break;
                 #endregion
             }
@@ -162,6 +167,19 @@ namespace DungeonCrawler
         public void UseItem(Item item)
         {
             item.Use();
+        }
+
+        /// <summary>
+        /// Returns if the tried movement action is legal.
+        /// </summary>
+        /// <param name="dir">Direction to try to move to.</param>
+        /// <returns>True if the movment is leagl.</returns>
+        private bool Allowed(DirectionType dir)
+        {
+
+            //denk dir mal nen guten Shit aus!!!
+
+            return true;
         }
     }
 }
