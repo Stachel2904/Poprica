@@ -32,15 +32,23 @@ namespace Poprica
         {
             this.IsMouseVisible = true;
 
-            SceneManager.Main.LoadScene(SceneType.MENU, (int)MenuType.MAINMENU);
-
             MainState = GameState.DEFAULT;
 
-            graphics.PreferredBackBufferHeight = 1080;
+            graphics.PreferredBackBufferHeight = 900;
             graphics.PreferredBackBufferWidth = 1920;
             graphics.ApplyChanges();
 
+            DebugInit();
+
             base.Initialize();
+        }
+
+        private void DebugInit()
+        {
+            SceneManager.Main.LoadScene(SceneType.MENU, (int)MenuType.MAINMENU);
+
+            WaifuManager.Main.UnlockWaifu(DialogueEntityName.RICA);
+            WaifuManager.Main.SelectedWaifu = DialogueEntityName.RICA;
         }
 
         /// <summary>

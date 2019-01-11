@@ -30,9 +30,9 @@ namespace Poprica
 
         private int age;
 
-        public DialogueEntity()
+        public DialogueEntity(DialogueEntityName name)
         {
-
+            Name = name;
         }
     }
 }
