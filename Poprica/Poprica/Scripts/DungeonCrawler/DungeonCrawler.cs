@@ -56,19 +56,19 @@ namespace DungeonCrawler
             Vector3 entryPoint = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 6; i >= 0; i--)
             {
                 Tile current = null;
                 Tile[] currentRow = null;
                 
                 if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(entryPoint.Y + orientation.Y * (i+1)), out currentRow))
                 {
-                    break;
+                    continue;
                 }
 
                 if (!currentRow.TryGetTile((int)(entryPoint.X + orientation.X * (i+1)), out current))
                 {
-                    break;
+                    continue;
                 }
                 
                 Poprica.Image img;
@@ -100,7 +100,7 @@ namespace DungeonCrawler
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imageNum, rect);
                     this.Images.Add(img);
                 }
-                else if (current.Type == TileType.TCROSS && current.Orientation != orientation) //TODO : Orientierung der t-Kreuzung darf auch anders sein!
+                else if (current.Type == TileType.TCROSS && current.Orientation != orientation)
                 {
                     int imageNum = 0;
 
@@ -116,28 +116,34 @@ namespace DungeonCrawler
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imageNum, rect);
                     this.Images.Add(img);
                 }
+                else if (current.Type == TileType.CONSTRUCTIONSIGN)
+                {
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.CONSTRUCTIONSIGN, rect);
+                    this.Images.Add(img);
+                }
                 else if ((int) current.Type > (int)TileType.CONSTRUCTIONSIGN)
                 {
-                    AddImageField(new Vector2(entryPoint.X + orientation.X * i, entryPoint.Y + orientation.X * i), i);
+                    AddImageField(new Vector2(entryPoint.X + orientation.X * i, entryPoint.Y + orientation.X * i), i, current);
                 }
                 else
                 {
-                    //img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
-                    //this.Images.Add(img);
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)current.Type, rect);
+                    this.Images.Add(img);
                     //this.Images.Add(AllImages[(int)current.Type]);
                 }
             }
         }
-
 
         public override void Update()
         {
             this.LoadImages();
         }
 
-        private void AddImageField(Vector2 startPos, int step)
+        private void AddImageField(Vector2 startPos, int step, Tile current)
         {
             Vector3 playerRot = Player.Main.Rotation;
+
+            int imgNumLeft = 0, imgNum = 0, imgNumRight = 0;
 
             Poprica.Image imgLeft, img, imgRight;
             Rectangle rectLeft, rect, rectRight;
@@ -149,9 +155,108 @@ namespace DungeonCrawler
             rect = new Rectangle(pos, size);
             rectRight = new Rectangle( new Point(pos.X + (int)(1920 / (Math.Pow(2, step))), pos.Y), size);
 
-            imgLeft = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)(startPos.Y - playerRot.Y)][(int)(startPos.X - playerRot.X)].Type, rectLeft);
-            img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)startPos.Y][(int)startPos.X].Type, rect);
-            imgRight = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)Dungeon.Main.Floor.Tiles[(int)(startPos.Y + playerRot.Y)][(int)(startPos.X + playerRot.X)].Type, rectRight);
+            if (current.Type == TileType.ROOMEXIT)
+            {
+                //SHIT hier muss noch einiges geändert werden!!
+
+                if (current.Orientation == playerRot)
+                {
+                    imgNumLeft = (int)ImageType.ROOMLEFTCORNER;
+                    imgNum = (int)ImageType.ROOMEXIT;
+                    imgNumRight = (int)ImageType.ROOMRIGHTCORNER;
+                }
+                else if ((current.Orientation + playerRot) == Vector3.Zero)
+                {
+                    imgNumLeft = (int)ImageType.ROOMLEFTPERSPEKTIVE;
+                    imgNum = (int)ImageType.ROOM;
+                    imgNumRight = (int)ImageType.ROOMRIGHTPERSPEKTIVE;
+                }
+                else if (current.Orientation == Vector3.Down)
+                {
+                    if (playerRot == Vector3.Right)
+                    {
+                        imgNumLeft = (int)ImageType.ROOMWALL;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)current.Type;
+                    }
+                    else if (playerRot == Vector3.Left)
+                    {
+                        imgNumLeft = (int)current.Type;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)ImageType.ROOMWALL;
+                    }
+                }
+                else if (current.Orientation == Vector3.Right)
+                {
+                    if (playerRot == Vector3.Down)
+                    {
+                        imgNumLeft = (int)current.Type;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)ImageType.ROOMWALL;
+                    }
+                    else if (playerRot == Vector3.Up)
+                    {
+                        imgNumLeft = (int)ImageType.ROOMWALL;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)current.Type;
+                    }
+                }
+                else if (current.Orientation == Vector3.Up)
+                {
+                    if (playerRot == Vector3.Right)
+                    {
+                        imgNumLeft = (int)current.Type;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)ImageType.ROOMWALL;
+                    }
+                    else if (playerRot == Vector3.Left)
+                    {
+                        imgNumLeft = (int)ImageType.ROOMWALL;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)current.Type;
+                    }
+                }
+                else if (current.Orientation == Vector3.Left)
+                {
+                    if (playerRot == Vector3.Down)
+                    {
+                        imgNumLeft = (int)ImageType.ROOMWALL;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)current.Type;
+                    }
+                    else if (playerRot == Vector3.Up)
+                    {
+                        imgNumLeft = (int)current.Type;
+                        imgNum = (int)ImageType.ROOM;
+                        imgNumRight = (int)ImageType.ROOMWALL;
+                    }
+                }
+            }
+            else if (current.Type == TileType.ROOM)
+            {
+
+            }
+            else if (current.Type == TileType.ROOMWALL)
+            {
+                imgNumLeft = (int)ImageType.ROOMLEFTCORNER;
+                imgNum = (int)ImageType.ROOMWALL;
+                imgNumRight = (int)ImageType.ROOMRIGHTCORNER;
+            }
+            else if (current.Type == TileType.PRISONERROOM)
+            {
+                imgNumLeft = (int)ImageType.ROOMLEFTPERSPEKTIVE;
+                imgNum = (int)ImageType.PRISONERROOM;
+                imgNumRight = (int)ImageType.ROOMRIGHTPERSPEKTIVE;
+            }
+            else if (current.Type == TileType.ROOMCORNER)
+            {
+                imgNum = GetImageForRoomCorner(playerRot, current.Orientation);
+            }
+
+
+            imgLeft = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imgNumLeft, rectLeft);
+            img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imgNum, rect);
+            imgRight = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, imgNumRight, rectRight);
 
             this.Images.Add(imgLeft);
             this.Images.Add(img);
@@ -162,8 +267,8 @@ namespace DungeonCrawler
         /// Returns an int, which represents the orientation of the image of the TCross.
         /// </summary>
         /// <param name="player">Vector3 which represents the players rotation.</param>
-        /// <param name="tile">Vector3, which represents the tile orientation.</param>
-        /// <returns>Index for ImaageType enum.</returns>
+        /// <param name="tile">Vector3 which represents the tile orientation.</param>
+        /// <returns>Index for ImageType enum.</returns>
         private int GetTcrossImageFromOrientation(Vector3 player, Vector3 tile)
         {
             int num = 0;
@@ -171,33 +276,75 @@ namespace DungeonCrawler
             if (player == Vector3.Down)
             {
                 if (tile == Vector3.Left)
-                    num = 18;
+                    num = (int) ImageType.TCROSSLEFT;
                 else
-                    num = 17;
+                    num = (int) ImageType.TCROSSRIGHT;
             }
             else if (player == Vector3.Right)
             {
                 if (tile == Vector3.Up)
-                    num = 17;
+                    num = (int)ImageType.TCROSSRIGHT;
                 else
-                    num = 18;
+                    num = (int)ImageType.TCROSSLEFT;
             }
             else if (player == Vector3.Up)
             {
                 if (tile == Vector3.Left)
-                    num = 17;
+                    num = (int)ImageType.TCROSSRIGHT;
                 else
-                    num = 18;
+                    num = (int)ImageType.TCROSSLEFT;
             }
             else if (player == Vector3.Left)
             {
                 if (tile == Vector3.Down)
-                    num = 17;
+                    num = (int)ImageType.TCROSSRIGHT;
                 else
-                    num = 18;
+                    num = (int)ImageType.TCROSSLEFT;
             }
 
             return num;
+        }
+
+        /// <summary>
+        /// Returns an int, which represents the image of the roomcorner.
+        /// </summary>
+        /// <param name="player">Vector3 which represents the players rotation.</param>
+        /// <param name="tile">Vector3 which represents the tile orientation. </param>
+        /// <returns>Index for Image enum.</returns>
+        private int GetImageForRoomCorner(Vector3 player, Vector3 tile)
+        {
+            int imgNum = 0;
+
+            if (tile == Vector3.Down)
+            {
+                if (player == Vector3.Down)
+                    imgNum = (int)ImageType.ROOMLEFTCORNER;
+                else if (player == Vector3.Left)
+                    imgNum = (int)ImageType.ROOMRIGHTCORNER;
+            }
+            else if (tile == Vector3.Right)
+            {
+                if (player == Vector3.Down)
+                    imgNum = (int)ImageType.ROOMRIGHTCORNER;
+                else if (player == Vector3.Right)
+                    imgNum = (int)ImageType.ROOMLEFTCORNER;
+            }
+            else if (tile == Vector3.Up)
+            {
+                if (player == Vector3.Right)
+                    imgNum = (int)ImageType.ROOMRIGHTCORNER;
+                else if (player == Vector3.Up)
+                    imgNum = (int)ImageType.ROOMLEFTCORNER;
+            }
+            else if (tile == Vector3.Left)
+            {
+                if (player == Vector3.Up)
+                    imgNum = (int)ImageType.ROOMRIGHTCORNER;
+                else if (player == Vector3.Left)
+                    imgNum = (int)ImageType.ROOMLEFTCORNER;
+            }
+
+            return imgNum;
         }
       
         private Point ImagePos(int step)

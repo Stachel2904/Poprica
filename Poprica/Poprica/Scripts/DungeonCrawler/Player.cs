@@ -57,9 +57,7 @@ namespace DungeonCrawler
         public void Move(int[] eventArgs)
         {
             DirectionType direction = (DirectionType)eventArgs[0];
-
-            System.Console.WriteLine(this.Rotation);
-
+            
             if (!Allowed(direction))
                 return;
 
@@ -176,10 +174,35 @@ namespace DungeonCrawler
         /// <returns>True if the movment is leagl.</returns>
         private bool Allowed(DirectionType dir)
         {
+            if ((int)dir > 3)
+                return true;
 
-            //denk dir mal nen guten Shit aus!!!
+            Tile current = Dungeon.Main.Floor.Tiles[(int)this.Location.Y][(int)this.Location.X];
+            int index = 0;
+            
+            if (this.Rotation == Vector3.Down)
+            {
+                index = (int)dir;
+            }
+            else if (this.Rotation == Vector3.Right)
+            {
+                index = ((int)dir + 1 < 4) ? (int)dir +1 : 0;
+            }
+            else if (this.Rotation == Vector3.Up)
+            {
+                index = ((int)dir + 2 < 4) ? (int)dir + 2 : (((int)dir + 1 < 4) ? 0 : 1);
+            }
+            else if (this.Rotation == Vector3.Left)
+            {
+                index = ((int)dir - 1 > 0) ? (int)dir - 1 : 3;
+            }
 
-            return true;
+            System.Console.WriteLine(index);
+
+            if (!current.Walls[index])
+                return true;
+            else
+                return false;
         }
     }
 }
