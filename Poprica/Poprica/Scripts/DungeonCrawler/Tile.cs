@@ -16,6 +16,7 @@ namespace DungeonCrawler
 
         /// <summary>
         /// Array of true and false values, which indicates if ther is a wall in a given direction.
+        /// 0 - is top, 1 - right, 2 - bottom, 3 - left side
         /// </summary>
         public bool[] Walls { get; set; }
 

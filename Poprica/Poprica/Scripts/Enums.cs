@@ -95,7 +95,7 @@ namespace Poprica
 
     public enum ActionType
     {
-        
+        TALK
     }
 
     public enum ButtonType

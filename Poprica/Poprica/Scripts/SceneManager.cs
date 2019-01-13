@@ -104,6 +104,11 @@ namespace Poprica
             {
                 RessourceManager.Main.DrawText(CurrentScene.Texts[i]);
             }
+
+            if (CurrentScene.SceneCategory == SceneType.PLACE)
+            {
+                WaifuManager.Main.RenderWaifus();
+            }
         }
 
         /// <summary>

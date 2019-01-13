@@ -110,6 +110,9 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
+    <None Include="Content\Json\DC\Floortest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\x86\Debug\Poprica.csproj.CoreCompileInputs.cache" />
     <None Include="obj\x86\Debug\Poprica.csprojAssemblyReference.cache" />

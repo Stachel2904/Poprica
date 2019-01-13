@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
 namespace Poprica
@@ -67,24 +68,49 @@ namespace Poprica
             //Waifus
             new string[]
             {
-                
+                "",
+                "Sprites/Poprica/RICA"
             },
             //DungeonCrawler
             new string[]
             {
-                "Sprites/DC/CONSTRUCTIONSIGN",
+                "Sprites/DC/WALL",
                 "Sprites/DC/STRAIGHT",
                 "Sprites/DC/RIGHTTURN",
-                "Sprites/DC/LEFTTRUN",
+                "Sprites/DC/LEFTTURN",
                 "Sprites/DC/TCROSS",
                 "Sprites/DC/INTERSECTION",
                 "Sprites/DC/ENTRY",
+
+                "Sprites/DC/STRAIGHTSIGN",
+                "Sprites/DC/RIGHTTURN",   //have to be changed to RIGHTTURNSIGN
+                "Sprites/DC/LEFTTURN",    //have to be changed to LEFTTURNSIGN
+                "Sprites/DC/TCROSSSIGNMAINLEFT",
+
                 "Sprites/DC/CONSTRUCTIONSIGN",
                 "Sprites/DC/ROOM",
-                "Sprites/DC/ROOMLEFT",
-                "Sprites/DC/ROOMRIGHT",
+                "Sprites/DC/ROOMWALL",
+                "Sprites/DC/ROOMRIGHTCORNER",
+                "Sprites/DC/ROOMEXIT",
                 "Sprites/DC/PRISONERROOM",
+
+
+                "Sprites/DC/TCROSSMAIN",
+                "Sprites/DC/TCROSSRIGHT",
+                "Sprites/DC/TCROSSLEFT",
+
+                
+                "Sprites/DC/ROOMRIGHT",
+                "Sprites/DC/ROOMLEFT",
+                "Sprites/DC/ROOMRIGHTPERSPEKTIVE",
+                "Sprites/DC/ROOMLEFTPERSPEKTIVE",
+                "Sprites/DC/ROOMLEFTCORNER",
             }
+        };
+
+        public static Dictionary<DialogueEntityPositionType, Rectangle> DialogueEntityPositions = new Dictionary<DialogueEntityPositionType, Rectangle>
+        {
+            { DialogueEntityPositionType.RIGHT, new Rectangle(1500, 0, 500, 1000)}
         };
 
         /// <summary>
