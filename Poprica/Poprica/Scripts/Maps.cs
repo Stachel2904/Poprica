@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
 namespace Poprica
@@ -67,7 +68,8 @@ namespace Poprica
             //Waifus
             new string[]
             {
-                
+                "",
+                "Sprites/Poprica/RICA"
             },
             //DungeonCrawler
             new string[]
@@ -104,6 +106,11 @@ namespace Poprica
                 "Sprites/DC/ROOMLEFTPERSPEKTIVE",
                 "Sprites/DC/ROOMLEFTCORNER",
             }
+        };
+
+        public static Dictionary<DialogueEntityPositionType, Rectangle> DialogueEntityPositions = new Dictionary<DialogueEntityPositionType, Rectangle>
+        {
+            { DialogueEntityPositionType.RIGHT, new Rectangle(1500, 0, 500, 1000)}
         };
 
         /// <summary>
