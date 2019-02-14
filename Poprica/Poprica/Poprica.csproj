@@ -52,6 +52,8 @@
     <Compile Include="Scripts\Animation.cs" />
     <Compile Include="Scripts\Button.cs" />
     <Compile Include="Scripts\DataManager.cs" />
+    <Compile Include="Scripts\Decision.cs" />
+    <Compile Include="Scripts\DialogueElement.cs" />
     <Compile Include="Scripts\DialogueEntity.cs" />
     <Compile Include="Scripts\DungeonCrawler\Armor.cs" />
     <Compile Include="Scripts\DungeonCrawler\BasicItem.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Scripts\Progress.cs" />
     <Compile Include="Scripts\Scene.cs" />
     <Compile Include="Scripts\Shop.cs" />
+    <Compile Include="Scripts\SpeakerProberties.cs" />
     <Compile Include="Scripts\Statement.cs" />
     <Compile Include="Scripts\TextObject.cs" />
     <Compile Include="Scripts\UserInterface.cs" />
@@ -122,6 +125,11 @@
     <Folder Include="bin\Windows\x86\Release\" />
     <Folder Include="obj\x86\Debug\TempPE\" />
     <Folder Include="SaveGame\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\XML\Dialogue\RICA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

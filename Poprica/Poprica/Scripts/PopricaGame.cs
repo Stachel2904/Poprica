@@ -80,6 +80,10 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            //Debug Purposes Only
+            //ToDo: delete
+            DialogueManager.Main.LoadNewDialogue(new DialogueEntityName[] { DialogueEntityName.RICA }, ActionType.TALK);
+
             switch (PopricaGame.MainState)
             {
                 case GameState.DEFAULT:

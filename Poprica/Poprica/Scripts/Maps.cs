@@ -89,9 +89,9 @@ namespace Poprica
             }
         };
 
-        public static Dictionary<DialogueEntityPositionType, Rectangle> DialogueEntityPositions = new Dictionary<DialogueEntityPositionType, Rectangle>
+        public static Dictionary<PositionType, Rectangle> DialogueEntityPositions = new Dictionary<PositionType, Rectangle>
         {
-            { DialogueEntityPositionType.RIGHT, new Rectangle(1500, 0, 500, 1000)}
+            { PositionType.RIGHT, new Rectangle(1500, 0, 500, 1000)}
         };
 
         /// <summary>

@@ -6,21 +6,44 @@ using System.Threading.Tasks;
 
 namespace Poprica
 {
-    public struct Statement
+    public class Statement : DialogueElement
     {
         /// <summary>
-        /// Holds an array of DialogEntityNames, which represents the entitiey with that statement.
+        /// Holds an array of DialogEntityNames, which represents the entities declaring that statement. Additionally the Proberties are also linked.
         /// </summary>
-        public DialogueEntityName[] Speakers { get; set; }
+        public Dictionary<DialogueEntityName, SpeakerProberties> Speakers { get; set; }
 
         /// <summary>
         /// Holds text message of this Statement.
         /// </summary>
         public string Message { get; set; }
 
-        public Statement(DialogueEntityName[] speakers, string message)
+        /// <summary>
+        /// The Index of the next Statement inside the Dialogue. -1 if Ending, -2 if just one step forward.
+        /// </summary>
+        public int NextStatement { get; set; }
+
+        public Statement() : base(DialogueElementType.STATEMENT)
         {
-            Speakers = speakers;
+            Speakers = new Dictionary<DialogueEntityName, SpeakerProberties>();
+            NextStatement = -2;
+        }
+
+
+        public Statement(DialogueEntityName[] speakers, MoodType[] moods, PoseType[] poses, PositionType[] positions, string message) : base(DialogueElementType.STATEMENT)
+        {
+            if(moods.Length != speakers.Length || poses.Length != speakers.Length || positions.Length != speakers.Length)
+            {
+                throw new Exception("The Speaker don't match the Proberties.");
+            }
+
+            Speakers = new Dictionary<DialogueEntityName, SpeakerProberties>();
+
+            for (int i = 0; i < speakers.Length; i++)
+            {
+                Speakers.Add(speakers[i], new SpeakerProberties(moods[i], poses[i], positions[i]));
+            }
+
             Message = message;
         }
 

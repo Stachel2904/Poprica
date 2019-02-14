@@ -26,7 +26,7 @@ namespace Poprica
         /// <summary>
         /// Holds the position, on screen, of this Entity. Is element from enum DialogueEntityPositionType.
         /// </summary>
-        public DialogueEntityPositionType Position { get; set; }
+        public PositionType Position { get; set; }
 
         private int age;
 
