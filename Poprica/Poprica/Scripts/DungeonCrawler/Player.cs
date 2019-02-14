@@ -172,7 +172,7 @@ namespace DungeonCrawler
         /// </summary>
         /// <param name="dir">Direction to try to move to.</param>
         /// <returns>True if the movment is leagl.</returns>
-        private bool Allowed(DirectionType dir)
+        public bool Allowed(DirectionType dir)
         {
             if ((int)dir > 3)
                 return true;

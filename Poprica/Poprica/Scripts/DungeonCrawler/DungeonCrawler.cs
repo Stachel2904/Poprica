@@ -74,6 +74,17 @@ namespace DungeonCrawler
                 Poprica.Image img;
                 Rectangle rect = new Rectangle(ImagePos(i), new Point((int)(1920 / (Math.Pow(2, i))), (int)(1080 / (Math.Pow(2, i)))));
 
+                //If wall is in front of the player ... stops seeing Tiles behind the wall
+                if (!Player.Main.Allowed(DirectionType.FORWARD) ) //&& GetTileInFront(entryPoint, orientation) != )
+                {
+                    rect = new Rectangle(ImagePos(0), new Point((int)(1920 / (Math.Pow(2, 0))), (int)(1080 / (Math.Pow(2, 0)))));
+
+                    //Abfrage ob Img nicht vllt ConstructionSign sein sollte
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
+                    this.Images.Add(img);
+                    return;
+                }
+
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
                 {
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.STRAIGHT, rect);
@@ -139,6 +150,12 @@ namespace DungeonCrawler
             this.LoadImages();
         }
 
+        /// <summary>
+        /// Adds a field of Images to he Image list. Because morte than one Image is visible.
+        /// </summary>
+        /// <param name="startPos">Position to start the field calculation.</param>
+        /// <param name="step">The iteration step.</param>
+        /// <param name="current">Current Tile.</param>
         private void AddImageField(Vector2 startPos, int step, Tile current)
         {
             Vector3 playerRot = Player.Main.Rotation;
