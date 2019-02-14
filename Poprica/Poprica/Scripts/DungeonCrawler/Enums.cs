@@ -14,8 +14,8 @@ namespace DungeonCrawler
     public enum DirectionType
     {
         FORWARD,
-        BACKWARD,
         RIGHT,
+        BACKWARD,
         LEFT,
         TURNRIGHT,
         TURNLEFT
@@ -31,13 +31,19 @@ namespace DungeonCrawler
         INTERSECTION,
         ENTRY,
 
+        STRAIGHTSIGN,
+        RIGHTTURNSIGN,
+        LEFTTURNSIGN,
+        TCROSSSIGNMAINLEFT,
+
+
         //Bitte diese als Block lassen!!
         CONSTRUCTIONSIGN,
         ROOM,
-        ROOMLEFT,
-        ROOMRIGHT,
+        ROOMWALL,
+        ROOMCORNER,
+        ROOMEXIT,
         PRISONERROOM,
-
     }
 
     public enum EventType
@@ -77,6 +83,7 @@ namespace DungeonCrawler
 
     public enum ImageType
     {
+        NONE,
         STRAIGHT,
         RIGHTTURN,
         LEFTTURN,
@@ -84,11 +91,27 @@ namespace DungeonCrawler
         INTERSECTION,
         ENTRY,
 
+        STRAIGHTSIGN,
+        RIGHTTURNSIGN,
+        LEFTTURNSIGN,
+        TCROSSSIGNMAINLEFT,
+
         //Bitte diese als Block lassen!!
         CONSTRUCTIONSIGN,
         ROOM,
-        ROOMLEFT,
-        ROOMRIGHT,
+        ROOMWALL,
+        ROOMRIGHTCORNER,
+        ROOMEXIT,
         PRISONERROOM,
+
+        TRCOSSMAIN,
+        TCROSSRIGHT,
+        TCROSSLEFT,
+
+        ROOMRIGHT,
+        ROOMLEFT,
+        ROOMRIGHTPERSPEKTIVE,
+        ROOMLEFTPERSPEKTIVE,
+        ROOMLEFTCORNER,
     }
 }

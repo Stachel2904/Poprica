@@ -57,6 +57,9 @@ namespace DungeonCrawler
         public void Move(int[] eventArgs)
         {
             DirectionType direction = (DirectionType)eventArgs[0];
+            
+            if (!Allowed(direction))
+                return;
 
             switch (direction)
             {
@@ -108,38 +111,38 @@ namespace DungeonCrawler
                 case DirectionType.TURNRIGHT:
                     if (this.Rotation == Vector3.Down)
                     {
-                        this.Rotation += (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Right;
                     }
                     else if (this.Rotation == Vector3.Up)
                     {
-                        this.Rotation -= (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Left;
                     }
                     else if (this.Rotation == Vector3.Left)
                     {
-                        this.Rotation += (Vector3.Right + Vector3.Down);
+                        this.Rotation = Vector3.Down;
                     }
                     else if (this.Rotation == Vector3.Right)
                     {
-                        this.Rotation += (Vector3.Left + Vector3.Up);
+                        this.Rotation = Vector3.Up;
                     }
                     break;
                 case DirectionType.TURNLEFT:
-                    if (this.Rotation == Vector3.Down || this.Rotation == Vector3.Right)
+                    if(this.Rotation == Vector3.Down)
                     {
-                        this.Rotation -= (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Left;
                     }
-                    else if (this.Rotation == Vector3.Up || this.Rotation == Vector3.Left)
+                    else if(this.Rotation == Vector3.Up)
                     {
-                        this.Rotation += (Vector3.One - Vector3.Backward);
+                        this.Rotation = Vector3.Right;
                     }
-                    //else if (this.Rotation == Vector3.Left)
-                    //{
-                    //    this.Rotation += (Vector3.One - Vector3.Backward);
-                    //}
-                    //else if (this.Rotation == Vector3.Right)
-                    //{
-                    //    this.Rotation -= (Vector3.One - Vector3.Backward);
-                    //}
+                    else if(this.Rotation == Vector3.Left)
+                    {
+                        this.Rotation = Vector3.Up;
+                    }
+                    else if(this.Rotation == Vector3.Right)
+                    {
+                        this.Rotation = Vector3.Down;
+                    }
                     break;
                 #endregion
             }
@@ -162,6 +165,44 @@ namespace DungeonCrawler
         public void UseItem(Item item)
         {
             item.Use();
+        }
+
+        /// <summary>
+        /// Returns if the tried movement action is legal.
+        /// </summary>
+        /// <param name="dir">Direction to try to move to.</param>
+        /// <returns>True if the movment is leagl.</returns>
+        public bool Allowed(DirectionType dir)
+        {
+            if ((int)dir > 3)
+                return true;
+
+            Tile current = Dungeon.Main.Floor.Tiles[(int)this.Location.Y][(int)this.Location.X];
+            int index = 0;
+            
+            if (this.Rotation == Vector3.Down)
+            {
+                index = (int)dir;
+            }
+            else if (this.Rotation == Vector3.Right)
+            {
+                index = ((int)dir + 1 < 4) ? (int)dir +1 : 0;
+            }
+            else if (this.Rotation == Vector3.Up)
+            {
+                index = ((int)dir + 2 < 4) ? (int)dir + 2 : (((int)dir + 1 < 4) ? 0 : 1);
+            }
+            else if (this.Rotation == Vector3.Left)
+            {
+                index = ((int)dir - 1 > 0) ? (int)dir - 1 : 3;
+            }
+
+            System.Console.WriteLine(index);
+
+            if (!current.Walls[index])
+                return true;
+            else
+                return false;
         }
     }
 }
