@@ -68,7 +68,7 @@ namespace Poprica
         SPEECH1
     }
 
-    public enum DialogueEntityPositionType
+    public enum PositionType
     {
         LEFT,
         MIDDLELEFT,
@@ -89,13 +89,45 @@ namespace Poprica
     public enum DialogueEntityName
     {
         NARRATOR = -1,
-        SELF,
+        PLAYER,
         RICA
     }
 
     public enum ActionType
     {
         TALK
+    }
+
+    public enum DialogueElementType
+    {
+        CONDITION,
+        STATEMENT,
+        DECISION,
+        CHOICE,
+        CONSEQUENCE,
+        END
+    }
+
+    public enum TraitType
+    {
+        LOVE,
+        OBEDIENCE,
+        MOOD
+    }
+
+    public enum MoodType
+    {
+        NORMAL,
+        HAPPY,
+        ANGRY,
+        BLUSH,
+        SURPRISED,
+        SAD
+    }
+
+    public enum PoseType
+    {
+        DEFAULT
     }
 
     public enum ButtonType

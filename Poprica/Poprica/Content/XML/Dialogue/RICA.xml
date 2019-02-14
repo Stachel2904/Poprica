@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <category type="talk">
+    <dialogue>
+      <statement index="0">
+        <speaker>
+          <name>Rica</name>
+        </speaker>
+        <text>What's up?</text>
+      </statement>
+      <decision index="1">
+        <choice>
+          <text>"What did you say?"</text>
+          <jump>2</jump>
+        </choice>
+        <choice>
+          <text>Leave</text>
+          <jump>3</jump>
+        </choice>
+        <choice>
+          <text>"Nothing..."</text>
+          <jump>5</jump>
+        </choice>
+        <choice>
+          <text>"I was thinking about you."</text>
+          <jump>6</jump>
+        </choice>
+      </decision>
+      <statement index="2">
+        <speaker>
+          <name>Player</name>
+        </speaker>
+        <text>What did you say?</text>
+        <jump>0</jump>
+      </statement>
+      <statement index="3">
+        <speaker>
+          <name>Rica</name>
+          <mood>Surprised</mood>
+          <consequence>
+            <trait type="love">-5</trait>
+          </consequence>
+        </speaker>
+        <text>Wai-</text>
+      </statement>
+      <statement index="4">
+        <speaker>
+          <name>Narrator</name>
+        </speaker>
+        <text>You left.</text>
+        <jump>-1</jump>
+      </statement>
+      <statement index="5">
+        <speaker>
+          <name>Rica</name>
+          <mood>Sad</mood>
+        </speaker>
+        <text>That's okay, I guess.</text>
+        <jump>-1</jump>
+      </statement>
+      <statement index="6">
+        <speaker>
+          <name>Rica</name>
+          <mood>Happy</mood>
+          <condition>
+            <trait type="love">5</trait>
+            <jump>7</jump>
+          </condition>
+        </speaker>
+        <text>Aww, I've been thinking about you too.</text>
+        <jump>-1</jump>
+      </statement>
+      <statement index="7">
+        <speaker>
+          <name>Rica</name>
+          <mood>Happy</mood>
+          <consequences>
+            <trait type="love">+5</trait>
+          </consequences>
+        </speaker>
+        <text>That's cute!</text>
+        <jump>-1</jump>
+      </statement>
+    </dialogue>
+  </category>
+</root>

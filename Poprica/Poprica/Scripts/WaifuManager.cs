@@ -84,7 +84,7 @@ namespace Poprica
             {
                 if(waifu.Value.Location == (SceneManager.Main.CurrentScene as Place).Location)
                 {
-                    RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], Maps.DialogueEntityPositions[DialogueEntityPositionType.RIGHT], null, Color.White, 0, 0, true);
+                    RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], Maps.DialogueEntityPositions[PositionType.RIGHT], null, Color.White, 0, 0, true);
                 }
             }
             //render Stats
