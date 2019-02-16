@@ -58,18 +58,6 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/INTERSECTION.png
 
-#begin Sprites/DC/LEFTTURN.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/LEFTTURN.png
-
 #begin Sprites/DC/PRISONERROOM.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -81,18 +69,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/PRISONERROOM.png
-
-#begin Sprites/DC/RIGHTTURN.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/RIGHTTURN.png
 
 #begin Sprites/DC/ROOM.png
 /importer:TextureImporter
@@ -297,6 +273,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/TRCOSSSIGNMAINRIGHT.png
+
+#begin Sprites/DC/TURNLEFT.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/TURNLEFT.png
+
+#begin Sprites/DC/TURNRIGHT.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/TURNRIGHT.png
 
 #begin Sprites/DC/WALL.png
 /importer:TextureImporter

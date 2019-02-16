@@ -5,6 +5,8 @@ int Xpressed, Ypressed;
 
 int time;
 
+int checkedEvent = 1;
+
 Button createFile;
 Button loadFile;
 Button newGrid;

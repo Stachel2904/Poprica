@@ -80,7 +80,7 @@ namespace Poprica
                 "Sprites/DC/LEFTTURN",
                 "Sprites/DC/TCROSS",
                 "Sprites/DC/INTERSECTION",
-                "Sprites/DC/ENTRY",
+                "Sprites/DC/STRAIGHT",
 
                 "Sprites/DC/STRAIGHTSIGN",
                 "Sprites/DC/RIGHTTURN",   //have to be changed to RIGHTTURNSIGN

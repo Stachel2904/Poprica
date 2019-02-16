@@ -1,20 +1,16 @@
 newEnum = [
         "NONE",
         "STRAIGHT",
-        "RIGHTTURN",
-        "LEFTTURN",
+        "TURN",
         "TCROSS",
         "INTERSECTION",
         "ENTRY",
-        " jkdfv vkjbf",
-        "jjj",
-        "kajakjsk",
 
         "STRAIGHTSIGN",
         "RIGHTTURNSIGN",
         "LEFTTURNSIGN",
         "TCROSSSIGNMAINLEFT",
-        "TRCOSSSIGNMAINRIGHT"
+        "TRCOSSSIGNMAINRIGHT",
     
         "CONSTRUCTIONSIGN",
         "ROOM",
@@ -46,7 +42,7 @@ oldEnum = [
         "PRISONERROOM"
 ]
 
-with open ("test.txt", "r") as file:
+with open ("Floortest.json", "r") as file:
     data = file.read().replace("\t", "").replace("\n", "")
     file.close()
     
@@ -61,8 +57,19 @@ while (foundIndex != -1):
     endOfReplace = data.find(',', foundIndex)
     
     print(oldEnum[int(data[foundIndex+8:endOfReplace])])
+
+
+    ##diesen Teil wegen Vereinen von zwei Tiles
+    search = "";
+
+    if (oldEnum[int(data[foundIndex+8:endOfReplace])] == "RIGHTTURN" or oldEnum[int(data[foundIndex+8:endOfReplace])] == "LEFTTURN"):
+        search = "TURN";
+    else:
+        search = oldEnum[int(data[foundIndex+8:endOfReplace])]
+
+    ####
     
-    data = data[: foundIndex+8] + str(newEnum.index(oldEnum[int(data[foundIndex+8:endOfReplace])])) + data[endOfReplace:]
+    data = data[: foundIndex+8] + str(newEnum.index(search)) + data[endOfReplace:]
     
-with open ("test1.txt", "w") as newFile:
+with open ("test1.json", "w") as newFile:
     newFile.write(data)

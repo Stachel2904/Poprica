@@ -83,7 +83,7 @@ class Grid {
         //    (i%boxes.length) * height/21 + width/20,
         //    (j%boxes[i].length) * height/21 + width/20);
             
-        boxes[i][j].display(j, i); 
+        boxes[i][j].display(); 
         //popMatrix();
       }
     }

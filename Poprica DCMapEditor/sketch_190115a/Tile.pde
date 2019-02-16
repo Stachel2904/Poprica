@@ -1,9 +1,10 @@
 class Tile {
   
   int type;
-  int eventType;
+  int eventType = 0;
   
   Boolean[] walls;
+  int[] orientation;
   
   
   boolean IsChecked;
@@ -22,6 +23,8 @@ class Tile {
      IsChecked = (_type != 0) ? true : false;
      type = _type;
      eventType = _event;
+     
+     display();
   }
   
   public int GetType(){
@@ -41,22 +44,44 @@ class Tile {
   {
     if ( ((x > this.X*W +10) && (x <= this.X*W + W + 10)) && ((y > this.Y*W +10) && ( y <= this.Y*W + W + 10))) {
      IsChecked = !IsChecked;
+     
+     if (IsChecked)
+       eventType = checkedEvent;
+     else
+       eventType = 0;
+     
      return true;
     }
     
     return false;
   }
   
-  void display(int x, int y)
+  void display()
   {
     
     if (IsChecked)
-      fill(0);
+      fill(EventToColor());
     else
       fill(255);
     
     rect(X*W + 10, Y*W + 10, W, W);
     //rect((X%14) * height/21 + width/20, (Y%20) * height/21 + width/20, W, W);
   } 
+  
+  color EventToColor(){
+    
+    color ret = color(255, 255, 255);
+    
+    if (eventType == 1)
+      ret = color(0, 0, 0);
+    else if (eventType == 2)
+      ret = color(0, 255, 255);
+    else if (eventType == 3)
+      ret = color(255, 0, 255);
+    else if (eventType == 4)
+      ret = color(255, 255, 0);
+      
+    return ret;
+  }
   
 }

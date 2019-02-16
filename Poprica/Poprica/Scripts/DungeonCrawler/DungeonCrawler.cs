@@ -95,7 +95,7 @@ namespace DungeonCrawler
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.INTERSECTION, rect);
                     this.Images.Add(img);
                 }
-                else if (current.Type == TileType.RIGHTTURN || current.Type == TileType.LEFTTURN)
+                else if (current.Type == TileType.TURN)
                 {
                     int imageNum = 0;
 

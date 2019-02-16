@@ -25,8 +25,7 @@ namespace DungeonCrawler
     {
         NONE,
         STRAIGHT,
-        RIGHTTURN,
-        LEFTTURN,
+        TURN,
         TCROSS,
         INTERSECTION,
         ENTRY,
