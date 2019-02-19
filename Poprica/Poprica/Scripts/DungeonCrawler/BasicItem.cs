@@ -13,9 +13,9 @@ namespace DungeonCrawler
         /// </summary>
         public BasicItemType Type { get; set; }
 
-        public BasicItem() : base()
+        public BasicItem(ItemCategory category, BasicItemType type) : base(category)
         {
-
+            Type = type;
         }
 
         /// <summary>

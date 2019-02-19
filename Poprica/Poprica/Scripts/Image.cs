@@ -30,7 +30,6 @@ namespace Poprica
             Type = type;
             Index = index;
             Rect = rect;
-
         }
     }
 }

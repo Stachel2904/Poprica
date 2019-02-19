@@ -5,13 +5,19 @@ int Xpressed, Ypressed;
 
 int time;
 
-int checkedEvent = 1;
+int checkedEvent = 0;
 
 Button createFile;
 Button loadFile;
 Button newGrid;
 
 Textbox tbX, tbY;
+
+Checkbox event1;
+Checkbox event2;
+Checkbox event3;
+Checkbox event4;
+Checkbox event5;
 
 Grid grid;
 Json file;

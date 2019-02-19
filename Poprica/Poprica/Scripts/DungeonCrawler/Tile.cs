@@ -48,6 +48,25 @@ namespace DungeonCrawler
             Event = _event;
             Enemies = enemies;
         }
+
+        public Item[] GetItems()
+        {
+            Item[] items = null;
+
+            if (this.Event == EventType.KEYRICA)
+            {
+                items = new Item[] { new BasicItem(ItemCategory.BASICITEM, BasicItemType.KEYRICA) };
+            }
+
+            return items;
+        }
+
+        public Boolean RemoveItem()
+        {
+            this.Event = EventType.NONE;
+
+            return true;
+        }
     }
 
     public static class Extension

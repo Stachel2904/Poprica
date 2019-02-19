@@ -31,7 +31,7 @@ namespace DungeonCrawler
 
         private Inventory()
         {
-
+            Items = new Dictionary<Item, int>();
         }
 
         /// <summary>
@@ -59,6 +59,18 @@ namespace DungeonCrawler
         {
             if (!Items.ContainsKey(item))
             {
+                Console.WriteLine("YEEAAAHH!!");
+
+                if (item.Category == ItemCategory.BASICITEM)
+                {
+                    BasicItem key = item as BasicItem;
+
+                    if (key.Type == BasicItemType.KEYRICA)
+                    {
+                        Console.WriteLine("SCHWALLALALALALA");
+                    }
+                }
+
                 Items.Add(item, amount);
             }
             else

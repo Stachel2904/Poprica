@@ -47,7 +47,10 @@ namespace DungeonCrawler
 
     public enum EventType
     {
-        NONE
+        NONE,
+        RICA,
+        KEYRICA
+
     }
 
     public enum EnemyType
@@ -57,7 +60,11 @@ namespace DungeonCrawler
 
     public enum ItemCategory
     {
-
+        NONE,
+        WEAPON,
+        ARMOR,
+        POTION,
+        BASICITEM
     }
 
     public enum WeaponType
@@ -77,7 +84,8 @@ namespace DungeonCrawler
 
     public enum BasicItemType
     {
-
+        KEYRICA,
+        KEYEMELIE
     }
 
     public enum ImageType
@@ -109,8 +117,13 @@ namespace DungeonCrawler
 
         ROOMRIGHT,
         ROOMLEFT,
-        ROOMRIGHTPERSPEKTIVE,
-        ROOMLEFTPERSPEKTIVE,
+        ROOMRIGHTPERSPECTIVE,
+        ROOMLEFTPERSPECTIVE,
         ROOMLEFTCORNER,
+        CORNERLEFTPERSPECTIVE,
+        CORNERRIGHTPERSPECTIVE,
+
+        KEY,
+        RICA
     }
 }

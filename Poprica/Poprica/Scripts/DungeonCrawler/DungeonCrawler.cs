@@ -48,7 +48,6 @@ namespace DungeonCrawler
         /// </summary>
         public override void LoadImages()
         {
-
             //TODO: Find latest Location in Dungeon and load these, from Progess-Class
 
             this.Images = new List<Poprica.Image>();
@@ -70,7 +69,7 @@ namespace DungeonCrawler
                 {
                     continue;
                 }
-                
+
                 Poprica.Image img;
                 Rectangle rect = new Rectangle(ImagePos(i), new Point((int)(1920 / (Math.Pow(2, i))), (int)(1080 / (Math.Pow(2, i)))));
 
@@ -142,12 +141,16 @@ namespace DungeonCrawler
                     this.Images.Add(img);
                     //this.Images.Add(AllImages[(int)current.Type]);
                 }
+
+                CheckTileForAdditionalImage(current, 6-i);
             }
         }
 
         public override void Update()
         {
             this.LoadImages();
+
+            Player.Main.UpdateInventory();
         }
 
         /// <summary>
@@ -175,7 +178,7 @@ namespace DungeonCrawler
             if (current.Type == TileType.ROOMEXIT)
             {
                 //SHIT hier muss noch einiges geändert werden!!
-
+                
                 if (current.Orientation == playerRot)
                 {
                     imgNumLeft = (int)ImageType.ROOMLEFTCORNER;
@@ -184,9 +187,9 @@ namespace DungeonCrawler
                 }
                 else if ((current.Orientation + playerRot) == Vector3.Zero)
                 {
-                    imgNumLeft = (int)ImageType.ROOMLEFTPERSPEKTIVE;
+                    imgNumLeft = (int)ImageType.ROOMLEFTPERSPECTIVE;
                     imgNum = (int)ImageType.ROOM;
-                    imgNumRight = (int)ImageType.ROOMRIGHTPERSPEKTIVE;
+                    imgNumRight = (int)ImageType.ROOMRIGHTPERSPECTIVE;
                 }
                 else if (current.Orientation == Vector3.Down)
                 {
@@ -255,15 +258,15 @@ namespace DungeonCrawler
             }
             else if (current.Type == TileType.ROOMWALL)
             {
-                imgNumLeft = (int)ImageType.ROOMLEFTCORNER;
-                imgNum = (int)ImageType.ROOMWALL;
-                imgNumRight = (int)ImageType.ROOMRIGHTCORNER;
+                imgNumLeft = (int)ImageType.CORNERLEFTPERSPECTIVE;
+                imgNum = GetImageForRoomWall(playerRot, current.Orientation); // (int)ImageType.CONSTRUCTIONSIGN;
+                imgNumRight = (int)ImageType.CORNERRIGHTPERSPECTIVE;
             }
             else if (current.Type == TileType.PRISONERROOM)
             {
-                imgNumLeft = (int)ImageType.ROOMLEFTPERSPEKTIVE;
+                imgNumLeft = (int)ImageType.ROOMLEFTPERSPECTIVE;
                 imgNum = (int)ImageType.PRISONERROOM;
-                imgNumRight = (int)ImageType.ROOMRIGHTPERSPEKTIVE;
+                imgNumRight = (int)ImageType.ROOMRIGHTPERSPECTIVE;
             }
             else if (current.Type == TileType.ROOMCORNER)
             {
@@ -363,10 +366,80 @@ namespace DungeonCrawler
 
             return imgNum;
         }
-      
-        private Point ImagePos(int step)
+
+        /// <summary>
+        /// Returns an int, which represents the image of the roomwall.
+        /// </summary>
+        /// <param name="player">Vector3 which represents the players rotation.</param>
+        /// <param name="tile">Vector3 which represents the tile orientation. </param>
+        /// <returns>Index of Image enum.</returns>
+        private int GetImageForRoomWall(Vector3 player, Vector3 tile)
         {
-            return new Point(Poprica.MathFunctions.CalcPicturePosWidth(step), Poprica.MathFunctions.CalcPicturePosHeight(step));
+            int imgNum = 0;
+
+            if (tile == player)
+            {
+                imgNum = (int)ImageType.ROOMWALL;
+            }
+            else if (tile == Vector3.Right)
+            {
+                if (player == Vector3.Down)
+                    imgNum = (int)ImageType.ROOMRIGHT;
+                else if (player == Vector3.Up)
+                    imgNum = (int)ImageType.ROOMLEFT;
+            }
+            else if (tile == Vector3.Up)
+            {
+                if (player == Vector3.Right)
+                    imgNum = (int)ImageType.ROOMRIGHT;
+                else if (player == Vector3.Left)
+                    imgNum = (int)ImageType.ROOMLEFT;
+            }
+            else if (tile == Vector3.Left)
+            {
+                if (player == Vector3.Down)
+                    imgNum = (int)ImageType.ROOMLEFT;
+                else if (player == Vector3.Up)
+                    imgNum = (int)ImageType.ROOMRIGHT;
+            }
+            else if (tile == Vector3.Down)
+            {
+                if (player == Vector3.Right)
+                    imgNum = (int)ImageType.ROOMLEFT;
+                else if (player == Vector3.Left)
+                    imgNum = (int)ImageType.ROOMRIGHT;
+            }
+
+            return imgNum;
+
+        }
+
+        private void CheckTileForAdditionalImage(Tile tile, int step)
+        {
+            EventType type = tile.Event;
+
+            Rectangle rect = new Rectangle(ImagePos(step, true), new Point(30+(step*10), 30+(step*10)));
+            Poprica.Image img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, 0, rect);
+
+            if (type == EventType.KEYRICA)
+            {
+                Console.WriteLine("Check");
+                img.Index = (int)ImageType.KEY;
+                Images.Add(img);
+            }
+        }
+
+
+        private Point ImagePos(int step, bool center = false)
+        {
+            if(!center)
+                return new Point(Poprica.MathFunctions.CalcPicturePosWidth(step), Poprica.MathFunctions.CalcPicturePosHeight(step));
+            else
+            {
+                Point point = new Point(960, 540); // Poprica.MathFunctions.CalcPicturePosMiddle(step);
+                return point;
+            }
+                
         }
     }
 }

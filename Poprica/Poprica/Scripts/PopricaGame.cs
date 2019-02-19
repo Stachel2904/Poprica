@@ -34,7 +34,7 @@ namespace Poprica
 
             MainState = GameState.DEFAULT;
 
-            graphics.PreferredBackBufferHeight = 900;
+            graphics.PreferredBackBufferHeight = 1080;
             graphics.PreferredBackBufferWidth = 1920;
             graphics.ApplyChanges();
 

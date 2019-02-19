@@ -13,7 +13,7 @@ namespace DungeonCrawler
         /// </summary>
         public PotionType Type { get; set; }
 
-        public Potion() : base()
+        public Potion(ItemCategory category) : base(category)
         {
 
         }

@@ -197,12 +197,33 @@ namespace DungeonCrawler
                 index = ((int)dir - 1 > 0) ? (int)dir - 1 : 3;
             }
 
-            System.Console.WriteLine(index);
-
             if (!current.Walls[index])
                 return true;
             else
                 return false;
+        }
+
+        /// <summary>
+        /// Updates the Players Inventory, calls Inventory Class.
+        /// </summary>
+        public void UpdateInventory()
+        {
+            Tile tile = Dungeon.Main.Floor.GetTile(new Vector2(this.Location.X, this.Location.Y));
+
+            if (tile == null)
+                return;
+
+            Item[] items = tile.GetItems();
+
+            if(items == null)
+                return;
+
+            tile.RemoveItem();
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                Inventory.Main.Additem(items[i]);
+            }
         }
     }
 }

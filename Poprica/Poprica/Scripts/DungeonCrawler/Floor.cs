@@ -33,7 +33,7 @@ namespace DungeonCrawler
         /// <returns>The Tile at the given location. Empty Tile if location is not found.</returns>
         public Tile GetTile(Vector2 location)
         {
-            return null;
+            return Tiles[(int)location.Y][(int)location.X];
         }
 
         /// <summary>

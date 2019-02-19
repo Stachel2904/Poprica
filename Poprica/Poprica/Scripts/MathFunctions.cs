@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
 using System.Threading.Tasks;
 
 namespace Poprica
@@ -26,6 +27,11 @@ namespace Poprica
         public static int CalcPicturePosHeight(int step)
         {
             return (int)((1080 / (Math.Pow(2, step))) * (Math.Pow(2, step) - 1)) / 2;
+        }
+
+        public static Point CalcPicturePosMiddle(int step = 1)
+        {
+            return new Point((int)(1920 / Math.Pow(2, step)), (int)(1080 / Math.Pow(2, step)));
         }
     }
 }

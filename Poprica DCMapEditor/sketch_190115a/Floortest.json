@@ -635,7 +635,7 @@
 					{
 					"Type" : 13,
 					"Walls" : [ true, true, false, false],
-					"Orientation" : "0, -1, 0",
+					"Orientation" : "1, 0, 0",
 					"Event" : 1,
 					"Enemies" : null,
 					},
@@ -848,7 +848,7 @@
 					{
 					"Type" : 12,
 					"Walls" : [ false, true, false, false],
-					"Orientation" : "-1, 0, 0",
+					"Orientation" : "1, 0, 0",
 					"Event" : 1,
 					"Enemies" : null,
 					},
@@ -2391,7 +2391,7 @@
 					{
 					"Type" : 13,
 					"Walls" : [ true, true, false, false],
-					"Orientation" : "0, -1, 0",
+					"Orientation" : "1, 0, 0",
 					"Event" : 1,
 					"Enemies" : null,
 					},
@@ -2590,7 +2590,7 @@
 					{
 					"Type" : 12,
 					"Walls" : [ false, false, false, true],
-					"Orientation" : "1, 0, 0",
+					"Orientation" : "-1, 0, 0",
 					"Event" : 1,
 					"Enemies" : null,
 					},
@@ -2604,7 +2604,7 @@
 					{
 					"Type" : 12,
 					"Walls" : [ false, true, false, false],
-					"Orientation" : "-1, 0, 0",
+					"Orientation" : "1, 0, 0",
 					"Event" : 1,
 					"Enemies" : null,
 					},
@@ -4263,5 +4263,5 @@
 				]
 			],
 			"FloorNum" : 1,
-			"DefaultEntryPoint" : "9, 19, 0"
+			"DefaultEntryPoint" : "9, 27, 0"
 } 

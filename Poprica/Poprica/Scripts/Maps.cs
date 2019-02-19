@@ -102,9 +102,14 @@ namespace Poprica
                 
                 "Sprites/DC/ROOMRIGHT",
                 "Sprites/DC/ROOMLEFT",
-                "Sprites/DC/ROOMRIGHTPERSPEKTIVE",
-                "Sprites/DC/ROOMLEFTPERSPEKTIVE",
+                "Sprites/DC/ROOMRIGHTPERSPECTIVE",
+                "Sprites/DC/ROOMLEFTPERSPECTIVE",
                 "Sprites/DC/ROOMLEFTCORNER",
+                "Sprites/DC/CORNERLEFTPERSPECTIVE",
+                "Sprites/DC/CORNERRIGHTPERSPECTIVE",
+
+                "Sprites/DC/KEY",
+                "Sprites/Poprica/RICA"
             }
         };
 

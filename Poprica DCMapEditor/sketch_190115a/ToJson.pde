@@ -147,11 +147,11 @@ class Json{
         if (i == 0)
           tile.orientation =  new int[] {0, -1, 0};
         else if (i == 2)
-          tile.orientation =  new int[] {1, 0, 0};
+          tile.orientation =  new int[] {-1, 0, 0};
         else if (i == 4)
           tile.orientation =  new int[] {0, 1, 0};
         else
-          tile.orientation =  new int[] {-1, 0, 0};
+          tile.orientation =  new int[] {1, 0, 0};
       
         tile.type = 12;
         return "12";
@@ -162,11 +162,11 @@ class Json{
                            || Arrays.equals( new Boolean[] { vectors[i][0], vectors[i][1], vectors[i][2], vectors[i][3], vectors[i][4], vectors[i][5], vectors[i][6], vectors[i][7]}, new Boolean[] {false, false, false, true, true, true, true, true}))){ //roomcorner
       
         if (i == 0)
-          tile.orientation =  new int[] {0, -1, 0};
+          tile.orientation =  new int[] {1, 0, 0};
         else if (i == 2)
-          tile.orientation =  new int[] {0, 1, 0};
-        else if (i == 4)
           tile.orientation =  new int[] {0, -1, 0};
+        else if (i == 4)
+          tile.orientation =  new int[] {-1, 0, 0};
         else
           tile.orientation =  new int[] {0, 1, 0};
       
@@ -197,7 +197,7 @@ class Json{
         tile.type = 1;
         return "1";
       }
-      else if (i % 2 == 0 && Arrays.equals( new Boolean[] {vectors[i][0], vectors[i][2], vectors[i][4], vectors[i][6]}, new Boolean[] {false, true, true, false})) { //vectors[i], new Boolean[] {false, false, true, false, true, false, false, false})) { //turn
+      else if (i % 2 == 0 && Arrays.equals( new Boolean[] {vectors[i][0], vectors[i][2], vectors[i][4], vectors[i][6]}, new Boolean[] {false, true, true, false})) { //turn
       
         if (i == 0)
           tile.orientation = new int[] {0, -1, 0}; //up

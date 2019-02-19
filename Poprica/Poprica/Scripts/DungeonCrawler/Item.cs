@@ -13,9 +13,9 @@ namespace DungeonCrawler
         /// </summary>
         public ItemCategory Category { get; set; }
 
-        public Item()
+        public Item(ItemCategory type)
         {
-
+            Category = type;
         }
 
         public abstract void Use();

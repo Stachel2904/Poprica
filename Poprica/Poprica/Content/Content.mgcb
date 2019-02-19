@@ -46,6 +46,30 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/CONSTRUCTIONSIGN.png
 
+#begin Sprites/DC/CORNERLEFTPERSPECTIVE.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/CORNERLEFTPERSPECTIVE.png
+
+#begin Sprites/DC/CORNERRIGHTPERSPECTIVE.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/CORNERRIGHTPERSPECTIVE.png
+
 #begin Sprites/DC/INTERSECTION.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -57,6 +81,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/INTERSECTION.png
+
+#begin Sprites/DC/KEY.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/KEY.png
+
+#begin Sprites/DC/LEFTTURN.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/LEFTTURN.png
 
 #begin Sprites/DC/PRISONERROOM.png
 /importer:TextureImporter
@@ -70,6 +118,30 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/PRISONERROOM.png
 
+#begin Sprites/DC/RICA.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/RICA.png
+
+#begin Sprites/DC/RIGHTTURN.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/RIGHTTURN.png
+
 #begin Sprites/DC/ROOM.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -81,6 +153,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/ROOM.png
+
+#begin Sprites/DC/ROOMCOMPLETE.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/ROOMCOMPLETE.png
 
 #begin Sprites/DC/ROOMEXIT.png
 /importer:TextureImporter
@@ -118,7 +202,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/ROOMLEFTCORNER.png
 
-#begin Sprites/DC/ROOMLEFTPERSPEKTIVE.png
+#begin Sprites/DC/ROOMLEFTPERSPECTIVE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -128,7 +212,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMLEFTPERSPEKTIVE.png
+/build:Sprites/DC/ROOMLEFTPERSPECTIVE.png
 
 #begin Sprites/DC/ROOMRIGHT.png
 /importer:TextureImporter
@@ -154,7 +238,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/ROOMRIGHTCORNER.png
 
-#begin Sprites/DC/ROOMRIGHTPERSPEKTIVE.png
+#begin Sprites/DC/ROOMRIGHTPERSPECTIVE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -164,7 +248,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMRIGHTPERSPEKTIVE.png
+/build:Sprites/DC/ROOMRIGHTPERSPECTIVE.png
 
 #begin Sprites/DC/ROOMWALL.png
 /importer:TextureImporter
@@ -178,7 +262,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/ROOMWALL.png
 
-#begin Sprites/DC/STRAIGHT.png
+#begin Sprites/DC/STRAIGHT.PNG
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -188,31 +272,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/STRAIGHT.png
-
-#begin Sprites/DC/STRAIGHTSIGN.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/STRAIGHTSIGN.png
-
-#begin Sprites/DC/TCROSS.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/TCROSS.png
+/build:Sprites/DC/STRAIGHT.PNG
 
 #begin Sprites/DC/TCROSSLEFT.png
 /importer:TextureImporter
@@ -249,54 +309,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/TCROSSRIGHT.png
-
-#begin Sprites/DC/TCROSSSIGNMAINLEFT.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/TCROSSSIGNMAINLEFT.png
-
-#begin Sprites/DC/TRCOSSSIGNMAINRIGHT.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/TRCOSSSIGNMAINRIGHT.png
-
-#begin Sprites/DC/TURNLEFT.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/TURNLEFT.png
-
-#begin Sprites/DC/TURNRIGHT.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/DC/TURNRIGHT.png
 
 #begin Sprites/DC/WALL.png
 /importer:TextureImporter
