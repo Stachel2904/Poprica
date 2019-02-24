@@ -114,12 +114,7 @@ namespace Poprica
             }
         };
 
-        public static Dictionary<dynamic, Point> DCImageSizes = new Dictionary<dynamic, Point>
-        {
-            {DungeonCrawler.EventType.RICA, new Point(290, 1080)},
-            {DungeonCrawler.BasicItemType.KEY, new Point(30, 30)},
-            {DungeonCrawler.EventType.CHEST, new Point(400,310) }
-        };
+        
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions = new Dictionary<PositionType, Rectangle>
         {
@@ -144,6 +139,13 @@ namespace Poprica
             "FontSmall",
             "FontDefault",
             "FontBig"
+        };
+
+        public static Dictionary<dynamic, double> ImageScale = new Dictionary<dynamic, double>
+        {
+            {DungeonCrawler.ImageType.RICA, 0.6},
+            {DungeonCrawler.ImageType.CHEST, 1.2},
+            {DungeonCrawler.ImageType.KEY, 3}
         };
 
         #region Poprica
@@ -185,7 +187,8 @@ namespace Poprica
                 { Keys.S, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.BACKWARD)})},
                 { Keys.D, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.TURNRIGHT)})},
                 { Keys.Q, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.LEFT)})},
-                { Keys.E, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.RIGHT)})}
+                { Keys.E, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.RIGHT)})},
+                { Keys.F, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Inventory.Main.UseItem), null)}
             }
         };
 
@@ -243,7 +246,14 @@ namespace Poprica
         #region DungeonCrawler
 
         //Keine Info über Input der nichts mit Movement zutun hat ...
-    
+        
+        public static Dictionary<dynamic, Point> DCImageSizes = new Dictionary<dynamic, Point>
+        {
+            {DungeonCrawler.EventType.RICA, new Point(290, 1080)},
+            {DungeonCrawler.BasicItemType.KEY, new Point(30, 30)},
+            {DungeonCrawler.EventType.CHEST, new Point(400,310) }
+        };
+
         /// <summary>
         /// Maps Keys to InputType.
         /// </summary>
@@ -289,7 +299,7 @@ namespace Poprica
     {
         /// <summary>
         /// Tries to find the value with given index in abstract datastructure.
-        /// Poosible total nonsense ... :D
+        /// Possible total nonsense ... :D
         /// </summary>
         /// <typeparam name="T">Generic type parameter for datastructure.</typeparam>
         /// <param name="dataStructure">Input datasurcture.</param>
@@ -298,8 +308,11 @@ namespace Poprica
         /// <returns>Returns true if element was found.</returns>
         public static bool TryGetValue<T>(this T dataStructure, dynamic index, out dynamic value)
         {
-            value = default(dynamic);
 
+            Console.WriteLine("ddd");
+
+            value = default(dynamic);
+            
             if (dataStructure.GetType() == typeof(string[]))
             {
                 string[] array = dataStructure as string[];
@@ -319,6 +332,16 @@ namespace Poprica
                     value = dict[index];
                     return true;
                 } 
+            }
+            else if (dataStructure.GetType() == typeof(Dictionary<Type , double>))
+            {
+                Dictionary<dynamic, dynamic> dict = dataStructure as Dictionary<dynamic, dynamic>;
+                
+                if (dict.ContainsKey(index))
+                {
+                    value = dict[index];
+                    return true;
+                }
             }
 
             return false;

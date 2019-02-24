@@ -18,12 +18,12 @@ namespace DungeonCrawler
             Type = type;
         }
 
-        /// <summary>
-        /// Uses this item.
-        /// </summary>
         public override void Use()
         {
-            throw new NotImplementedException();
+            if (Type == BasicItemType.KEY)
+            {
+                GamePlay.Rescue(this);
+            }
         }
     }
 }

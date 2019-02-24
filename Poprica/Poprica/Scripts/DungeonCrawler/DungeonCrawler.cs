@@ -50,7 +50,7 @@ namespace DungeonCrawler
         {
             this.Images = new List<Poprica.Image>();
 
-            Vector3 entryPoint = Player.Main.Location;
+            Vector3 playerPos = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
 
             for (int i = 6; i >= 0; i--)
@@ -58,12 +58,12 @@ namespace DungeonCrawler
                 Tile current = null;
                 Tile[] currentRow = null;
                 
-                if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(entryPoint.Y + orientation.Y * (i+1)), out currentRow))
+                if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(playerPos.Y + orientation.Y * (i+1)), out currentRow))
                 {
                     continue;
                 }
 
-                if (!currentRow.TryGetTile((int)(entryPoint.X + orientation.X * (i+1)), out current))
+                if (!currentRow.TryGetTile((int)(playerPos.X + orientation.X * (i+1)), out current))
                 {
                     continue;
                 }
@@ -131,7 +131,7 @@ namespace DungeonCrawler
                 }
                 else if ((int) current.Type > (int)TileType.CONSTRUCTIONSIGN)
                 {
-                    AddImageField(new Vector2(entryPoint.X + orientation.X * i, entryPoint.Y + orientation.X * i), i, current);
+                    AddImageField(new Vector2(playerPos.X + orientation.X * i, playerPos.Y + orientation.X * i), i, current);
                 }
                 else
                 {
@@ -149,7 +149,21 @@ namespace DungeonCrawler
             this.LoadImages();
 
             Player.Main.UpdateInventory();
-            GamePlay.Update();
+
+            Vector3 playerPos = Player.Main.Location;
+            Vector3 orientation = Player.Main.Rotation;
+
+            Tile current = null;
+            Tile[] currentRow = null;
+
+            if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(playerPos.Y + orientation.Y), out currentRow))
+            {
+                if (!currentRow.TryGetTile((int)(playerPos.X + orientation.X), out current))
+                {
+                    GamePlay.Update(current.Event);
+                }
+            }
+            //GamePlay.Update(Dungeon.Main.Floor.Tiles[(int) (playerPos.Y + Player.Main.Rotation.Y)][(int)(Player.Main.Location.X + Player.Main.Rotation.X)].Event);
         }
 
         /// <summary>
@@ -427,9 +441,15 @@ namespace DungeonCrawler
                 Rectangle eventRect = new Rectangle();
                 Point size = new Point();
 
+                if (type == EventType.RESCUE || type == EventType.PRISON)
+                    return;
+
+                int imgIndex = (int)((ImageType)Enum.Parse(typeof(ImageType), type.ToString()));
+
                 if (Poprica.Maps.DCImageSizes.TryGetValue(type, out size))
                 {
-                    Point newSize = Poprica.MathFunctions.CalcImageSize(size, step);
+                    //Console.WriteLine("Event");
+                    Point newSize = Poprica.MathFunctions.CalcImageSize(size, step, (ImageType) imgIndex);
                     eventRect = new Rectangle(Poprica.MathFunctions.ImagePos(step, Poprica.PositionType.BOTTOM, newSize), newSize);
                 }
                 else
@@ -441,7 +461,7 @@ namespace DungeonCrawler
                 Poprica.Image eventImg = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, 0, eventRect);
 
                 //converts EventType Enum to ImageType Enum
-                eventImg.Index = (int)((ImageType)Enum.Parse(typeof(ImageType), type.ToString()));
+                eventImg.Index = imgIndex;
                 Images.Add(eventImg);
             }
 
@@ -459,9 +479,12 @@ namespace DungeonCrawler
                 {
                     dynamic t = EnumManagement.GetEnumType(pair.Key, pair.Value); //Enum.Parse(GetEnumType(pair.Key).GetType(), ((int) pair.Value).ToString()).GetType();
                     
+                    int imgIndex  = (int)((ImageType)Enum.Parse(typeof(ImageType), t.ToString()));
+
                     if (Poprica.Maps.DCImageSizes.TryGetValue(t, out size))
                     {
-                        Point newSize = Poprica.MathFunctions.CalcImageSize(size, step);
+                        //Console.WriteLine("Item");
+                        Point newSize = Poprica.MathFunctions.CalcImageSize(size, step, (ImageType) imgIndex);
                         rect = new Rectangle(Poprica.MathFunctions.ImagePos(step, Poprica.PositionType.BOTTOM, newSize), newSize);
                     }
                     else
@@ -473,7 +496,7 @@ namespace DungeonCrawler
                     Poprica.Image Img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, 0, rect);
 
                     //converts ItemType Enum to ImageType Enum
-                    Img.Index = (int)((ImageType)Enum.Parse(typeof(ImageType), t.ToString()));
+                    Img.Index = imgIndex;
                     Images.Add(Img);
                 }
             }

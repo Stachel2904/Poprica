@@ -211,8 +211,10 @@ namespace DungeonCrawler
             Tile tile = Dungeon.Main.Floor.GetTile(new Vector2(this.Location.X, this.Location.Y));
 
             if (tile == null)
+            {
                 return;
-
+            }
+            
             Item[] items = tile.GetItems();
 
             if(items == null)

@@ -49,8 +49,9 @@ namespace DungeonCrawler
     {
         NONE,
         RICA,
-        KEY,
         CHEST,
+        RESCUE,
+        PRISON,
     }
 
     public enum EnemyType

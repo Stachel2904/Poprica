@@ -29,10 +29,19 @@ namespace Poprica
             return (int)((1080 / (Math.Pow(2, step))) * (Math.Pow(2, step) - 1)) / 2;
         }
         
-        public static Point CalcImageSize(Point old, int i)
+        public static Point CalcImageSize(Point old, int i, dynamic index = null)
         {
-            return new Point((int)((old.X * 0.8)  / Math.Pow(2, i)), (int)((old.Y * 0.8) / Math.Pow(2, i)));
-            //return new Point((int) ((old.X / (Math.Pow(2, i))) * (Math.Pow(2, i) - 1)) / 2, (int) ((old.Y / (Math.Pow(2, i))) * (Math.Pow(2, i) - 1)) / 2);
+            if (index == null)
+                return new Point((int)((old.X) / Math.Pow(2, i)), (int)((old.Y) / Math.Pow(2, i)));
+            else
+            {
+                double scale = 1;
+                
+                if (Poprica.Maps.ImageScale.TryGetValue(index, out scale))
+                    return new Point((int)((old.X * scale) / Math.Pow(2, i)), (int)((old.Y * scale) / Math.Pow(2, i)));
+                
+                return new Point((int)((old.X) / Math.Pow(2, i)), (int)((old.Y) / Math.Pow(2, i)));
+            }
         }
 
         /// <summary>

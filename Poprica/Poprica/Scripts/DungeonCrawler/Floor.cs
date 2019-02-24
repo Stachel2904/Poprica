@@ -33,7 +33,20 @@ namespace DungeonCrawler
         /// <returns>The Tile at the given location. Empty Tile if location is not found.</returns>
         public Tile GetTile(Vector2 location)
         {
+            //Tile[] currentRow;
+            //Tile current;
+
+            //if (!Dungeon.Main.Floor.Tiles.TryGetTiles((int)(location.Y), out currentRow))
+            //{
+            //    if (!currentRow.TryGetTile((int)(location.X), out current))
+            //    {
+            //        return current;
+            //    }
+            //}
+
             return Tiles[(int)location.Y][(int)location.X];
+
+            //return null;
         }
 
         /// <summary>

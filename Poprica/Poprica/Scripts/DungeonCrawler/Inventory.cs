@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace DungeonCrawler
 {
@@ -29,9 +30,12 @@ namespace DungeonCrawler
 
         public Dictionary<Item, int> Items { get; set; }
 
+        public Item ActiveItem { get; set; }
+
         private Inventory()
         {
             Items = new Dictionary<Item, int>();
+            ActiveItem = null;
         }
 
         /// <summary>
@@ -59,8 +63,7 @@ namespace DungeonCrawler
         {
             if (!Items.ContainsKey(item))
             {
-                Console.WriteLine("YEEAAAHH!!");
-
+                //nur zum Debuggen schwalalalalalalala
                 if (item.Category == ItemCategory.BASICITEM)
                 {
                     BasicItem key = item as BasicItem;
@@ -72,6 +75,7 @@ namespace DungeonCrawler
                 }
 
                 Items.Add(item, amount);
+                ActiveItem = item;
             }
             else
             {
@@ -112,6 +116,14 @@ namespace DungeonCrawler
             }
 
             return false;
+        }
+
+        public void UseItem(int[] args)
+        {
+            if (ActiveItem != null)
+            {
+                ActiveItem.Use();
+            }
         }
 
     }

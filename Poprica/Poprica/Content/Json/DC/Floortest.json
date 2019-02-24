@@ -3206,7 +3206,7 @@
 					"Type" : 14,
 					"Walls" : [ false, false, false, false],
 					"Orientation" : "0, 1, 0",
-					"Event" : 0,
+					"Event" : 3,
 					"Enemies" : null, 
 					"Items" : null
 					},
@@ -3967,7 +3967,7 @@
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
-					"Event" : 3,
+					"Event" : 0,
 					"Enemies" : null, 
 					"Items" : null
 					},
