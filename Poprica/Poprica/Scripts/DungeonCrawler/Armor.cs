@@ -13,9 +13,9 @@ namespace DungeonCrawler
         /// </summary>
         public ArmorType Type { get; set; }
 
-        public Armor(ItemCategory category) : base(category)
+        public Armor(ItemCategory category, ArmorType type) : base(category)
         {
-
+            Type = type;
         }
 
         /// <summary>

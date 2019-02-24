@@ -70,11 +70,16 @@ namespace Poprica
 
     public enum PositionType
     {
+        NONE,
         LEFT,
         MIDDLELEFT,
         MIDDLE,
         MIDDLERIGHT,
-        RIGHT
+        RIGHT,
+        TOP,
+        BOTTOM,
+        RIGHTBOTTOM,
+        LEFTBOTTOM
     }
 
     public enum DialogueEntityType

@@ -109,8 +109,16 @@ namespace Poprica
                 "Sprites/DC/CORNERRIGHTPERSPECTIVE",
 
                 "Sprites/DC/KEY",
-                "Sprites/Poprica/RICA"
+                "Sprites/DC/RICA",
+                "Sprites/DC/CHEST"
             }
+        };
+
+        public static Dictionary<dynamic, Point> DCImageSizes = new Dictionary<dynamic, Point>
+        {
+            {DungeonCrawler.EventType.RICA, new Point(290, 1080)},
+            {DungeonCrawler.BasicItemType.KEY, new Point(30, 30)},
+            {DungeonCrawler.EventType.CHEST, new Point(400,310) }
         };
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions = new Dictionary<PositionType, Rectangle>
@@ -275,6 +283,45 @@ namespace Poprica
 
         #endregion
 
+    }
 
+    public static class Extension
+    {
+        /// <summary>
+        /// Tries to find the value with given index in abstract datastructure.
+        /// Poosible total nonsense ... :D
+        /// </summary>
+        /// <typeparam name="T">Generic type parameter for datastructure.</typeparam>
+        /// <param name="dataStructure">Input datasurcture.</param>
+        /// <param name="index">Index to search for.</param>
+        /// <param name="value">Out variable, which hold value of dstastructure.</param>
+        /// <returns>Returns true if element was found.</returns>
+        public static bool TryGetValue<T>(this T dataStructure, dynamic index, out dynamic value)
+        {
+            value = default(dynamic);
+
+            if (dataStructure.GetType() == typeof(string[]))
+            {
+                string[] array = dataStructure as string[];
+
+                if (index < array.Length && index >= 0)
+                {
+                    value = array[index];
+                    return true;
+                }
+            }
+            else if (dataStructure.GetType() == typeof(Dictionary<object, object>))
+            {
+                Dictionary<dynamic, dynamic> dict = dataStructure as Dictionary<dynamic, dynamic>;
+
+                if (dict.ContainsKey(index))
+                {
+                    value = dict[index];
+                    return true;
+                } 
+            }
+
+            return false;
+        }
     }
 }

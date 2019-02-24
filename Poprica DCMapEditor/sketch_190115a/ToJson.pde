@@ -75,6 +75,7 @@ class Json{
         input += "\t\t\t\t\t\"Orientation\" : " + GetOrientation(j, i) + ",\n";
         input += "\t\t\t\t\t\"Event\" : " + GetEvent(j, i) + ",\n";
         input += "\t\t\t\t\t\"Enemies\" : " + "null" + ",\n";
+        input += "\t\t\t\t\t\"Items\" : " + "null" + ",\n";
         input += "\t\t\t\t\t},\n";
         
       }

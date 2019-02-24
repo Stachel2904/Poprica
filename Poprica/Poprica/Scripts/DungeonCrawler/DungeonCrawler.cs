@@ -48,8 +48,6 @@ namespace DungeonCrawler
         /// </summary>
         public override void LoadImages()
         {
-            //TODO: Find latest Location in Dungeon and load these, from Progess-Class
-
             this.Images = new List<Poprica.Image>();
 
             Vector3 entryPoint = Player.Main.Location;
@@ -71,12 +69,12 @@ namespace DungeonCrawler
                 }
 
                 Poprica.Image img;
-                Rectangle rect = new Rectangle(ImagePos(i), new Point((int)(1920 / (Math.Pow(2, i))), (int)(1080 / (Math.Pow(2, i)))));
+                Rectangle rect = new Rectangle(Poprica.MathFunctions.ImagePos(i), new Point((int)(1920 / (Math.Pow(2, i))), (int)(1080 / (Math.Pow(2, i)))));
 
                 //If wall is in front of the player ... stops seeing Tiles behind the wall
                 if (!Player.Main.Allowed(DirectionType.FORWARD) ) //&& GetTileInFront(entryPoint, orientation) != )
                 {
-                    rect = new Rectangle(ImagePos(0), new Point((int)(1920 / (Math.Pow(2, 0))), (int)(1080 / (Math.Pow(2, 0)))));
+                    rect = new Rectangle(Poprica.MathFunctions.ImagePos(0), new Point((int)(1920 / (Math.Pow(2, 0))), (int)(1080 / (Math.Pow(2, 0)))));
 
                     //Abfrage ob Img nicht vllt ConstructionSign sein sollte
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
@@ -142,7 +140,7 @@ namespace DungeonCrawler
                     //this.Images.Add(AllImages[(int)current.Type]);
                 }
 
-                CheckTileForAdditionalImage(current, 6-i);
+                CheckTileForAdditionalImage(current, i);//6-i);
             }
         }
 
@@ -151,6 +149,7 @@ namespace DungeonCrawler
             this.LoadImages();
 
             Player.Main.UpdateInventory();
+            GamePlay.Update();
         }
 
         /// <summary>
@@ -168,7 +167,7 @@ namespace DungeonCrawler
             Poprica.Image imgLeft, img, imgRight;
             Rectangle rectLeft, rect, rectRight;
 
-            Point pos = ImagePos(step);
+            Point pos = Poprica.MathFunctions.ImagePos(step);
             Point size = new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step))));
 
             rectLeft = new Rectangle(new Point(pos.X - (int)(1920 / (Math.Pow(2, step))), pos.Y), size);
@@ -414,32 +413,70 @@ namespace DungeonCrawler
 
         }
 
+        /// <summary>
+        /// Puts Images of Events and Items to the images list.
+        /// </summary>
+        /// <param name="tile">Current Tile of iteration.</param>
+        /// <param name="step">Current iteration step.</param>
         private void CheckTileForAdditionalImage(Tile tile, int step)
         {
             EventType type = tile.Event;
 
-            Rectangle rect = new Rectangle(ImagePos(step, true), new Point(30+(step*10), 30+(step*10)));
-            Poprica.Image img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, 0, rect);
-
-            if (type == EventType.KEYRICA)
+            if (type != EventType.NONE)
             {
-                Console.WriteLine("Check");
-                img.Index = (int)ImageType.KEY;
-                Images.Add(img);
+                Rectangle eventRect = new Rectangle();
+                Point size = new Point();
+
+                if (Poprica.Maps.DCImageSizes.TryGetValue(type, out size))
+                {
+                    Point newSize = Poprica.MathFunctions.CalcImageSize(size, step);
+                    eventRect = new Rectangle(Poprica.MathFunctions.ImagePos(step, Poprica.PositionType.BOTTOM, newSize), newSize);
+                }
+                else
+                {
+                    Point newSize = Poprica.MathFunctions.CalcImageSize(new Point(30, 30), step);
+                    eventRect = new Rectangle(Poprica.MathFunctions.ImagePos(step, Poprica.PositionType.BOTTOM, newSize), newSize);
+                }
+
+                Poprica.Image eventImg = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, 0, eventRect);
+
+                //converts EventType Enum to ImageType Enum
+                eventImg.Index = (int)((ImageType)Enum.Parse(typeof(ImageType), type.ToString()));
+                Images.Add(eventImg);
             }
-        }
 
+            Dictionary<ItemCategory, dynamic> items = tile.Items;
 
-        private Point ImagePos(int step, bool center = false)
-        {
-            if(!center)
-                return new Point(Poprica.MathFunctions.CalcPicturePosWidth(step), Poprica.MathFunctions.CalcPicturePosHeight(step));
-            else
+            if (items == null)
+                return;
+
+            if (items.Count() > 0)
             {
-                Point point = new Point(960, 540); // Poprica.MathFunctions.CalcPicturePosMiddle(step);
-                return point;
-            }
+                Rectangle rect = new Rectangle();
+                Point size = new Point();
                 
+                foreach (KeyValuePair<ItemCategory, dynamic> pair in items)
+                {
+                    dynamic t = EnumManagement.GetEnumType(pair.Key, pair.Value); //Enum.Parse(GetEnumType(pair.Key).GetType(), ((int) pair.Value).ToString()).GetType();
+                    
+                    if (Poprica.Maps.DCImageSizes.TryGetValue(t, out size))
+                    {
+                        Point newSize = Poprica.MathFunctions.CalcImageSize(size, step);
+                        rect = new Rectangle(Poprica.MathFunctions.ImagePos(step, Poprica.PositionType.BOTTOM, newSize), newSize);
+                    }
+                    else
+                    {
+                        Point newSize = Poprica.MathFunctions.CalcImageSize(new Point(30, 30), step);
+                        rect = new Rectangle(Poprica.MathFunctions.ImagePos(step, Poprica.PositionType.BOTTOM, newSize), newSize);
+                    }
+
+                    Poprica.Image Img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, 0, rect);
+
+                    //converts ItemType Enum to ImageType Enum
+                    Img.Index = (int)((ImageType)Enum.Parse(typeof(ImageType), t.ToString()));
+                    Images.Add(Img);
+                }
+            }
         }
     }
 }

@@ -8,210 +8,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -221,210 +251,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, true, true, false],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -434,210 +494,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 12,
 					"Walls" : [ true, false, false, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 13,
 					"Walls" : [ true, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -647,210 +737,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ false, false, true, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, true, true, false],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 14,
 					"Walls" : [ false, false, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 15,
 					"Walls" : [ false, false, false, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 12,
 					"Walls" : [ false, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -860,210 +980,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, false, true, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 12,
 					"Walls" : [ false, false, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, true, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -1073,210 +1223,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -1286,210 +1466,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, false, true, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ true, false, false, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ false, false, true, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ false, true, false, false],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -1499,210 +1709,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -1712,210 +1952,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, false, true, true],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ false, true, false, false],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -1925,210 +2195,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 4,
 					"Walls" : [ false, false, false, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -2138,210 +2438,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ false, true, true, true],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, false, true, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ true, false, false, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, true, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -2351,210 +2681,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
-					"Event" : 2,
-					"Enemies" : null,
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : { 4 : 0 }
 					},
 					{
 					"Type" : 12,
 					"Walls" : [ true, false, false, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 13,
 					"Walls" : [ true, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -2564,210 +2924,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 12,
 					"Walls" : [ false, false, false, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 15,
 					"Walls" : [ false, false, false, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 1,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 12,
 					"Walls" : [ false, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ false, false, false, true],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, true, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, false, true, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ false, false, true, false],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 3,
 					"Walls" : [ true, false, false, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, true, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -2777,210 +3167,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, false, true, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 14,
 					"Walls" : [ false, false, false, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, true, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -2990,849 +3410,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, false, true, true],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, true, false, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, false, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, true, false, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 6,
-					"Walls" : [ true, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-				],
-
-				[
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, false, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 6,
-					"Walls" : [ true, true, true, false],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, false, true],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, true, false, false],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, false, true, true],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, true, false, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-				],
-
-				[
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, false, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, true, false, false],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 2,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, false, true, true],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, true, true, false],
-					"Orientation" : "0, 1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, false, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, true, true, false],
-					"Orientation" : "0, 1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, false, true, true],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ true, false, false, false],
-					"Orientation" : "0, 1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, true, true, false],
-					"Orientation" : "0, 1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-				],
-
-				[
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, false, true],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, true, false, false],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ true, false, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, true, false],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ true, true, false, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ true, false, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ true, true, false, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 6,
+					"Walls" : [ true, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -3842,210 +3653,240 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
-					"Walls" : [ false, false, true, true],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, true, false],
+					"Walls" : [ true, false, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 4,
-					"Walls" : [ false, false, false, false],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, true, false],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, true, false],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 3,
-					"Walls" : [ false, false, true, false],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ true, false, true, false],
-					"Orientation" : "1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 6,
 					"Walls" : [ true, true, true, false],
 					"Orientation" : "-1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 1,
-					"Walls" : [ false, true, false, true],
-					"Orientation" : "0, -1, 0",
-					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 0,
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ false, true, false, true],
 					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, false, true],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, true, false, false],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, false, true, true],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ true, true, false, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				],
 
@@ -4055,210 +3896,969 @@
 					"Walls" : null,
 					"Orientation" : "0, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
-					"Walls" : [ false, false, true, true],
-					"Orientation" : "-1, 0, 0",
+					"Walls" : [ true, false, false, true],
+					"Orientation" : "0, -1, 0",
 					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 6,
-					"Walls" : [ true, true, true, false],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 6,
-					"Walls" : [ false, true, true, true],
-					"Orientation" : "0, 1, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 0,
-					"Walls" : null,
-					"Orientation" : "0, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
-					},
-					{
-					"Type" : 2,
-					"Walls" : [ false, false, true, true],
-					"Orientation" : "-1, 0, 0",
-					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 1,
 					"Walls" : [ true, false, true, false],
 					"Orientation" : "1, 0, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, true, false, false],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 3,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, false, true, true],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
 					},
 					{
 					"Type" : 2,
 					"Walls" : [ false, true, true, false],
 					"Orientation" : "0, 1, 0",
 					"Event" : 0,
-					"Enemies" : null,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ true, false, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, true, true, false],
+					"Orientation" : "0, 1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, false, true, true],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ true, false, false, false],
+					"Orientation" : "0, 1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, true, true, false],
+					"Orientation" : "0, 1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+				],
+
+				[
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, false, true],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, true, false, false],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ true, false, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, true, false],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ true, true, false, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+				],
+
+				[
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, false, true, true],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, true, false],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 4,
+					"Walls" : [ false, false, false, false],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, true, false],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, true, false],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 3,
+					"Walls" : [ false, false, true, false],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 6,
+					"Walls" : [ true, true, true, false],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ false, true, false, true],
+					"Orientation" : "0, -1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+				],
+
+				[
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, false, true, true],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 6,
+					"Walls" : [ true, true, true, false],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 6,
+					"Walls" : [ false, true, true, true],
+					"Orientation" : "0, 1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 0,
+					"Walls" : null,
+					"Orientation" : "0, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, false, true, true],
+					"Orientation" : "-1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 1,
+					"Walls" : [ true, false, true, false],
+					"Orientation" : "1, 0, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
+					},
+					{
+					"Type" : 2,
+					"Walls" : [ false, true, true, false],
+					"Orientation" : "0, 1, 0",
+					"Event" : 0,
+					"Enemies" : null, 
+					"Items" : null
 					},
 				]
 			],

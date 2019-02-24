@@ -13,9 +13,9 @@ namespace DungeonCrawler
         /// </summary>
         public WeaponType Type { get; set; }
 
-        public Weapon(ItemCategory category) : base(category)
+        public Weapon(ItemCategory category, WeaponType type) : base(category)
         {
-
+            Type = type;
         }
 
         /// <summary>

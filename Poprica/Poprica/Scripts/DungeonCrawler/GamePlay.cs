@@ -23,5 +23,13 @@ namespace DungeonCrawler
         {
 
         }
+
+        /// <summary>
+        /// Updates current Gameplay stuff.
+        /// </summary>
+        public static void Update()
+        {
+
+        }
     }
 }

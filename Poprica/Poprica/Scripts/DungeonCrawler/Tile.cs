@@ -35,36 +35,59 @@ namespace DungeonCrawler
         /// </summary>
         public Dictionary<EnemyType, double> Enemies { get; set; }
 
+        /// <summary>
+        /// Dictionaray of Item which can be found on this Tile.
+        /// Value is of type dynamic.
+        /// </summary>
+        public Dictionary<ItemCategory, dynamic> Items { get; set; }
+        
         public Tile()
         {
             Type = TileType.ROOM;
             Orientation = new Vector3(0, -1, 0);
         }
 
-        public Tile(TileType type, bool[] walls, EventType _event, Dictionary<EnemyType, double> enemies)
+        public Tile(TileType type, bool[] walls, EventType _event, Dictionary<EnemyType, double> enemies, Dictionary<ItemCategory, dynamic> items)
         {
             Type = type;
             Walls = walls;
             Event = _event;
             Enemies = enemies;
+            Items = items;
         }
 
         public Item[] GetItems()
         {
+            if (Items == null)
+                return null;
+
             Item[] items = null;
 
-            if (this.Event == EventType.KEYRICA)
-            {
-                items = new Item[] { new BasicItem(ItemCategory.BASICITEM, BasicItemType.KEYRICA) };
-            }
+            items = new Item[Items.Count()];
 
+            int i = 0;
+
+            foreach (KeyValuePair<ItemCategory, dynamic> pair in Items)
+            {
+                if (pair.Key == ItemCategory.BASICITEM)
+                    items[i] = new BasicItem(pair.Key, (BasicItemType) pair.Value);
+                else if (pair.Key == ItemCategory.ARMOR)
+                    items[i] = new Armor(pair.Key, (ArmorType) pair.Value);
+                else if (pair.Key == ItemCategory.WEAPON)
+                    items[i] = new Weapon(pair.Key, (WeaponType) pair.Value);
+                else if (pair.Key == ItemCategory.POTION)
+                    items[i] = new Potion(pair.Key, (PotionType) pair.Value);
+
+                i++;
+            }
+            
             return items;
         }
 
         public Boolean RemoveItem()
         {
-            this.Event = EventType.NONE;
-
+            this.Items = null;    //ToDo
+             
             return true;
         }
     }

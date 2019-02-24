@@ -65,7 +65,7 @@ namespace DungeonCrawler
                 {
                     BasicItem key = item as BasicItem;
 
-                    if (key.Type == BasicItemType.KEYRICA)
+                    if (key.Type == BasicItemType.KEY)
                     {
                         Console.WriteLine("SCHWALLALALALALA");
                     }

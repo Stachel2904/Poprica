@@ -49,8 +49,8 @@ namespace DungeonCrawler
     {
         NONE,
         RICA,
-        KEYRICA
-
+        KEY,
+        CHEST,
     }
 
     public enum EnemyType
@@ -79,12 +79,13 @@ namespace DungeonCrawler
 
     public enum PotionType
     {
-
+        HEALTH,
+        ARMOR
     }
 
     public enum BasicItemType
     {
-        KEYRICA,
+        KEY,
         KEYEMELIE
     }
 
@@ -124,6 +125,33 @@ namespace DungeonCrawler
         CORNERRIGHTPERSPECTIVE,
 
         KEY,
-        RICA
+        RICA,
+        CHEST
+    }
+
+    public static class EnumManagement
+    {
+        /// <summary>
+        /// Returns a Enum Value depends on given ItemCategory type and dynamic index.
+        /// </summary>
+        /// <param name="type">Value of Itemcategory.</param>
+        /// <param name="index">Index for result enum.</param>
+        /// <returns>Value of target enum.</returns>
+        public static dynamic GetEnumType(ItemCategory type, dynamic index)
+        {
+            switch (type)
+            {
+                case ItemCategory.ARMOR:
+                    return (index < Enum.GetNames(typeof(ArmorType)).Length && index >= 0) ? (ArmorType) index : 0;
+                case ItemCategory.BASICITEM:
+                    return (index < Enum.GetNames(typeof(BasicItemType)).Length && index >= 0) ? (BasicItemType)index : 0;
+                case ItemCategory.POTION:
+                    return (index < Enum.GetNames(typeof(PotionType)).Length && index >= 0) ? (PotionType)index : 0;
+                case ItemCategory.WEAPON:
+                    return (index < Enum.GetNames(typeof(WeaponType)).Length && index >= 0) ? (WeaponType)index : 0;
+            }
+
+            return typeof(BasicItemType);
+        }
     }
 }

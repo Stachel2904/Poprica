@@ -34,6 +34,18 @@
 /processorParam:TextureFormat=Compressed
 /build:Font/FontSmall.spritefont
 
+#begin Sprites/DC/CHEST.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/DC/CHEST.png
+
 #begin Sprites/DC/CONSTRUCTIONSIGN.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -262,7 +274,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/DC/ROOMWALL.png
 
-#begin Sprites/DC/STRAIGHT.PNG
+#begin Sprites/DC/STRAIGHT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -272,7 +284,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/STRAIGHT.PNG
+/build:Sprites/DC/STRAIGHT.png
 
 #begin Sprites/DC/TCROSSLEFT.png
 /importer:TextureImporter
