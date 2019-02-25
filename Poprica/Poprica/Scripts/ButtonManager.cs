@@ -28,6 +28,8 @@ namespace Poprica
         private Dictionary<Button, Action> actionButtons;
         private Button[] menuButtons;
 
+        private Vector2 currentScale;
+
         private ButtonManager()
         {
 
@@ -39,7 +41,7 @@ namespace Poprica
         /// <param name="actions">The Actions linked to the Buttons</param>
         public void CreateButtons(Action[] actions)
         {
-
+            currentScale = PopricaGame.Main.CalcCurrentScale();
         }
 
         /// <summary>
@@ -48,24 +50,35 @@ namespace Poprica
         /// <param name="locations">The Locations linked to the Buttons</param>
         public void CreateButtons(LocationType[] locations)
         {
-
+            currentScale = PopricaGame.Main.CalcCurrentScale();
         }
 
         /// <summary>
         /// Create a Button for each ButtonType.
         /// </summary>
         /// <param name="buttons">The ButtonTypes linked to the Buttons</param>
-        public Button[] CreateButtons(ButtonType[] buttons)
+        public Button[] CreateButtons(ButtonType[] buttons, MenuType type)
         {
+            //List<Button> createdButtons = new List<Button>();
+            //for (int i = 0; i < buttons.Length; i += 10)
+            //{
+            //    for (int j = 0; j < ((buttons.Length < 10) ? buttons.Length : 10); j++)
+            //    {
+            //        Rectangle desRect = new Rectangle(i * 200, j * 50, 200, 50);
+            //        Button newButton = new Button(buttons[i + j], desRect);
+            //        createdButtons.Add(newButton);
+            //    }
+            //}
+            currentScale = PopricaGame.Main.CalcCurrentScale();
+
             List<Button> createdButtons = new List<Button>();
-            for (int i = 0; i < buttons.Length; i += 10)
+            
+            for (int i = 0; i < buttons.Length; i++)
             {
-                for (int j = 0; j < ((buttons.Length < 10) ? buttons.Length : 10); j++)
-                {
-                    Rectangle desRect = new Rectangle(i * 200, j * 50, 200, 50);
-                    Button newButton = new Button(buttons[i + j], desRect);
-                    createdButtons.Add(newButton);
-                }
+                Rectangle rect = Maps.MenuButtonRects[type][i];
+
+                Button button = new Button(buttons[i], rect); //insert scale
+                createdButtons.Add(button);
             }
 
             menuButtons = createdButtons.ToArray();
@@ -106,17 +119,25 @@ namespace Poprica
             }
         }
 
-        private bool CheckPointInRect(Point point, Rectangle rectangle)
+        private bool CheckPointInRect(Point point, Rectangle rectangle, bool isRect = true)
         {
-            bool insideX = point.X > rectangle.X && point.X < rectangle.X + rectangle.Width;
-            bool insideY = point.Y > rectangle.Y && point.Y < rectangle.Y + rectangle.Height;
-
-            if (insideX && insideY)
+            if (isRect)
             {
-                return true;
+                bool insideX = point.X > rectangle.X && point.X < rectangle.X + rectangle.Width;
+                bool insideY = point.Y > rectangle.Y && point.Y < rectangle.Y + rectangle.Height;
+
+                if (insideX && insideY)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+
             }
 
             return false;
         }
+        
     }
 }

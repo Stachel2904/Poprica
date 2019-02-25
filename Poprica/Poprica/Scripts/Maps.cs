@@ -16,7 +16,11 @@ namespace Poprica
         public static Dictionary<ButtonType, ActionEvent> ButtonMap { get; } = new Dictionary<ButtonType, ActionEvent>()
         {
             { ButtonType.STARTGAME, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM })},
-            { ButtonType.STARTDUNGEONCRAWLER, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER})},
+            //{ ButtonType.STARTDUNGEONCRAWLER, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER})},
+            { ButtonType.LOADGAME, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.LOADSAVEGAME})},
+            { ButtonType.OPTIONS, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})},
+            { ButtonType.PATREON, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER}) },//new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})}, //insert Funkt for Website
+            { ButtonType.HELP, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.HELP})},
             { ButtonType.EXIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
         };
 
@@ -39,8 +43,36 @@ namespace Poprica
                 new ButtonType[]
                 {
                     ButtonType.STARTGAME,
-                    ButtonType.STARTDUNGEONCRAWLER,
+                    ButtonType.LOADGAME,
+                    ButtonType.OPTIONS,
+                    ButtonType.HELP,
+                    ButtonType.PATREON,
                     ButtonType.EXIT
+                }
+            },
+            //LOADGAME
+            {
+                MenuType.LOADSAVEGAME,
+                new ButtonType[]
+                {
+
+                }
+            }
+        };
+
+        public static Dictionary<MenuType, Rectangle[]> MenuButtonRects { get; } = new Dictionary<MenuType, Rectangle[]>()
+        {
+            //MainMenu
+            {
+                MenuType.MAINMENU,
+                new Rectangle[]
+                {
+                    new Rectangle(960, 540, 80, 60),
+                    new Rectangle(1060, 560, 80, 60),
+                    new Rectangle(1160, 580, 80, 60),
+                    new Rectangle(940, 640, 80, 60),
+                    new Rectangle(1040, 660, 80, 60),
+                    new Rectangle(1140, 680, 80, 60)
                 }
             }
         };
@@ -116,7 +148,7 @@ namespace Poprica
 
         
 
-        public static Dictionary<PositionType, Rectangle> DialogueEntityPositions = new Dictionary<PositionType, Rectangle>
+        public static Dictionary<PositionType, Rectangle> DialogueEntityPositions { get; } = new Dictionary<PositionType, Rectangle>
         {
             { PositionType.RIGHT, new Rectangle(1500, 0, 500, 1000)}
         };
@@ -124,24 +156,27 @@ namespace Poprica
         /// <summary>
         /// Stores the Text on a Button
         /// </summary>
-        public static string[] MenuButtonText = new string[]
+        public static string[] MenuButtonText { get; } = new string[]
         {
-            "Start Poprica",
-            "Start Dungeon Crawler",
+            "Start",
+            "Load",
+            "Options",
+            "Help",
+            "Patreon",
             "Exit"
         };
 
         /// <summary>
         /// Stores the paths to different Size of Fonts
         /// </summary>
-        public static string[] Fonts = new string[]
+        public static string[] Fonts { get; } = new string[]
         {
             "FontSmall",
             "FontDefault",
             "FontBig"
         };
 
-        public static Dictionary<dynamic, double> ImageScale = new Dictionary<dynamic, double>
+        public static Dictionary<dynamic, double> ImageScale { get; } = new Dictionary<dynamic, double>
         {
             {DungeonCrawler.ImageType.RICA, 0.6},
             {DungeonCrawler.ImageType.CHEST, 1.2},
@@ -247,7 +282,7 @@ namespace Poprica
 
         //Keine Info über Input der nichts mit Movement zutun hat ...
         
-        public static Dictionary<dynamic, Point> DCImageSizes = new Dictionary<dynamic, Point>
+        public static Dictionary<dynamic, Point> DCImageSizes { get; } = new Dictionary<dynamic, Point>
         {
             {DungeonCrawler.EventType.RICA, new Point(290, 1080)},
             {DungeonCrawler.BasicItemType.KEY, new Point(30, 30)},

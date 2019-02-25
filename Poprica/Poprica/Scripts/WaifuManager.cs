@@ -87,7 +87,7 @@ namespace Poprica
                     RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], Maps.DialogueEntityPositions[PositionType.RIGHT], null, Color.White, 0, 0, true);
                 }
             }
-            //render Stats
+            //render Stats, should be in Scenemanager
             WaifuStats renderedStats = waifus[SelectedWaifu].stats;
             RessourceManager.Main.DrawText(new TextObject(renderedStats.Affection.ToString(), new Rectangle(50, 50, 50, 50)));
             RessourceManager.Main.DrawText(new TextObject(renderedStats.Obedience.ToString(), new Rectangle(150, 50, 50, 50)));

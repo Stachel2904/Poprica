@@ -15,6 +15,9 @@ namespace Poprica
         public List<Image> Images { get; set; }
         public List<TextObject> Texts { get; set; }
 
+        protected int height;
+        protected int width;
+
         public Scene(SceneType sceneType)
         {
             Images = new List<Image>();
@@ -27,6 +30,9 @@ namespace Poprica
         /// </summary>
         public virtual void Update()
         {
+            height = Poprica.PopricaGame.Main.gameHeight;
+            width = Poprica.PopricaGame.Main.gameWidth;
+
 
         }
 

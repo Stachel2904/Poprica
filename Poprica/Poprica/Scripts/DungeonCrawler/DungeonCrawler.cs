@@ -69,12 +69,12 @@ namespace DungeonCrawler
                 }
 
                 Poprica.Image img;
-                Rectangle rect = new Rectangle(Poprica.MathFunctions.ImagePos(i), new Point((int)(1920 / (Math.Pow(2, i))), (int)(1080 / (Math.Pow(2, i)))));
+                Rectangle rect = new Rectangle(Poprica.MathFunctions.ImagePos(i), new Point((int)(width / (Math.Pow(2, i))), (int)(height / (Math.Pow(2, i)))));
 
                 //If wall is in front of the player ... stops seeing Tiles behind the wall
                 if (!Player.Main.Allowed(DirectionType.FORWARD) ) //&& GetTileInFront(entryPoint, orientation) != )
                 {
-                    rect = new Rectangle(Poprica.MathFunctions.ImagePos(0), new Point((int)(1920 / (Math.Pow(2, 0))), (int)(1080 / (Math.Pow(2, 0)))));
+                    rect = new Rectangle(Poprica.MathFunctions.ImagePos(0), new Point((int)(width / (Math.Pow(2, 0))), (int)(height / (Math.Pow(2, 0)))));
 
                     //Abfrage ob Img nicht vllt ConstructionSign sein sollte
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
@@ -146,6 +146,9 @@ namespace DungeonCrawler
 
         public override void Update()
         {
+            height = Poprica.PopricaGame.Main.gameHeight;
+            width = Poprica.PopricaGame.Main.gameWidth;
+
             this.LoadImages();
 
             Player.Main.UpdateInventory();
@@ -182,11 +185,11 @@ namespace DungeonCrawler
             Rectangle rectLeft, rect, rectRight;
 
             Point pos = Poprica.MathFunctions.ImagePos(step);
-            Point size = new Point((int)(1920 / (Math.Pow(2, step))), (int)(1080 / (Math.Pow(2, step))));
+            Point size = new Point((int)(width/ (Math.Pow(2, step))), (int)(height / (Math.Pow(2, step))));
 
-            rectLeft = new Rectangle(new Point(pos.X - (int)(1920 / (Math.Pow(2, step))), pos.Y), size);
+            rectLeft = new Rectangle(new Point(pos.X - (int)(width / (Math.Pow(2, step))), pos.Y), size);
             rect = new Rectangle(pos, size);
-            rectRight = new Rectangle( new Point(pos.X + (int)(1920 / (Math.Pow(2, step))), pos.Y), size);
+            rectRight = new Rectangle( new Point(pos.X + (int)(width / (Math.Pow(2, step))), pos.Y), size);
 
             if (current.Type == TileType.ROOMEXIT)
             {

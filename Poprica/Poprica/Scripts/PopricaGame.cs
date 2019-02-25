@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -9,17 +10,44 @@ namespace Poprica
     /// </summary>
     public class PopricaGame : Game
     {
-        GraphicsDeviceManager graphics;
+        #region Singleton
+        private static PopricaGame main;
 
+        public static PopricaGame Main
+        {
+            get
+            {
+                if (main == null)
+                {
+                    main = new PopricaGame();
+                }
+                return main;
+            }
+        }
+        #endregion
+
+        GraphicsDeviceManager graphics;
+        //ResizeStatus resizing;
+        
         /// <summary>
         /// The State of the Game.
         /// </summary>
         public static GameState MainState { get; set; }
 
+        public static int maxGameHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+        public static int maxGameWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+
+        public int gameHeight { get { return Window.ClientBounds.Height; } }
+        public int gameWidth { get { return Window.ClientBounds.Width; } }
+        
         public PopricaGame()
         {
+            main = this;
+
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+
         }
 
         /// <summary>
@@ -30,6 +58,8 @@ namespace Poprica
         /// </summary>
         protected override void Initialize()
         {
+            Window.AllowUserResizing = true;
+
             this.IsMouseVisible = true;
 
             MainState = GameState.DEFAULT;
@@ -121,6 +151,11 @@ namespace Poprica
         protected override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);
+        }
+
+        public Vector2 CalcCurrentScale()
+        {
+            return new Vector2(gameWidth / 1920, gameHeight / 1080);
         }
     }
 }

@@ -29,6 +29,7 @@ namespace Poprica
         PLACE,
         MENU,
         SHOP,
+
         DUNGEONCRAWLER
     }
 
@@ -138,7 +139,10 @@ namespace Poprica
     public enum ButtonType
     {
         STARTGAME,
-        STARTDUNGEONCRAWLER,
+        LOADGAME,
+        OPTIONS,
+        HELP,
+        PATREON,
         EXIT
     }
 
@@ -164,6 +168,11 @@ namespace Poprica
 
     public enum MenuType
     {
-        MAINMENU
+        MAINMENU,
+        PAUSEMENU,
+        LOADSAVEGAME,
+        OPTIONS,
+        HELP
+
     }
 }

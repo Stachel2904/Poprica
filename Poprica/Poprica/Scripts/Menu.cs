@@ -17,7 +17,7 @@ namespace Poprica
         {
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
-            Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons);
+            Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, type);
 
             for (int i = 0; i < createdButtons.Length; i++)
             {
@@ -79,6 +79,14 @@ namespace Poprica
         /// Calls the Load-fct. from Progress.
         /// </summary>
         public void Load()
+        {
+
+        }
+
+        /// <summary>
+        /// Opens the pause menu.
+        /// </summary>
+        public void PauseMenu()
         {
 
         }
