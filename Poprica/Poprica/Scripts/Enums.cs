@@ -36,6 +36,7 @@ namespace Poprica
     public enum ImageType
     {
         UI,
+        MENU,
         ICONS,
         BACKGROUND,
         WAIFU,

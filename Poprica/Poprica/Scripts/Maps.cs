@@ -67,12 +67,12 @@ namespace Poprica
                 MenuType.MAINMENU,
                 new Rectangle[]
                 {
-                    new Rectangle(960, 540, 80, 60),
-                    new Rectangle(1060, 560, 80, 60),
-                    new Rectangle(1160, 580, 80, 60),
-                    new Rectangle(940, 640, 80, 60),
-                    new Rectangle(1040, 660, 80, 60),
-                    new Rectangle(1140, 680, 80, 60)
+                    new Rectangle(1010, 560, 100, 80),
+                    new Rectangle(1190, 580, 100, 80),
+                    new Rectangle(1370, 600, 100, 80),
+                    new Rectangle(960, 690, 100, 80),
+                    new Rectangle(1140, 720, 100, 80),
+                    new Rectangle(1320, 750, 100, 80)
                 }
             }
         };
@@ -96,6 +96,10 @@ namespace Poprica
             new String[]
             {
                 "Sprites/UI/MAINMENU",
+                //PAUSEMENU
+                //LOADSAVEGAME
+                //OPTIONS
+                //HELP
             },
             //Icons
             new string[]

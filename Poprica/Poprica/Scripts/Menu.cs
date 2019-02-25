@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace Poprica
 {
@@ -17,20 +18,28 @@ namespace Poprica
         {
             Type = type;
 
-            Images.Add(new Image(n));
+            LoadImages();
 
-            ButtonType[] menuButtons = Maps.MenuButtonMap[type];
+        }
 
-            Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, type);
+        public override void LoadImages()
+        {
+            Images.Clear();
+            Texts.Clear();
+
+            Images.Add(new Image(ImageType.MENU, (int)Type, new Rectangle(0, 0, width, height)));
+
+            ButtonType[] menuButtons = Maps.MenuButtonMap[Type];
+
+            Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, Type);
 
             for (int i = 0; i < createdButtons.Length; i++)
             {
                 int imgIndex = (int)((UIImageType)Enum.Parse(typeof(UIImageType), createdButtons[i].Type.ToString()));
-                
-                this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
-                this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
-            }
 
+                this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
+                //this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
+            }
         }
 
         /// <summary>
@@ -103,6 +112,16 @@ namespace Poprica
         public void MainMenu()
         {
 
+        }
+
+        /// <summary>
+        /// Updates the Menu.
+        /// </summary>
+        public override void Update()
+        {
+            base.Update();
+
+            LoadImages();
         }
     }
 }

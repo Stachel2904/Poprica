@@ -406,6 +406,18 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/LOAD.png
 
+#begin Sprites/UI/MAINMENU.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/MAINMENU.png
+
 #begin Sprites/UI/OPTIONS.png
 /importer:TextureImporter
 /processor:TextureProcessor

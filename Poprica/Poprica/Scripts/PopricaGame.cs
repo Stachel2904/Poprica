@@ -155,7 +155,7 @@ namespace Poprica
 
         public Vector2 CalcCurrentScale()
         {
-            return new Vector2(gameWidth / 1920, gameHeight / 1080);
+            return new Vector2((float) gameWidth / (float) 1920, (float) gameHeight / (float) 1080);
         }
     }
 }
