@@ -44,7 +44,13 @@ namespace Poprica
 
     public enum UIImageType
     {
-        BUTTON
+        PLAY,
+        LOAD,
+        OPTIONS,
+        HELP,
+        PATREON,
+        QUIT,
+        BUTTON,
     }
 
     public enum IconImageType
@@ -138,12 +144,12 @@ namespace Poprica
 
     public enum ButtonType
     {
-        STARTGAME,
-        LOADGAME,
+        PLAY,
+        LOAD,
         OPTIONS,
         HELP,
         PATREON,
-        EXIT
+        QUIT
     }
 
     public enum AnimationState

@@ -15,13 +15,17 @@ namespace Poprica
 
         public Menu(MenuType type) : base(SceneType.MENU)
         {
+            Type = type;
+
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, type);
 
             for (int i = 0; i < createdButtons.Length; i++)
             {
-                this.Images.Add(new Image(ImageType.UI, (int)UIImageType.BUTTON, createdButtons[i].Rect));
+                int imgIndex = (int)((UIImageType)Enum.Parse(typeof(UIImageType), createdButtons[i].Type.ToString()));
+                
+                this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
                 this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
             }
 

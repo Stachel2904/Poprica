@@ -15,13 +15,13 @@ namespace Poprica
         /// </summary>
         public static Dictionary<ButtonType, ActionEvent> ButtonMap { get; } = new Dictionary<ButtonType, ActionEvent>()
         {
-            { ButtonType.STARTGAME, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM })},
+            { ButtonType.PLAY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM })},
             //{ ButtonType.STARTDUNGEONCRAWLER, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER})},
-            { ButtonType.LOADGAME, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.LOADSAVEGAME})},
+            { ButtonType.LOAD, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.LOADSAVEGAME})},
             { ButtonType.OPTIONS, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})},
             { ButtonType.PATREON, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER}) },//new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})}, //insert Funkt for Website
             { ButtonType.HELP, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.HELP})},
-            { ButtonType.EXIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
+            { ButtonType.QUIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
         };
 
         /// <summary>
@@ -42,12 +42,12 @@ namespace Poprica
                 MenuType.MAINMENU,
                 new ButtonType[]
                 {
-                    ButtonType.STARTGAME,
-                    ButtonType.LOADGAME,
+                    ButtonType.PLAY,
+                    ButtonType.LOAD,
                     ButtonType.OPTIONS,
                     ButtonType.HELP,
                     ButtonType.PATREON,
-                    ButtonType.EXIT
+                    ButtonType.QUIT
                 }
             },
             //LOADGAME
@@ -85,7 +85,17 @@ namespace Poprica
             //UI
             new string[]
             {
-                "Sprites/UI/UIButton",
+                "Sprites/UI/PLAY",
+                "Sprites/UI/LOAD",
+                "Sprites/UI/OPTIONS",
+                "Sprites/UI/HELP",
+                "Sprites/UI/PATREON",
+                "Sprites/UI/QUIT",
+            },
+            //Menu
+            new String[]
+            {
+                "Sprites/UI/MAINMENU",
             },
             //Icons
             new string[]
@@ -163,7 +173,7 @@ namespace Poprica
             "Options",
             "Help",
             "Patreon",
-            "Exit"
+            "Quit"
         };
 
         /// <summary>
