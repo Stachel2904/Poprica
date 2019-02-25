@@ -17,6 +17,8 @@ namespace Poprica
         {
             Type = type;
 
+            Images.Add(new Image(n));
+
             ButtonType[] menuButtons = Maps.MenuButtonMap[type];
 
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, type);
