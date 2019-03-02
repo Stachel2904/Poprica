@@ -62,6 +62,10 @@ namespace Poprica
 
             this.IsMouseVisible = true;
 
+            //macht noch nicht ganz das was ich will :D
+            Texture2D mouseTexture = Content.Load<Texture2D>("Sprites/UI/CURSOR");
+            Mouse.SetCursor(MouseCursor.FromTexture2D(mouseTexture, 1, 1));
+
             MainState = GameState.DEFAULT;
 
             graphics.PreferredBackBufferHeight = 1080;

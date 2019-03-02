@@ -358,6 +358,18 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/Poprica/RICA.png
 
+#begin Sprites/UI/CURSOR.ico
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/CURSOR.ico
+
 #begin Sprites/UI/HELP.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -382,7 +394,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/ICON.png
 
-#begin Sprites/UI/Icons/Icon.ico
+#begin Sprites/UI/Icons/ICON.ico
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -392,7 +404,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/UI/Icons/Icon.ico
+/build:Sprites/UI/Icons/ICON.ico
 
 #begin Sprites/UI/LOAD.png
 /importer:TextureImporter
