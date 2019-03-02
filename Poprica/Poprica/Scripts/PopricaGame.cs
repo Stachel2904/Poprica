@@ -64,7 +64,7 @@ namespace Poprica
 
             MainState = GameState.DEFAULT;
 
-            graphics.PreferredBackBufferHeight = 1080;
+            graphics.PreferredBackBufferHeight = 900;
             graphics.PreferredBackBufferWidth = 1920;
             graphics.ApplyChanges();
 
@@ -110,6 +110,8 @@ namespace Poprica
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            Window.ClientSizeChanged += UpdateAllImageSizes;
+
             //Debug Purposes Only
             //ToDo: delete
             DialogueManager.Main.LoadNewDialogue(new DialogueEntityName[] { DialogueEntityName.RICA }, ActionType.TALK);
@@ -138,7 +140,6 @@ namespace Poprica
                 case GameState.EXIT:
                     this.Exit();
                     break;
-
             }
 
             base.Update(gameTime);
@@ -156,6 +157,11 @@ namespace Poprica
         public Vector2 CalcCurrentScale()
         {
             return new Vector2((float) gameWidth / (float) 1920, (float) gameHeight / (float) 1080);
+        }
+
+        private void UpdateAllImageSizes(object sender, EventArgs e)
+        {
+            //Console.WriteLine("ICH ÄNDERE MEINE GRÖSSSEEEEEEE!!!!");
         }
     }
 }

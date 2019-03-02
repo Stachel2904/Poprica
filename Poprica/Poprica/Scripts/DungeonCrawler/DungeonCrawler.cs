@@ -146,8 +146,8 @@ namespace DungeonCrawler
 
         public override void Update()
         {
-            height = Poprica.PopricaGame.Main.gameHeight;
-            width = Poprica.PopricaGame.Main.gameWidth;
+            //height = Poprica.PopricaGame.Main.gameHeight;
+            //width = Poprica.PopricaGame.Main.gameWidth;
 
             this.LoadImages();
 

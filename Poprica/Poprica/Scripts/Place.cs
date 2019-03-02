@@ -19,7 +19,16 @@ namespace Poprica
 
         public Place(LocationType type) : base(SceneType.PLACE)
         {
-            Images.Add(new Image(ImageType.BACKGROUND, (int) type, (new Rectangle(0, 0, 1920, 1080))));
+            Location = type;
+            
+        }
+
+        public override void LoadImages()
+        {
+            Images.Clear();
+            Texts.Clear();
+
+            Images.Add(new Image(ImageType.BACKGROUND, (int)Location, (new Rectangle(0, 0, PopricaGame.maxGameWidth, PopricaGame.maxGameHeight))));
         }
 
         private DialogueEntityName[] GetAllWaifus()
@@ -52,6 +61,13 @@ namespace Poprica
         {
 
             return false;
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            LoadImages();
         }
     }
 }
