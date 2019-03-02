@@ -67,12 +67,12 @@ namespace Poprica
                 MenuType.MAINMENU,
                 new Rectangle[]
                 {
-                    new Rectangle(1010, 560, 100, 80),
-                    new Rectangle(1190, 580, 100, 80),
-                    new Rectangle(1370, 600, 100, 80),
-                    new Rectangle(960, 690, 100, 80),
-                    new Rectangle(1140, 720, 100, 80),
-                    new Rectangle(1320, 750, 100, 80)
+                    new Rectangle(2020, 1120, 200, 160),
+                    new Rectangle(2380, 1160, 200, 160),
+                    new Rectangle(2740, 1200, 200, 160),
+                    new Rectangle(1920, 1380, 200, 160),
+                    new Rectangle(2280, 1420, 200, 160),
+                    new Rectangle(2640, 1500, 200, 160)
                 }
             }
         };
@@ -164,7 +164,7 @@ namespace Poprica
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions { get; } = new Dictionary<PositionType, Rectangle>
         {
-            { PositionType.RIGHT, new Rectangle(1500, 0, 500, 1000)}
+            { PositionType.RIGHT, new Rectangle(3000, 0, 1000, 2000)}
         };
 
         /// <summary>
@@ -190,6 +190,7 @@ namespace Poprica
             "FontBig"
         };
 
+        //Just for Debug purposes
         public static Dictionary<dynamic, double> ImageScale { get; } = new Dictionary<dynamic, double>
         {
             {DungeonCrawler.ImageType.RICA, 0.6},
@@ -298,9 +299,9 @@ namespace Poprica
         
         public static Dictionary<dynamic, Point> DCImageSizes { get; } = new Dictionary<dynamic, Point>
         {
-            {DungeonCrawler.EventType.RICA, new Point(290, 1080)},
-            {DungeonCrawler.BasicItemType.KEY, new Point(30, 30)},
-            {DungeonCrawler.EventType.CHEST, new Point(400,310) }
+            {DungeonCrawler.EventType.RICA, new Point(580, 2160)},
+            {DungeonCrawler.BasicItemType.KEY, new Point(60, 60)},
+            {DungeonCrawler.EventType.CHEST, new Point(800, 620) }
         };
 
         /// <summary>

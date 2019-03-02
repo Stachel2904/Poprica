@@ -33,7 +33,8 @@ namespace Poprica
         /// </summary>
         public virtual void Update()
         {
-
+            //height = PopricaGame.Main.gameHeight;
+            //width = PopricaGame.Main.gameWidth;
         }
 
         /// <summary>

@@ -68,7 +68,7 @@ namespace Poprica
 
             MainState = GameState.DEFAULT;
 
-            graphics.PreferredBackBufferHeight = 900;
+            graphics.PreferredBackBufferHeight = 1080;
             graphics.PreferredBackBufferWidth = 1920;
             graphics.ApplyChanges();
 
@@ -160,7 +160,14 @@ namespace Poprica
 
         public Vector2 CalcCurrentScale()
         {
-            return new Vector2((float) gameWidth / (float) 1920, (float) gameHeight / (float) 1080);
+            try
+            {
+                return new Vector2((float)gameWidth / (float)maxGameWidth, (float)gameHeight / (float)maxGameHeight);
+            }
+            catch
+            {
+                return Vector2.One;
+            }
         }
 
         private void UpdateAllImageSizes(object sender, EventArgs e)

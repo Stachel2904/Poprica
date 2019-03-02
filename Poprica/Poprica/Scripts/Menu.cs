@@ -27,7 +27,7 @@ namespace Poprica
             Images.Clear();
             Texts.Clear();
 
-            Images.Add(new Image(ImageType.MENU, (int)Type, new Rectangle(0, 0, PopricaGame.maxGameWidth, PopricaGame.maxGameHeight)));
+            Images.Add(new Image(ImageType.MENU, (int)Type, new Rectangle(0, 0, width, height)));
 
             ButtonType[] menuButtons = Maps.MenuButtonMap[Type];
 

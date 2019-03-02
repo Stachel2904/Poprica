@@ -187,9 +187,13 @@ namespace DungeonCrawler
             Point pos = Poprica.MathFunctions.ImagePos(step);
             Point size = new Point((int)(width/ (Math.Pow(2, step))), (int)(height / (Math.Pow(2, step))));
 
-            rectLeft = new Rectangle(new Point(pos.X - (int)(width / (Math.Pow(2, step))), pos.Y), size);
+            Console.Write(step);
+            Console.WriteLine(pos);
+            Console.WriteLine(size);
+
+            rectLeft = new Rectangle(new Point(pos.X - (int)((width * Poprica.PopricaGame.Main.CalcCurrentScale().X) / (Math.Pow(2, step))), pos.Y), size);
             rect = new Rectangle(pos, size);
-            rectRight = new Rectangle( new Point(pos.X + (int)(width / (Math.Pow(2, step))), pos.Y), size);
+            rectRight = new Rectangle( new Point(pos.X + (int)((width * Poprica.PopricaGame.Main.CalcCurrentScale().X) / (Math.Pow(2, step))), pos.Y), size);
 
             if (current.Type == TileType.ROOMEXIT)
             {

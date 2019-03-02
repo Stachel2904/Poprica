@@ -16,7 +16,7 @@ namespace Poprica
         /// <returns>x Position of the image.</returns>
         public static int CalcPicturePosWidth(int step)
         {
-            return (int) ((PopricaGame.Main.gameWidth / (Math.Pow(2, step))) * (Math.Pow(2, step) - 1)) / 2;
+            return (int) (((PopricaGame.Main.gameWidth) / (Math.Pow(2, step))) * (Math.Pow(2, step) - 1)) / 2;
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Poprica
         /// <returns>y Position of the image.</returns>
         public static int CalcPicturePosHeight(int step)
         {
-            return (int)((PopricaGame.Main.gameHeight / (Math.Pow(2, step))) * (Math.Pow(2, step) - 1)) / 2;
+            return (int)(((PopricaGame.Main.gameHeight) / (Math.Pow(2, step))) * (Math.Pow(2, step) - 1)) / 2;
         }
         
         public static Point CalcImageSize(Point old, int i, dynamic index = null)
@@ -36,11 +36,9 @@ namespace Poprica
             else
             {
                 double scale = 1;
-                float height = PopricaGame.Main.gameHeight * PopricaGame.Main.CalcCurrentScale().Y;
-                float width = PopricaGame.Main.gameWidth * PopricaGame.Main.CalcCurrentScale().X;
                 
                 if (Poprica.Maps.ImageScale.TryGetValue(index, out scale))
-                    return new Point((int)((old.X * scale * (width /(float) 1920)) / Math.Pow(2, i)), (int)((old.Y * scale * (height / (float) 1080)) / Math.Pow(2, i)));
+                    return new Point((int)((old.X * scale) / Math.Pow(2, i)), (int)((old.Y * scale) / Math.Pow(2, i)));
                 
                 return new Point((int)((old.X) / Math.Pow(2, i)), (int)((old.Y) / Math.Pow(2, i)));
             }
@@ -60,25 +58,22 @@ namespace Poprica
 
             Vector2 scale = PopricaGame.Main.CalcCurrentScale();
 
-            int height = PopricaGame.maxGameHeight * (int) scale.Y;
-            int width = PopricaGame.maxGameWidth * (int) scale.X;
-            
-            //Console.WriteLine(height);
-            //Console.WriteLine(width);
+            int height = PopricaGame.Main.gameHeight;
+            int width = PopricaGame.Main.gameWidth;
 
             switch (side)
             {
                 case PositionType.MIDDLE:
-                    return new Point((width / 2) - (size.X * (int) scale.X) / 2, (height / 2) - (size.Y * (int)scale.Y) / 2);
+                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((height / 2) - ((size.Y * scale.Y) / 2)));
                 case PositionType.BOTTOM:
-                    return new Point((width / 2) - (size.X * (int)scale.X) / 2, (int)(height - (((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1))) - (size.Y * (int)scale.Y));
+                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((height - (((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1))) - (size.Y * scale.Y)));
                 case PositionType.TOP:
-                    return new Point((width / 2) - (size.X * (int)scale.X) / 2, (int)(((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1)) - (size.Y * (int)scale.Y));
+                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1)) - (size.Y * scale.Y)));
                 case PositionType.RIGHTBOTTOM:
                 case PositionType.LEFTBOTTOM:
                 case PositionType.RIGHT:
                 case PositionType.LEFT:
-                    return new Point((width / 2) - (size.X * (int)scale.X) / 2, (height / 2) - (size.Y * (int)scale.Y) / 2);
+                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((height / 2) - (size.Y * scale.Y) / 2));
 
                 default:
                     return new Point(CalcPicturePosWidth(step), CalcPicturePosHeight(step));
