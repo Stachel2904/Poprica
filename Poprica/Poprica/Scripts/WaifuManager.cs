@@ -84,9 +84,15 @@ namespace Poprica
             {
                 if(waifu.Value.Location == (SceneManager.Main.CurrentScene as Place).Location)
                 {
-                    RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], Maps.DialogueEntityPositions[PositionType.RIGHT], null, Color.White, 0, 0, true);
+                    //should moved into a field, damit das nicht in jedem frame berechnet wird
+                    Rectangle newRect = Maps.DialogueEntityPositions[PositionType.RIGHT];
+
+                    newRect.Location = new Point((int) (newRect.Location.X * PopricaGame.Main.CalcCurrentScale().X), (int) (newRect.Location.Y * PopricaGame.Main.CalcCurrentScale().Y));
+
+                    RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], newRect, null, Color.White, 0, 0, true);
                 }
             }
+
             //render Stats, should be in Scenemanager
             WaifuStats renderedStats = waifus[SelectedWaifu].stats;
             RessourceManager.Main.DrawText(new TextObject(renderedStats.Affection.ToString(), new Rectangle(50, 50, 50, 50)));

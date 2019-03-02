@@ -149,12 +149,14 @@ namespace DungeonCrawler
             //height = Poprica.PopricaGame.Main.gameHeight;
             //width = Poprica.PopricaGame.Main.gameWidth;
 
+            //if moved or game size changed
             this.LoadImages();
 
             Player.Main.UpdateInventory();
 
             Vector3 playerPos = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
+            //endif
 
             Tile current = null;
             Tile[] currentRow = null;
@@ -187,11 +189,7 @@ namespace DungeonCrawler
             Point pos = Poprica.MathFunctions.ImagePos(step);
             Point size = new Point((int)(width/ (Math.Pow(2, step))), (int)(height / (Math.Pow(2, step))));
 
-            Console.Write(step);
-            Console.WriteLine(pos);
-            Console.WriteLine(size);
-
-            rectLeft = new Rectangle(new Point(pos.X - (int)((width * Poprica.PopricaGame.Main.CalcCurrentScale().X) / (Math.Pow(2, step))), pos.Y), size);
+            rectLeft = new Rectangle(new Point(pos.X - (int)((width * Poprica.PopricaGame.Main.CalcCurrentScale().X)/ (Math.Pow(2, step))), pos.Y), size);
             rect = new Rectangle(pos, size);
             rectRight = new Rectangle( new Point(pos.X + (int)((width * Poprica.PopricaGame.Main.CalcCurrentScale().X) / (Math.Pow(2, step))), pos.Y), size);
 

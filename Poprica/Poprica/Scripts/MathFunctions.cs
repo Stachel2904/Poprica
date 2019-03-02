@@ -60,20 +60,22 @@ namespace Poprica
 
             int height = PopricaGame.Main.gameHeight;
             int width = PopricaGame.Main.gameWidth;
+            float X = size.X * scale.X;
+            float Y = size.Y * scale.Y;
 
             switch (side)
             {
                 case PositionType.MIDDLE:
-                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((height / 2) - ((size.Y * scale.Y) / 2)));
+                    return new Point((int) ((width / 2) - X / 2), (int) ((height / 2) - (Y / 2)));
                 case PositionType.BOTTOM:
-                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((height - (((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1))) - (size.Y * scale.Y)));
+                    return new Point((int) ((width / 2) - X / 2), (int) ((height - (((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1))) - Y));
                 case PositionType.TOP:
-                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1)) - (size.Y * scale.Y)));
+                    return new Point((int) ((width / 2) - X / 2), (int) ((((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1)) - Y));
                 case PositionType.RIGHTBOTTOM:
                 case PositionType.LEFTBOTTOM:
                 case PositionType.RIGHT:
                 case PositionType.LEFT:
-                    return new Point((int) ((width / 2) - (size.X * scale.X) / 2), (int) ((height / 2) - (size.Y * scale.Y) / 2));
+                    return new Point((int) ((width / 2) - X / 2), (int) ((height / 2) - Y / 2));
 
                 default:
                     return new Point(CalcPicturePosWidth(step), CalcPicturePosHeight(step));
