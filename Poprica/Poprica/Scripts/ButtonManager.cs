@@ -42,6 +42,8 @@ namespace Poprica
         public void CreateButtons(Action[] actions)
         {
             currentScale = PopricaGame.Main.CalcCurrentScale();
+
+
         }
 
         /// <summary>
@@ -51,6 +53,8 @@ namespace Poprica
         public void CreateButtons(LocationType[] locations)
         {
             currentScale = PopricaGame.Main.CalcCurrentScale();
+
+
         }
 
         /// <summary>
@@ -77,14 +81,14 @@ namespace Poprica
             {
                 Rectangle rect = Maps.MenuButtonRects[type][i];
 
-                Console.WriteLine("scale: " + currentScale.X);
+                //Console.WriteLine("scale: " + currentScale.X);
 
                 int rectX = (int) (rect.Location.X * currentScale.X);
                 int rectY = (int) (rect.Location.Y * currentScale.Y);
-                int rectW = (int) (rect.Size.X * currentScale.X);
-                int rectH = (int) (rect.Size.Y * currentScale.Y);
+                int rectW = (int) (rect.Size.X); // * currentScale.X);
+                int rectH = (int)(rect.Size.Y); // * currentScale.Y);
 
-                Console.WriteLine(rectX);
+                //Console.WriteLine(rectX);
 
                 Button button = new Button(buttons[i], new Rectangle(rectX, rectY, rectW, rectH)); //insert scale
                 createdButtons.Add(button);
@@ -132,8 +136,8 @@ namespace Poprica
         {
             if (isRect)
             {
-                bool insideX = point.X > rectangle.X && point.X < rectangle.X + rectangle.Width;
-                bool insideY = point.Y > rectangle.Y && point.Y < rectangle.Y + rectangle.Height;
+                bool insideX = point.X > rectangle.X && point.X < rectangle.X + (int)(rectangle.Width * currentScale.X);   //remove Button scale later!
+                bool insideY = point.Y > rectangle.Y && point.Y < rectangle.Y + (int)(rectangle.Height * currentScale.Y);
 
                 if (insideX && insideY)
                 {

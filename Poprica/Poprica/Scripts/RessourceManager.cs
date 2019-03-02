@@ -91,7 +91,9 @@ namespace Poprica
                 cachedTextures.Add(path, renderedTexture);
             }
 
-            renderer.Draw(renderedTexture, destinationRect, sourceRect, color, rotation, Vector2.Zero, (flipped) ? SpriteEffects.FlipHorizontally : SpriteEffects.None, 0.0f);
+            Rectangle newRect = new Rectangle(destinationRect.Location.X, destinationRect.Location.Y, (int) (destinationRect.Size.X * PopricaGame.Main.CalcCurrentScale().X), (int) (destinationRect.Size.Y * PopricaGame.Main.CalcCurrentScale().Y));
+
+            renderer.Draw(renderedTexture, newRect, sourceRect, color, rotation, Vector2.Zero, (flipped) ? SpriteEffects.FlipHorizontally : SpriteEffects.None, 0.0f);
         }
 
         public void DrawText(TextObject text, bool verticalCenter = true, bool horizontalCenter = true)

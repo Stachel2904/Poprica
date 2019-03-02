@@ -36,9 +36,11 @@ namespace Poprica
             else
             {
                 double scale = 1;
+                float height = PopricaGame.Main.gameHeight * PopricaGame.Main.CalcCurrentScale().Y;
+                float width = PopricaGame.Main.gameWidth * PopricaGame.Main.CalcCurrentScale().X;
                 
                 if (Poprica.Maps.ImageScale.TryGetValue(index, out scale))
-                    return new Point((int)((old.X * scale * ((float)PopricaGame.Main.gameWidth /(float) 1920)) / Math.Pow(2, i)), (int)((old.Y * scale * ((float) PopricaGame.Main.gameHeight / (float) 1080)) / Math.Pow(2, i)));
+                    return new Point((int)((old.X * scale * (width /(float) 1920)) / Math.Pow(2, i)), (int)((old.Y * scale * (height / (float) 1080)) / Math.Pow(2, i)));
                 
                 return new Point((int)((old.X) / Math.Pow(2, i)), (int)((old.Y) / Math.Pow(2, i)));
             }
@@ -56,25 +58,27 @@ namespace Poprica
         {
             //ToDo: Add display picture at the sides
 
-            int height = PopricaGame.Main.gameHeight;
-            int width = PopricaGame.Main.gameWidth;
+            Vector2 scale = PopricaGame.Main.CalcCurrentScale();
 
-            Console.WriteLine(height);
-            Console.WriteLine(width);
+            int height = PopricaGame.maxGameHeight * (int) scale.Y;
+            int width = PopricaGame.maxGameWidth * (int) scale.X;
+            
+            //Console.WriteLine(height);
+            //Console.WriteLine(width);
 
             switch (side)
             {
                 case PositionType.MIDDLE:
-                    return new Point((width / 2) - size.X / 2, (height / 2) - size.Y / 2);
+                    return new Point((width / 2) - (size.X * (int) scale.X) / 2, (height / 2) - (size.Y * (int)scale.Y) / 2);
                 case PositionType.BOTTOM:
-                    return new Point((width / 2) - size.X / 2, (int)(height - (((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1))) - size.Y);
+                    return new Point((width / 2) - (size.X * (int)scale.X) / 2, (int)(height - (((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1))) - (size.Y * (int)scale.Y));
                 case PositionType.TOP:
-                    return new Point((width / 2) - size.X / 2, (int)(((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1)) - size.Y);
+                    return new Point((width / 2) - (size.X * (int)scale.X) / 2, (int)(((height / 4) * Row1_5_13_29(step)) / Math.Pow(2, step + 1)) - (size.Y * (int)scale.Y));
                 case PositionType.RIGHTBOTTOM:
                 case PositionType.LEFTBOTTOM:
                 case PositionType.RIGHT:
                 case PositionType.LEFT:
-                    return new Point((width / 2) - size.X / 2, (height / 2) - size.Y / 2);
+                    return new Point((width / 2) - (size.X * (int)scale.X) / 2, (height / 2) - (size.Y * (int)scale.Y) / 2);
 
                 default:
                     return new Point(CalcPicturePosWidth(step), CalcPicturePosHeight(step));

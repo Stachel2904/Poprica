@@ -20,8 +20,8 @@ namespace Poprica
 
         public Scene(SceneType sceneType)
         {
-            height = PopricaGame.Main.gameHeight;
-            width = PopricaGame.Main.gameWidth;
+            height = PopricaGame.maxGameHeight;
+            width = PopricaGame.maxGameWidth;
 
             Images = new List<Image>();
             Texts = new List<TextObject>();
@@ -33,8 +33,7 @@ namespace Poprica
         /// </summary>
         public virtual void Update()
         {
-            height = PopricaGame.Main.gameHeight;
-            width = PopricaGame.Main.gameWidth;
+
         }
 
         /// <summary>
