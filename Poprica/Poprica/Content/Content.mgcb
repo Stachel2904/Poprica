@@ -358,7 +358,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/Poprica/RICA.png
 
-#begin Sprites/UI/CURSOR.ico
+#begin Sprites/UI/CURSOR.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -368,7 +368,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/UI/CURSOR.ico
+/build:Sprites/UI/CURSOR.png
 
 #begin Sprites/UI/HELP.png
 /importer:TextureImporter

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Windows.Forms;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -61,10 +63,11 @@ namespace Poprica
             Window.AllowUserResizing = true;
 
             this.IsMouseVisible = true;
+            
 
-            //macht noch nicht ganz das was ich will :D
+            //set costum cursor
             Texture2D mouseTexture = Content.Load<Texture2D>("Sprites/UI/CURSOR");
-            Mouse.SetCursor(MouseCursor.FromTexture2D(mouseTexture, 1, 1));
+            Mouse.SetCursor(MouseCursor.FromTexture2D(mouseTexture, 2, 2));
 
             MainState = GameState.DEFAULT;
 

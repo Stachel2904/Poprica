@@ -63,16 +63,6 @@ namespace Poprica
         /// <param name="buttons">The ButtonTypes linked to the Buttons</param>
         public Button[] CreateButtons(ButtonType[] buttons, MenuType type)
         {
-            //List<Button> createdButtons = new List<Button>();
-            //for (int i = 0; i < buttons.Length; i += 10)
-            //{
-            //    for (int j = 0; j < ((buttons.Length < 10) ? buttons.Length : 10); j++)
-            //    {
-            //        Rectangle desRect = new Rectangle(i * 200, j * 50, 200, 50);
-            //        Button newButton = new Button(buttons[i + j], desRect);
-            //        createdButtons.Add(newButton);
-            //    }
-            //}
             currentScale = PopricaGame.Main.CalcCurrentScale();
 
             List<Button> createdButtons = new List<Button>();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace Poprica
 {
@@ -50,7 +51,10 @@ namespace Poprica
         /// </summary>
         public virtual void LoadImages()
         {
+            Rectangle rect = new Rectangle();
+            Image playerInfo = new Image();
 
+            Images.Add(playerInfo);
         }
 
         /// <summary>

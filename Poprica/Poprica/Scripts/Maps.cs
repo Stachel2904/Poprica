@@ -91,6 +91,7 @@ namespace Poprica
                 "Sprites/UI/HELP",
                 "Sprites/UI/PATREON",
                 "Sprites/UI/QUIT",
+                "Sprites/UI/PLAYERINFO",
             },
             //Menu
             new String[]
