@@ -25,10 +25,11 @@ namespace Poprica
 
         public override void LoadImages()
         {
-            Images.Clear();
-            Texts.Clear();
+            base.LoadImages();
 
             Images.Add(new Image(ImageType.BACKGROUND, (int)Location, (new Rectangle(0, 0, PopricaGame.maxGameWidth, PopricaGame.maxGameHeight))));
+
+            LoadPlayerInfo(); //and other UI stuff
         }
 
         private DialogueEntityName[] GetAllWaifus()

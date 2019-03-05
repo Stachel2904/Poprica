@@ -394,7 +394,7 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/ICON.png
 
-#begin Sprites/UI/Icons/ICON.ico
+#begin Sprites/UI/Icons/Icon.ico
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -404,7 +404,19 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/UI/Icons/ICON.ico
+/build:Sprites/UI/Icons/Icon.ico
+
+#begin Sprites/UI/INVENTORY.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/INVENTORY.png
 
 #begin Sprites/UI/LOAD.png
 /importer:TextureImporter
@@ -429,6 +441,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/MAINMENU.png
+
+#begin Sprites/UI/MONEY.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/MONEY.png
 
 #begin Sprites/UI/OPTIONS.png
 /importer:TextureImporter
@@ -466,6 +490,18 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/PLAY.png
 
+#begin Sprites/UI/PLAYERINFO.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/PLAYERINFO.png
+
 #begin Sprites/UI/PopricaLogo.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -489,6 +525,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/QUIT.png
+
+#begin Sprites/UI/SAVE.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/SAVE.png
 
 #begin Sprites/UI/SMARTPHONE.png
 /importer:TextureImporter

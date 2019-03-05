@@ -48,7 +48,7 @@ namespace DungeonCrawler
         /// </summary>
         public override void LoadImages()
         {
-            this.Images = new List<Poprica.Image>();
+            base.LoadImages();
 
             Vector3 playerPos = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
@@ -79,6 +79,9 @@ namespace DungeonCrawler
                     //Abfrage ob Img nicht vllt ConstructionSign sein sollte
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
                     this.Images.Add(img);
+
+                    LoadPlayerInfo();
+
                     return;
                 }
 
@@ -142,6 +145,8 @@ namespace DungeonCrawler
 
                 CheckTileForAdditionalImage(current, i);//6-i);
             }
+
+            LoadPlayerInfo();
         }
 
         public override void Update()

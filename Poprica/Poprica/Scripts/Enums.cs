@@ -51,6 +51,10 @@ namespace Poprica
         HELP,
         PATREON,
         QUIT,
+        PLAYERINFO,
+        MONEY,
+        SAVE,
+        INVENTORY,
         BUTTON,
     }
 
@@ -150,7 +154,10 @@ namespace Poprica
         OPTIONS,
         HELP,
         PATREON,
-        QUIT
+        QUIT,
+        MONEY,
+        SAVE,
+        INVENTORY
     }
 
     public enum AnimationState
@@ -179,7 +186,8 @@ namespace Poprica
         PAUSEMENU,
         LOADSAVEGAME,
         OPTIONS,
-        HELP
+        HELP,
+        PLAYERINFO,
 
     }
 }

@@ -21,7 +21,10 @@ namespace Poprica
             { ButtonType.OPTIONS, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})},
             { ButtonType.PATREON, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER}) },//new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})}, //insert Funkt for Website
             { ButtonType.HELP, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.HELP})},
-            { ButtonType.QUIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
+            { ButtonType.QUIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})},
+            { ButtonType.MONEY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
+            { ButtonType.SAVE, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
+            { ButtonType.INVENTORY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
         };
 
         /// <summary>
@@ -57,6 +60,16 @@ namespace Poprica
                 {
 
                 }
+            },
+            //PLAYERINFO
+            {
+                MenuType.PLAYERINFO,
+                new ButtonType[]
+                {
+                    ButtonType.MONEY,
+                    ButtonType.SAVE,
+                    ButtonType.INVENTORY
+                }
             }
         };
 
@@ -74,7 +87,26 @@ namespace Poprica
                     new Rectangle(2280, 1420, 200, 160),
                     new Rectangle(2640, 1500, 200, 160)
                 }
+            },
+            //Loadgame
+            {
+                MenuType.LOADSAVEGAME,
+                new Rectangle[]
+                {
+
+                }
+            },
+            //PlayerInfo
+            {
+                MenuType.PLAYERINFO,
+                new Rectangle[]
+                {
+                    new Rectangle(3380, 145, 120, 95),
+                    new Rectangle(3520, 145, 80, 95),
+                    new Rectangle(3618, 145, 120, 95)
+                }
             }
+
         };
 
         /// <summary>
@@ -91,7 +123,11 @@ namespace Poprica
                 "Sprites/UI/HELP",
                 "Sprites/UI/PATREON",
                 "Sprites/UI/QUIT",
+
                 "Sprites/UI/PLAYERINFO",
+                "Sprites/UI/MONEY",
+                "Sprites/UI/SAVE",
+                "Sprites/UI/INVENTORY",
             },
             //Menu
             new String[]
@@ -165,7 +201,7 @@ namespace Poprica
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions { get; } = new Dictionary<PositionType, Rectangle>
         {
-            { PositionType.RIGHT, new Rectangle(3000, 0, 1000, 2000)}
+            { PositionType.RIGHT, new Rectangle(3000, 300, 1000, 2000)}
         };
 
         /// <summary>

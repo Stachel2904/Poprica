@@ -29,6 +29,8 @@ namespace Poprica
 
             Images.Add(new Image(ImageType.MENU, (int)Type, new Rectangle(0, 0, width, height)));
 
+
+            //put to ButtonManager?!
             ButtonType[] menuButtons = Maps.MenuButtonMap[Type];
 
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, Type);

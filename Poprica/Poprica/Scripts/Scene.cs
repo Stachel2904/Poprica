@@ -51,10 +51,8 @@ namespace Poprica
         /// </summary>
         public virtual void LoadImages()
         {
-            Rectangle rect = new Rectangle();
-            Image playerInfo = new Image();
-
-            Images.Add(playerInfo);
+            Images.Clear();
+            Texts.Clear(); //should been in own LoadTexts Fct.
         }
 
         /// <summary>
@@ -64,6 +62,29 @@ namespace Poprica
         public bool Restart()
         {
             return false;
+        }
+
+        public void LoadPlayerInfo()
+        {
+            Vector2 scale = PopricaGame.Main.CalcCurrentScale();
+
+            Rectangle rect = new Rectangle((int)(3300 * scale.X), (int)(20 * scale.Y), 520, 250);
+            Image playerInfo = new Image(ImageType.UI, (int)UIImageType.PLAYERINFO, rect);
+
+            Images.Add(playerInfo);
+
+
+            //put to ButtonManager?!
+            ButtonType[] menuButtons = Maps.MenuButtonMap[MenuType.PLAYERINFO];
+
+            Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, MenuType.PLAYERINFO);
+
+            for (int i = 0; i < createdButtons.Length; i++)
+            {
+                int imgIndex = (int)((UIImageType)Enum.Parse(typeof(UIImageType), createdButtons[i].Type.ToString()));
+
+                this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
+            }
         }
     }
 }
