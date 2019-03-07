@@ -107,7 +107,7 @@ namespace DungeonCrawler
 
         public static bool TryGetTile(this Tile[] array, int index, out Tile element)
         {
-            if (index < array.Length && index >= 0)
+            if (array != null && index < array.Length && index >= 0)
             {
                 element = array[index];
                 return true;

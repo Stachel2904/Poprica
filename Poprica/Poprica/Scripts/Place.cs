@@ -27,7 +27,7 @@ namespace Poprica
         {
             base.LoadImages();
 
-            Images.Add(new Image(ImageType.BACKGROUND, (int)Location, (new Rectangle(0, 0, PopricaGame.maxGameWidth, PopricaGame.maxGameHeight))));
+            Images.Add(new Image(ImageType.BACKGROUND, (int)Location, (new Rectangle(0, 0, width, height))));
 
             LoadPlayerInfo(); //and other UI stuff
         }

@@ -21,8 +21,9 @@ namespace Poprica
 
         public Scene(SceneType sceneType)
         {
-            height = PopricaGame.maxGameHeight;
-            width = PopricaGame.maxGameWidth;
+            //ToDo change to old
+            height = 2160; // PopricaGame.maxGameHeight;
+            width = 3840; // PopricaGame.maxGameWidth;
 
             Images = new List<Image>();
             Texts = new List<TextObject>();

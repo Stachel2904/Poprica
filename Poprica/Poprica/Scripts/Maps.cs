@@ -201,7 +201,7 @@ namespace Poprica
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions { get; } = new Dictionary<PositionType, Rectangle>
         {
-            { PositionType.RIGHT, new Rectangle(3000, 300, 1000, 2000)}
+            { PositionType.RIGHT, new Rectangle(2800, 300, 1000, 2000)}
         };
 
         /// <summary>

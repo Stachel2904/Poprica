@@ -168,7 +168,8 @@ namespace DungeonCrawler
             {
                 if (!currentRow.TryGetTile((int)(playerPos.X + orientation.X), out current))
                 {
-                    GamePlay.Update(current.Event);
+                    if (current != null)
+                        GamePlay.Update(current.Event);
                 }
             }
             //GamePlay.Update(Dungeon.Main.Floor.Tiles[(int) (playerPos.Y + Player.Main.Rotation.Y)][(int)(Player.Main.Location.X + Player.Main.Rotation.X)].Event);

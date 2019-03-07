@@ -165,7 +165,8 @@ namespace Poprica
         {
             try
             {
-                return new Vector2((float)gameWidth / (float)maxGameWidth, (float)gameHeight / (float)maxGameHeight);
+                return new Vector2((float)gameWidth / 3820, (float)gameHeight / 2160);
+                //return new Vector2((float)gameWidth / (float)maxGameWidth, (float)gameHeight / (float)maxGameHeight);
             }
             catch
             {
