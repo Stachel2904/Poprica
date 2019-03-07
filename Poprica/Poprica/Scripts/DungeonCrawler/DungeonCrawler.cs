@@ -79,10 +79,8 @@ namespace DungeonCrawler
                     //Abfrage ob Img nicht vllt ConstructionSign sein sollte
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
                     this.Images.Add(img);
-
-                    LoadPlayerInfo();
-
-                    return;
+                    
+                    break;
                 }
 
                 if (current.Type == TileType.STRAIGHT && (current.Orientation == orientation || current.Orientation == -orientation))
