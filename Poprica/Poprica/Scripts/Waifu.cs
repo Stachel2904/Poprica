@@ -16,25 +16,15 @@ namespace Poprica
         public LocationType Location { get; set; }
         public bool Locked { get; set; }
         public WaifuStats stats;
+        public MoodType Mood { get; set; }
 
         private Dictionary<ActionType, WaifuStats> consequences;
 
         public Waifu(DialogueEntityName name) : base(name)
         {
             Memories = new List<Memory>();
-            //standard stats
-            switch (name)
-            {
-                case DialogueEntityName.RICA:
-                    Location = LocationType.LIVINGROOM;
-                    Locked = true;
-                    stats = new WaifuStats(10, 10, 10, 10);
-                    consequences = new Dictionary<ActionType, WaifuStats>
-                    {
-                        {ActionType.TALK, new WaifuStats(2, 1 , 0, -1) }
-                    };
-                    break;
-            }
+
+            SetStandardStats();
         }
 
         /// <summary>
@@ -54,6 +44,37 @@ namespace Poprica
         {
 
             return consequences[action];
+        }
+
+        private void SetStandardStats()
+        {
+            //standard stats
+            switch (this.Name)
+            {
+                case DialogueEntityName.RICA:
+                    Location = LocationType.LIVINGROOM;
+                    Locked = true;
+                    Mood = MoodType.NORMAL;
+                    stats = new WaifuStats(10, 10, 10, 10);
+                    consequences = new Dictionary<ActionType, WaifuStats>
+                    {
+                        {ActionType.TALK, new WaifuStats(2, 1 , 0, -1) }
+                    };
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Debug Method .... maybe ...
+        /// </summary>
+        /// <param name="eventArgs"></param>
+        public void SetMood(int[] eventArgs)
+        {
+            //Mood = (MoodType) eventArgs[0];
+            if (Mood == MoodType.NORMAL)
+                Mood = MoodType.HAPPY;
+            else
+                Mood = MoodType.NORMAL;
         }
     }
 }

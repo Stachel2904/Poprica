@@ -71,15 +71,15 @@ namespace Poprica
             {
                 Rectangle rect = Maps.MenuButtonRects[type][i];
 
-                Console.WriteLine("scale: " + currentScale.X);
-                Console.WriteLine("Old: " + rect.Location.X);
+                //Console.WriteLine("scale: " + currentScale.X);
+                //Console.WriteLine("Old: " + rect.Location.X);
 
                 int rectX = (int) (rect.Location.X * currentScale.X);
                 int rectY = (int) (rect.Location.Y * currentScale.Y);
                 int rectW = (int) (rect.Size.X); // * currentScale.X);
                 int rectH = (int)(rect.Size.Y); // * currentScale.Y);
 
-                Console.WriteLine("new: " + rectX);
+                //Console.WriteLine("new: " + rectX);
 
                 Button button = new Button(buttons[i], new Rectangle(rectX, rectY, rectW, rectH)); //insert scale
                 createdButtons.Add(button);

@@ -40,6 +40,7 @@ namespace Poprica
         ICONS,
         BACKGROUND,
         WAIFU,
+        MOOD,
         DUNGEONCRAWLER
     }
 

@@ -154,6 +154,15 @@ namespace Poprica
                 "",
                 "Sprites/Poprica/RICA"
             },
+            //Moods
+            new string[]  //every Waifu must have same amount of Moods!! nicht so geil :D
+            {
+                //Moods of Rica
+                "Sprites/Poprica/Moods/RICANORMAL",
+                "Sprites/Poprica/Moods/RICABLUSH",  //is place for happy mood
+
+                //Moods of Emely
+            },
             //DungeonCrawler
             new string[]
             {
@@ -201,7 +210,7 @@ namespace Poprica
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions { get; } = new Dictionary<PositionType, Rectangle>
         {
-            { PositionType.RIGHT, new Rectangle(2800, 300, 1000, 2000)}
+            { PositionType.RIGHT, new Rectangle(2800, 300, 520, 2000)}
         };
 
         /// <summary>
@@ -250,7 +259,8 @@ namespace Poprica
             //Place Input
             new Dictionary<Keys, ActionEvent>
             {
-                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.MAINMENU})}
+                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.MAINMENU})},
+                { Keys.F, new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetMood), new int[]{(int)MoodType.HAPPY}) }
             },
 
             //Menu Input

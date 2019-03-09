@@ -89,11 +89,15 @@ namespace Poprica
 
                     newRect.Location = new Point((int) (newRect.Location.X * PopricaGame.Main.CalcCurrentScale().X), (int) (newRect.Location.Y * PopricaGame.Main.CalcCurrentScale().Y));
 
-                    RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], newRect, null, Color.White, 0, 0, true);
+                    SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.WAIFU, (int)waifu.Value.Name, newRect));  //add Waifu to Images list
+                    SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.MOOD, (int)waifu.Value.Mood, newRect));
+
+                    //RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], newRect, null, Color.White, 0, 0, true);
+                    //RessourceManager.Main.Draw(Maps)
                 }
             }
 
-            //render Stats, should be in Scenemanager
+            //render Stats, should be in Scenemanager; JP: "sure???"
             WaifuStats renderedStats = waifus[SelectedWaifu].stats;
             RessourceManager.Main.DrawText(new TextObject(renderedStats.Affection.ToString(), new Rectangle(50, 50, 50, 50)));
             RessourceManager.Main.DrawText(new TextObject(renderedStats.Obedience.ToString(), new Rectangle(150, 50, 50, 50)));

@@ -92,12 +92,17 @@ namespace Poprica
 
         public void RenderScene()
         {
+            if (CurrentScene.SceneCategory == SceneType.PLACE)
+            {
+                WaifuManager.Main.RenderWaifus();
+            }
+
             for (int i = 0; i < CurrentScene.Images.Count(); i++)
             {
                 Image drawedImage = CurrentScene.Images[i];
 
                 string pathToImage = Maps.ImageMap[(int)drawedImage.Type][drawedImage.Index];
-
+                
                 RessourceManager.Main.Draw(pathToImage, drawedImage.Rect, null, Color.White);
             }
             for (int i = 0; i < CurrentScene.Texts.Count(); i++)
@@ -105,10 +110,7 @@ namespace Poprica
                 RessourceManager.Main.DrawText(CurrentScene.Texts[i]);
             }
 
-            if (CurrentScene.SceneCategory == SceneType.PLACE)
-            {
-                WaifuManager.Main.RenderWaifus();
-            }
+            
         }
 
         /// <summary>
