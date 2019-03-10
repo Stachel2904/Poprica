@@ -146,6 +146,7 @@ namespace Poprica
             //Backgrounds
             new string[]
             {
+                "",
                 "Sprites/Poprica/LIVINGROOM"
             },
             //Poses

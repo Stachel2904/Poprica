@@ -84,8 +84,8 @@ namespace Poprica
         {
             SceneManager.Main.LoadScene(SceneType.MENU, (int)MenuType.MAINMENU);
 
-            WaifuManager.Main.UnlockWaifu(DialogueEntityName.RICA);
-            WaifuManager.Main.SelectedWaifu = DialogueEntityName.RICA;
+            //WaifuManager.Main.UnlockWaifu(DialogueEntityName.RICA);
+            //WaifuManager.Main.SelectedWaifu = DialogueEntityName.RICA;
         }
 
         /// <summary>
@@ -121,7 +121,7 @@ namespace Poprica
 
             //Debug Purposes Only
             //ToDo: delete
-            DialogueManager.Main.LoadNewDialogue(new DialogueEntityName[] { DialogueEntityName.RICA }, ActionType.TALK);
+            //DialogueManager.Main.LoadNewDialogue(new DialogueEntityName[] { DialogueEntityName.RICA }, ActionType.TALK);
 
             switch (PopricaGame.MainState)
             {

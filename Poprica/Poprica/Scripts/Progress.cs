@@ -32,5 +32,7 @@ namespace Poprica
 
         public static Vector3 DungeonPos;
         public static Vector3 DungeonRot;
+
+        public static Dictionary<DialogueEntityName, Waifu> waifus;
     }
 }

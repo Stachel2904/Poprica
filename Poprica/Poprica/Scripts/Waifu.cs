@@ -13,7 +13,6 @@ namespace Poprica
         /// Holds a list of Memories of this Waifu, representing previous key actions with this Waifu.
         /// </summary>
         public List<Memory> Memories { get; set; }
-        public LocationType Location { get; set; }
         public bool Locked { get; set; }
         public WaifuStats Stats;
         public MoodType Mood { get; set; }
@@ -56,7 +55,7 @@ namespace Poprica
             switch (this.Name)
             {
                 case DialogueEntityName.RICA:
-                    Location = LocationType.LIVINGROOM;
+                    Location = LocationType.NONE;
                     Locked = true;
                     Mood = MoodType.NORMAL;
                     Pose = PoseType.NORMAL;

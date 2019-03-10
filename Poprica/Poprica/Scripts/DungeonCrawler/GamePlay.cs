@@ -40,8 +40,26 @@ namespace DungeonCrawler
             if (tile.Event == EventType.RESCUE)
             {
                 Tile prisonerTile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X + Player.Main.Rotation.X, Player.Main.Location.Y + Player.Main.Rotation.Y));
+                EventType type = prisonerTile.Event;
                 prisonerTile.Event = EventType.PRISON;
+
+                //ToDo change to dynamic Waifu
+                Poprica.WaifuManager.Main.UnlockWaifu(DecodeEventTypeToWaifuName(type));
                 Console.WriteLine("Rica auf Tasche");
+            }
+        }
+
+        private static Poprica.DialogueEntityName DecodeEventTypeToWaifuName(EventType type)
+        {
+            switch (type)
+            {
+                case EventType.RICA:
+                    Poprica.DialogueEntityName name = Poprica.DialogueEntityName.RICA;
+                    Poprica.WaifuManager.Main.GetWaifu(name).Location = Poprica.LocationType.LIVINGROOM;
+                    return name;
+
+                default:
+                    return Poprica.DialogueEntityName.RICA;
             }
         }
     }

@@ -36,7 +36,7 @@ namespace Poprica
             {
                 { DialogueEntityName.RICA, new Waifu(DialogueEntityName.RICA) }
             };
-
+            
             party = new List<Waifu>();
         }
 
@@ -83,7 +83,7 @@ namespace Poprica
         {
             foreach(KeyValuePair<DialogueEntityName, Waifu> waifu in waifus)
             {
-                if(waifu.Value.Location == (SceneManager.Main.CurrentScene as Place).Location)
+                if(waifu.Value.Location == (SceneManager.Main.CurrentScene as Place).Location && !waifu.Value.Locked)
                 {
                     //should moved into a field, damit das nicht in jedem frame berechnet wird
                     Rectangle newRect = Maps.DialogueEntityPositions[PositionType.RIGHT];
@@ -98,18 +98,15 @@ namespace Poprica
                     {
                         SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.CLOTHES, (int)waifu.Value.Clothes[i], newRect, waifu.Value.Name.ToString()));
                     }
-
-                    //RessourceManager.Main.Draw(Maps.ImageMap[(int)ImageType.WAIFU][(int)waifu.Value.Name], newRect, null, Color.White, 0, 0, true);
-                    //RessourceManager.Main.Draw(Maps)
                 }
             }
 
             //render Stats, should be in Scenemanager; JP: "sure???"
-            WaifuStats renderedStats = waifus[SelectedWaifu].Stats;
-            RessourceManager.Main.DrawText(new TextObject(renderedStats.Affection.ToString(), new Rectangle(50, 50, 50, 50)));
-            RessourceManager.Main.DrawText(new TextObject(renderedStats.Obedience.ToString(), new Rectangle(150, 50, 50, 50)));
-            RessourceManager.Main.DrawText(new TextObject(renderedStats.Hornyness.ToString(), new Rectangle(250, 50, 50, 50)));
-            RessourceManager.Main.DrawText(new TextObject(renderedStats.Stamina.ToString(), new Rectangle(350, 50, 50, 50)));
+            //WaifuStats renderedStats = waifus[SelectedWaifu].Stats;
+            //RessourceManager.Main.DrawText(new TextObject(renderedStats.Affection.ToString(), new Rectangle(50, 50, 50, 50)));
+            //RessourceManager.Main.DrawText(new TextObject(renderedStats.Obedience.ToString(), new Rectangle(150, 50, 50, 50)));
+            //RessourceManager.Main.DrawText(new TextObject(renderedStats.Hornyness.ToString(), new Rectangle(250, 50, 50, 50)));
+            //RessourceManager.Main.DrawText(new TextObject(renderedStats.Stamina.ToString(), new Rectangle(350, 50, 50, 50)));
         }
     }
 }
