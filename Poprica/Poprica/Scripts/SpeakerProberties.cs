@@ -37,7 +37,7 @@ namespace Poprica
         public SpeakerProberties()
         {
             Mood = MoodType.NORMAL;
-            Pose = PoseType.DEFAULT;
+            Pose = PoseType.NORMAL;
             Position = PositionType.RIGHT;
             Conditions = new Dictionary<TraitType, int>();
             FalseConditionJumpIndex = -1;

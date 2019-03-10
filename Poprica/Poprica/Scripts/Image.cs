@@ -25,11 +25,26 @@ namespace Poprica
         /// </summary>
         public Rectangle Rect { get; set; }
 
+        //ToDo delete
+        /// <summary>
+        /// Holds string with Waifu Name (optional)
+        /// </summary>
+        public string WaifuName { get; set; }
+
+        public Image(ImageType type, int index, Rectangle rect, string name)
+        {
+            Type = type;
+            Index = index;
+            Rect = rect;
+            WaifuName = name;
+        }
+
         public Image(ImageType type, int index, Rectangle rect)
         {
             Type = type;
             Index = index;
             Rect = rect;
+            WaifuName = "";
         }
     }
 }

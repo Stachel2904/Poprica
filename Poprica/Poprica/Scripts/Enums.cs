@@ -39,8 +39,9 @@ namespace Poprica
         MENU,
         ICONS,
         BACKGROUND,
-        WAIFU,
+        POSES,
         MOOD,
+        CLOTHES,
         DUNGEONCRAWLER
     }
 
@@ -143,9 +144,25 @@ namespace Poprica
         SAD
     }
 
+    public enum ClothesType
+    {
+        BRABLACKT,
+        BRADARKRED,
+        BRARED,
+        PANTSBLACKT,
+        PANTSRED,
+        PANTSDARKRED,
+        TANGABLACKT,
+        TANGADARKRED,
+        TANGARED,
+        DRESSBLUE,
+        DRESSRUINED,
+        DRESSWHITE,
+    }
+
     public enum PoseType
     {
-        DEFAULT
+        NORMAL,
     }
 
     public enum ButtonType

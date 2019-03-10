@@ -15,14 +15,18 @@ namespace Poprica
         public List<Memory> Memories { get; set; }
         public LocationType Location { get; set; }
         public bool Locked { get; set; }
-        public WaifuStats stats;
+        public WaifuStats Stats;
         public MoodType Mood { get; set; }
+        public PoseType Pose { get; set; }
+        public List<ClothesType> Clothes { get; set; }
+
 
         private Dictionary<ActionType, WaifuStats> consequences;
 
         public Waifu(DialogueEntityName name) : base(name)
         {
             Memories = new List<Memory>();
+            Clothes = new List<ClothesType>();
 
             SetStandardStats();
         }
@@ -55,7 +59,8 @@ namespace Poprica
                     Location = LocationType.LIVINGROOM;
                     Locked = true;
                     Mood = MoodType.NORMAL;
-                    stats = new WaifuStats(10, 10, 10, 10);
+                    Pose = PoseType.NORMAL;
+                    Stats = new WaifuStats(10, 10, 10, 10);
                     consequences = new Dictionary<ActionType, WaifuStats>
                     {
                         {ActionType.TALK, new WaifuStats(2, 1 , 0, -1) }
@@ -72,9 +77,30 @@ namespace Poprica
         {
             //Mood = (MoodType) eventArgs[0];
             if (Mood == MoodType.NORMAL)
-                Mood = MoodType.HAPPY;
+                Mood = MoodType.SURPRISED;
             else
                 Mood = MoodType.NORMAL;
+        }
+
+        /// <summary>
+        /// Debug Method .... maybe ...
+        /// </summary>
+        /// <param name="eventArgs"></param>
+        public void SetClothes(int[] eventArgs)
+        {
+            if (Clothes.Count != 0)
+            {
+                Clothes = new List<ClothesType>();
+            }
+            else
+            {
+                Clothes = new List<ClothesType>()
+                {
+                    ClothesType.BRABLACKT,
+                    ClothesType.TANGABLACKT,
+                    //ClothesType.DRESSBLUE
+                };
+            }
         }
     }
 }

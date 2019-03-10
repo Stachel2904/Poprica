@@ -101,16 +101,16 @@ namespace Poprica
             {
                 Image drawedImage = CurrentScene.Images[i];
 
-                string pathToImage = Maps.ImageMap[(int)drawedImage.Type][drawedImage.Index];
+                string pathToImage = "";
+                Maps.ImageMap.TryGetImage(drawedImage.Type, drawedImage.Index, drawedImage.WaifuName, out pathToImage);
                 
                 RessourceManager.Main.Draw(pathToImage, drawedImage.Rect, null, Color.White);
             }
+
             for (int i = 0; i < CurrentScene.Texts.Count(); i++)
             {
                 RessourceManager.Main.DrawText(CurrentScene.Texts[i]);
             }
-
-            
         }
 
         /// <summary>

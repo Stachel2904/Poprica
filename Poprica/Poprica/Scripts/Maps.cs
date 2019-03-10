@@ -148,20 +148,36 @@ namespace Poprica
             {
                 "Sprites/Poprica/LIVINGROOM"
             },
-            //Waifus
+            //Poses
             new string[]
             {
-                "",
-                "Sprites/Poprica/RICA"
+                "NORMAL"
             },
             //Moods
             new string[]  //every Waifu must have same amount of Moods!! nicht so geil :D
             {
-                //Moods of Rica
-                "Sprites/Poprica/Moods/RICANORMAL",
-                "Sprites/Poprica/Moods/RICABLUSH",  //is place for happy mood
-
-                //Moods of Emely
+                "NORMAL",
+                "HAPPY",
+                "ANGRY",
+                "BLUSH",
+                "SURPRISED",
+                "SAD"
+            },
+            //Clothes
+            new string[]   //every Waifu must have same amount of Clothes!! nicht so geil :D
+            {
+                "BRABLACKT",
+                "BRADARKRED",
+                "BRARED",
+                "PANTSBLACKT",
+                "PANTSRED",
+                "PANTSDARKRED",
+                "TANGABLACKT",
+                "TANGADARKRED",
+                "TANGARED",
+                "DRESSBLUE",
+                "DRESSRUINED",
+                "DRESSWHITE",
             },
             //DungeonCrawler
             new string[]
@@ -260,7 +276,9 @@ namespace Poprica
             new Dictionary<Keys, ActionEvent>
             {
                 { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.MAINMENU})},
-                { Keys.F, new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetMood), new int[]{(int)MoodType.HAPPY}) }
+                { Keys.F, new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetMood), new int[]{(int)MoodType.HAPPY}) },
+                { Keys.T, new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetClothes), new int[]{}) }
+
             },
 
             //Menu Input
@@ -437,6 +455,30 @@ namespace Poprica
                 if (dict.ContainsKey(index))
                 {
                     value = dict[index];
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static bool TryGetImage(this string[][] images, ImageType imgType, int type, string waifuName, out string value)
+        {
+            value = default(string);
+
+            if ((int) imgType < images.Length && imgType >= 0)
+            {
+                if (type < images[(int) imgType].Length && type >= 0)
+                {
+                    if (imgType == ImageType.POSES)
+                        value = "Sprites/Poprica/" + waifuName + "/Poses/" + images[(int)imgType][type];
+                    else if (imgType == ImageType.MOOD)
+                        value = "Sprites/Poprica/" + waifuName + "/Moods/" + images[(int)imgType][type];
+                    else if (imgType == ImageType.CLOTHES)
+                        value = "Sprites/Poprica/" + waifuName + "/Clothes/" + images[(int)imgType][type];
+                    else
+                        value = images[(int)imgType][type];
+
                     return true;
                 }
             }
