@@ -71,6 +71,7 @@
     <Compile Include="Scripts\Actions.cs" />
     <Compile Include="Scripts\Animation.cs" />
     <Compile Include="Scripts\Button.cs" />
+    <Compile Include="Scripts\ContentLoader.cs" />
     <Compile Include="Scripts\DataManager.cs" />
     <Compile Include="Scripts\Decision.cs" />
     <Compile Include="Scripts\DialogueElement.cs" />

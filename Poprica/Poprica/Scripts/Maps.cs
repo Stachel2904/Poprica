@@ -112,116 +112,121 @@ namespace Poprica
         /// <summary>
         /// Maps string in 2D-array Minigame as x-Axis and ImageType as y-Axis  
         /// </summary>
-        public static string[][] ImageMap { get; } = new string[][]
+        public static Dictionary<ImageType, dynamic> ImageMap { get; set; } = new Dictionary<ImageType, dynamic>()
         {
-            //UI
-            new string[]
-            {
-                "Sprites/UI/PLAY",
-                "Sprites/UI/LOAD",
-                "Sprites/UI/OPTIONS",
-                "Sprites/UI/HELP",
-                "Sprites/UI/PATREON",
-                "Sprites/UI/QUIT",
 
-                "Sprites/UI/PLAYERINFO",
-                "Sprites/UI/MONEY",
-                "Sprites/UI/SAVE",
-                "Sprites/UI/INVENTORY",
-            },
-            //Menu
-            new String[]
-            {
-                "Sprites/UI/MAINMENU",
-                //PAUSEMENU
-                //LOADSAVEGAME
-                //OPTIONS
-                //HELP
-            },
-            //Icons
-            new string[]
-            {
+        }; 
 
-            },
-            //Backgrounds
-            new string[]
-            {
-                "",
-                "Sprites/Poprica/LIVINGROOM"
-            },
-            //Poses
-            new string[]
-            {
-                "NORMAL"
-            },
-            //Moods
-            new string[]  //every Waifu must have same amount of Moods!! nicht so geil :D
-            {
-                "NORMAL",
-                "HAPPY",
-                "ANGRY",
-                "BLUSH",
-                "SURPRISED",
-                "SAD"
-            },
-            //Clothes
-            new string[]   //every Waifu must have same amount of Clothes!! nicht so geil :D
-            {
-                "BRABLACKT",
-                "BRADARKRED",
-                "BRARED",
-                "PANTSBLACKT",
-                "PANTSRED",
-                "PANTSDARKRED",
-                "TANGABLACKT",
-                "TANGADARKRED",
-                "TANGARED",
-                "DRESSBLUE",
-                "DRESSRUINED",
-                "DRESSWHITE",
-            },
-            //DungeonCrawler
-            new string[]
-            {
-                "Sprites/DC/WALL",
-                "Sprites/DC/STRAIGHT",
-                "Sprites/DC/RIGHTTURN",
-                "Sprites/DC/LEFTTURN",
-                "Sprites/DC/TCROSS",
-                "Sprites/DC/INTERSECTION",
-                "Sprites/DC/STRAIGHT",
+        //public static string[][] ImageMap { get; } = new string[][]
+        //{
+        //    //UI
+        //    new string[]
+        //    {
+        //        "Sprites/UI/PLAY",
+        //        "Sprites/UI/LOAD",
+        //        "Sprites/UI/OPTIONS",
+        //        "Sprites/UI/HELP",
+        //        "Sprites/UI/PATREON",
+        //        "Sprites/UI/QUIT",
 
-                "Sprites/DC/STRAIGHTSIGN",
-                "Sprites/DC/RIGHTTURN",   //have to be changed to RIGHTTURNSIGN
-                "Sprites/DC/LEFTTURN",    //have to be changed to LEFTTURNSIGN
-                "Sprites/DC/TCROSSSIGNMAINLEFT",
+        //        "Sprites/UI/PLAYERINFO",
+        //        "Sprites/UI/MONEY",
+        //        "Sprites/UI/SAVE",
+        //        "Sprites/UI/INVENTORY",
+        //    },
+        //    //Menu
+        //    new String[]
+        //    {
+        //        "Sprites/UI/MAINMENU",
+        //        //PAUSEMENU
+        //        //LOADSAVEGAME
+        //        //OPTIONS
+        //        //HELP
+        //    },
+        //    //Icons
+        //    new string[]
+        //    {
 
-                "Sprites/DC/CONSTRUCTIONSIGN",
-                "Sprites/DC/ROOM",
-                "Sprites/DC/ROOMWALL",
-                "Sprites/DC/ROOMRIGHTCORNER",
-                "Sprites/DC/ROOMEXIT",
-                "Sprites/DC/PRISONERROOM",
+        //    },
+        //    //Backgrounds
+        //    new string[]
+        //    {
+        //        "",
+        //        "Sprites/Poprica/LIVINGROOM"
+        //    },
+        //    //Poses
+        //    new string[]
+        //    {
+        //        "NORMAL"
+        //    },
+        //    //Moods
+        //    new string[]  //every Waifu must have same amount of Moods!! nicht so geil :D
+        //    {
+        //        "NORMAL",
+        //        "HAPPY",
+        //        "ANGRY",
+        //        "BLUSH",
+        //        "SURPRISED",
+        //        "SAD"
+        //    },
+        //    //Clothes
+        //    new string[]   //every Waifu must have same amount of Clothes!! nicht so geil :D
+        //    {
+        //        "BRABLACKT",
+        //        "BRADARKRED",
+        //        "BRARED",
+        //        "PANTSBLACKT",
+        //        "PANTSRED",
+        //        "PANTSDARKRED",
+        //        "TANGABLACKT",
+        //        "TANGADARKRED",
+        //        "TANGARED",
+        //        "DRESSBLUE",
+        //        "DRESSRUINED",
+        //        "DRESSWHITE",
+        //    },
+        //    //DungeonCrawler
+        //    new string[]
+        //    {
+        //        "Sprites/DC/WALL",
+        //        "Sprites/DC/STRAIGHT",
+        //        "Sprites/DC/RIGHTTURN",
+        //        "Sprites/DC/LEFTTURN",
+        //        "Sprites/DC/TCROSS",
+        //        "Sprites/DC/INTERSECTION",
+        //        "Sprites/DC/STRAIGHT",
+
+        //        "Sprites/DC/STRAIGHTSIGN",
+        //        "Sprites/DC/RIGHTTURN",   //have to be changed to RIGHTTURNSIGN
+        //        "Sprites/DC/LEFTTURN",    //have to be changed to LEFTTURNSIGN
+        //        "Sprites/DC/TCROSSSIGNMAINLEFT",
+
+        //        "Sprites/DC/CONSTRUCTIONSIGN",
+        //        "Sprites/DC/ROOM",
+        //        "Sprites/DC/ROOMWALL",
+        //        "Sprites/DC/ROOMRIGHTCORNER",
+        //        "Sprites/DC/ROOMEXIT",
+        //        "Sprites/DC/PRISONERROOM",
 
 
-                "Sprites/DC/TCROSSMAIN",
-                "Sprites/DC/TCROSSRIGHT",
-                "Sprites/DC/TCROSSLEFT",
+        //        "Sprites/DC/TCROSSMAIN",
+        //        "Sprites/DC/TCROSSRIGHT",
+        //        "Sprites/DC/TCROSSLEFT",
 
                 
-                "Sprites/DC/ROOMRIGHT",
-                "Sprites/DC/ROOMLEFT",
-                "Sprites/DC/ROOMRIGHTPERSPECTIVE",
-                "Sprites/DC/ROOMLEFTPERSPECTIVE",
-                "Sprites/DC/ROOMLEFTCORNER",
-                "Sprites/DC/CORNERLEFTPERSPECTIVE",
-                "Sprites/DC/CORNERRIGHTPERSPECTIVE",
+        //        "Sprites/DC/ROOMRIGHT",
+        //        "Sprites/DC/ROOMLEFT",
+        //        "Sprites/DC/ROOMRIGHTPERSPECTIVE",
+        //        "Sprites/DC/ROOMLEFTPERSPECTIVE",
+        //        "Sprites/DC/ROOMLEFTCORNER",
+        //        "Sprites/DC/CORNERLEFTPERSPECTIVE",
+        //        "Sprites/DC/CORNERRIGHTPERSPECTIVE",
 
-                "Sprites/DC/KEY",
-                "Sprites/DC/RICA",
-                "Sprites/DC/CHEST"
-            }
-        };
+        //        "Sprites/DC/KEY",
+        //        "Sprites/DC/RICA",
+        //        "Sprites/DC/CHEST"
+        //    }
+        //};
 
         
 
@@ -471,14 +476,14 @@ namespace Poprica
             {
                 if (type < images[(int) imgType].Length && type >= 0)
                 {
-                    if (imgType == ImageType.POSES)
-                        value = "Sprites/Poprica/" + waifuName + "/Poses/" + images[(int)imgType][type];
-                    else if (imgType == ImageType.MOOD)
-                        value = "Sprites/Poprica/" + waifuName + "/Moods/" + images[(int)imgType][type];
-                    else if (imgType == ImageType.CLOTHES)
-                        value = "Sprites/Poprica/" + waifuName + "/Clothes/" + images[(int)imgType][type];
-                    else
-                        value = images[(int)imgType][type];
+                    //if (imgType == ImageType.POSES)
+                    //    value = "Sprites/Poprica/" + waifuName + "/Poses/" + images[(int)imgType][type];
+                    //else if (imgType == ImageType.MOOD)
+                    //    value = "Sprites/Poprica/" + waifuName + "/Moods/" + images[(int)imgType][type];
+                    //else if (imgType == ImageType.CLOTHES)
+                    //    value = "Sprites/Poprica/" + waifuName + "/Clothes/" + images[(int)imgType][type];
+                    //else
+                    //    value = images[(int)imgType][type];
 
                     return true;
                 }

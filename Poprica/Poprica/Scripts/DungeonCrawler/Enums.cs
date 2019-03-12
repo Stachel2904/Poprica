@@ -92,42 +92,71 @@ namespace DungeonCrawler
 
     public enum ImageType
     {
-        NONE,
-        STRAIGHT,
-        RIGHTTURN,
-        LEFTTURN,
-        TCROSS,
-        INTERSECTION,
-        ENTRY,
-
-        STRAIGHTSIGN,
-        RIGHTTURNSIGN,
-        LEFTTURNSIGN,
-        TCROSSSIGNMAINLEFT,
-
-        //Bitte diese als Block lassen!!
+        CHEST,
         CONSTRUCTIONSIGN,
-        ROOM,
-        ROOMWALL,
-        ROOMRIGHTCORNER,
-        ROOMEXIT,
-        PRISONERROOM,
-
-        TRCOSSMAIN,
-        TCROSSRIGHT,
-        TCROSSLEFT,
-
-        ROOMRIGHT,
-        ROOMLEFT,
-        ROOMRIGHTPERSPECTIVE,
-        ROOMLEFTPERSPECTIVE,
-        ROOMLEFTCORNER,
         CORNERLEFTPERSPECTIVE,
         CORNERRIGHTPERSPECTIVE,
-
+        INTERSECTION,
         KEY,
+        LEFTTURN,
+        PRISONERROOM,
         RICA,
-        CHEST
+        RIGHTTURN,
+        ROOM,
+        ROOMCOMPLETE,
+        ROOMEXIT,
+        ROOMLEFT,
+        ROOMLEFTCORNER,
+        ROOMLEFTPERSPECTIVE,
+        ROOMRIGHT,
+        ROOMRIGHTCORNER,
+        ROOMRIGHTPERSPECTIVE,
+        ROOMWALL,
+        STRAIGHT,
+        TCROSSLEFT,
+        TCROSSMAIN,
+        TCROSSRIGHT,
+        WALL,
+
+
+        //NONE,
+
+        //NONE,
+        //STRAIGHT,
+        //RIGHTTURN,
+        //LEFTTURN,
+        //TCROSS,
+        //INTERSECTION,
+        //ENTRY,
+
+        //STRAIGHTSIGN,
+        //RIGHTTURNSIGN,
+        //LEFTTURNSIGN,
+        //TCROSSSIGNMAINLEFT,
+
+        ////Bitte diese als Block lassen!!
+        //CONSTRUCTIONSIGN,
+        //ROOM,
+        //ROOMWALL,
+        //ROOMRIGHTCORNER,
+        //ROOMEXIT,
+        //PRISONERROOM,
+
+        //TRCOSSMAIN,
+        //TCROSSRIGHT,
+        //TCROSSLEFT,
+
+        //ROOMRIGHT,
+        //ROOMLEFT,
+        //ROOMRIGHTPERSPECTIVE,
+        //ROOMLEFTPERSPECTIVE,
+        //ROOMLEFTCORNER,
+        //CORNERLEFTPERSPECTIVE,
+        //CORNERRIGHTPERSPECTIVE,
+
+        //KEY,
+        //RICA,
+        //CHEST
     }
 
     public static class EnumManagement

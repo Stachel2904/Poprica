@@ -34,7 +34,7 @@
 /processorParam:TextureFormat=Compressed
 /build:Font/FontSmall.spritefont
 
-#begin Sprites/DC/CHEST.png
+#begin Sprites/DUNGEONCRAWLER/CHEST.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -44,9 +44,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/CHEST.png
+/build:Sprites/DUNGEONCRAWLER/CHEST.png
 
-#begin Sprites/DC/CONSTRUCTIONSIGN.png
+#begin Sprites/DUNGEONCRAWLER/CONSTRUCTIONSIGN.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -56,9 +56,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/CONSTRUCTIONSIGN.png
+/build:Sprites/DUNGEONCRAWLER/CONSTRUCTIONSIGN.png
 
-#begin Sprites/DC/CORNERLEFTPERSPECTIVE.png
+#begin Sprites/DUNGEONCRAWLER/CORNERLEFTPERSPECTIVE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -68,9 +68,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/CORNERLEFTPERSPECTIVE.png
+/build:Sprites/DUNGEONCRAWLER/CORNERLEFTPERSPECTIVE.png
 
-#begin Sprites/DC/CORNERRIGHTPERSPECTIVE.png
+#begin Sprites/DUNGEONCRAWLER/CORNERRIGHTPERSPECTIVE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -80,9 +80,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/CORNERRIGHTPERSPECTIVE.png
+/build:Sprites/DUNGEONCRAWLER/CORNERRIGHTPERSPECTIVE.png
 
-#begin Sprites/DC/INTERSECTION.png
+#begin Sprites/DUNGEONCRAWLER/INTERSECTION.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -92,9 +92,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/INTERSECTION.png
+/build:Sprites/DUNGEONCRAWLER/INTERSECTION.png
 
-#begin Sprites/DC/KEY.png
+#begin Sprites/DUNGEONCRAWLER/KEY.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -104,9 +104,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/KEY.png
+/build:Sprites/DUNGEONCRAWLER/KEY.png
 
-#begin Sprites/DC/LEFTTURN.png
+#begin Sprites/DUNGEONCRAWLER/LEFTTURN.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -116,9 +116,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/LEFTTURN.png
+/build:Sprites/DUNGEONCRAWLER/LEFTTURN.png
 
-#begin Sprites/DC/PRISONERROOM.png
+#begin Sprites/DUNGEONCRAWLER/PRISONERROOM.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -128,9 +128,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/PRISONERROOM.png
+/build:Sprites/DUNGEONCRAWLER/PRISONERROOM.png
 
-#begin Sprites/DC/RICA.png
+#begin Sprites/DUNGEONCRAWLER/RICA.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -140,9 +140,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/RICA.png
+/build:Sprites/DUNGEONCRAWLER/RICA.png
 
-#begin Sprites/DC/RIGHTTURN.png
+#begin Sprites/DUNGEONCRAWLER/RIGHTTURN.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -152,9 +152,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/RIGHTTURN.png
+/build:Sprites/DUNGEONCRAWLER/RIGHTTURN.png
 
-#begin Sprites/DC/ROOM.png
+#begin Sprites/DUNGEONCRAWLER/ROOM.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -164,9 +164,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOM.png
+/build:Sprites/DUNGEONCRAWLER/ROOM.png
 
-#begin Sprites/DC/ROOMCOMPLETE.png
+#begin Sprites/DUNGEONCRAWLER/ROOMCOMPLETE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -176,9 +176,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMCOMPLETE.png
+/build:Sprites/DUNGEONCRAWLER/ROOMCOMPLETE.png
 
-#begin Sprites/DC/ROOMEXIT.png
+#begin Sprites/DUNGEONCRAWLER/ROOMEXIT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -188,9 +188,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMEXIT.png
+/build:Sprites/DUNGEONCRAWLER/ROOMEXIT.png
 
-#begin Sprites/DC/ROOMLEFT.png
+#begin Sprites/DUNGEONCRAWLER/ROOMLEFT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -200,9 +200,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMLEFT.png
+/build:Sprites/DUNGEONCRAWLER/ROOMLEFT.png
 
-#begin Sprites/DC/ROOMLEFTCORNER.png
+#begin Sprites/DUNGEONCRAWLER/ROOMLEFTCORNER.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -212,9 +212,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMLEFTCORNER.png
+/build:Sprites/DUNGEONCRAWLER/ROOMLEFTCORNER.png
 
-#begin Sprites/DC/ROOMLEFTPERSPECTIVE.png
+#begin Sprites/DUNGEONCRAWLER/ROOMLEFTPERSPECTIVE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -224,9 +224,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMLEFTPERSPECTIVE.png
+/build:Sprites/DUNGEONCRAWLER/ROOMLEFTPERSPECTIVE.png
 
-#begin Sprites/DC/ROOMRIGHT.png
+#begin Sprites/DUNGEONCRAWLER/ROOMRIGHT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -236,9 +236,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMRIGHT.png
+/build:Sprites/DUNGEONCRAWLER/ROOMRIGHT.png
 
-#begin Sprites/DC/ROOMRIGHTCORNER.png
+#begin Sprites/DUNGEONCRAWLER/ROOMRIGHTCORNER.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -248,9 +248,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMRIGHTCORNER.png
+/build:Sprites/DUNGEONCRAWLER/ROOMRIGHTCORNER.png
 
-#begin Sprites/DC/ROOMRIGHTPERSPECTIVE.png
+#begin Sprites/DUNGEONCRAWLER/ROOMRIGHTPERSPECTIVE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -260,9 +260,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMRIGHTPERSPECTIVE.png
+/build:Sprites/DUNGEONCRAWLER/ROOMRIGHTPERSPECTIVE.png
 
-#begin Sprites/DC/ROOMWALL.png
+#begin Sprites/DUNGEONCRAWLER/ROOMWALL.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -272,9 +272,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/ROOMWALL.png
+/build:Sprites/DUNGEONCRAWLER/ROOMWALL.png
 
-#begin Sprites/DC/STRAIGHT.png
+#begin Sprites/DUNGEONCRAWLER/STRAIGHT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -284,9 +284,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/STRAIGHT.png
+/build:Sprites/DUNGEONCRAWLER/STRAIGHT.png
 
-#begin Sprites/DC/TCROSSLEFT.png
+#begin Sprites/DUNGEONCRAWLER/TCROSSLEFT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -296,9 +296,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/TCROSSLEFT.png
+/build:Sprites/DUNGEONCRAWLER/TCROSSLEFT.png
 
-#begin Sprites/DC/TCROSSMAIN.png
+#begin Sprites/DUNGEONCRAWLER/TCROSSMAIN.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -308,9 +308,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/TCROSSMAIN.png
+/build:Sprites/DUNGEONCRAWLER/TCROSSMAIN.png
 
-#begin Sprites/DC/TCROSSRIGHT.png
+#begin Sprites/DUNGEONCRAWLER/TCROSSRIGHT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -320,9 +320,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/TCROSSRIGHT.png
+/build:Sprites/DUNGEONCRAWLER/TCROSSRIGHT.png
 
-#begin Sprites/DC/WALL.png
+#begin Sprites/DUNGEONCRAWLER/WALL.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -332,9 +332,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/DC/WALL.png
+/build:Sprites/DUNGEONCRAWLER/WALL.png
 
-#begin Sprites/Icons/ICON.ico
+#begin Sprites/ICONS/ICON.ico
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -344,9 +344,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Icons/ICON.ico
+/build:Sprites/ICONS/ICON.ico
 
-#begin Sprites/Poprica/LIVINGROOM.png
+#begin Sprites/MENU/MAINMENU.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -356,9 +356,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/LIVINGROOM.png
+/build:Sprites/MENU/MAINMENU.png
 
-#begin Sprites/Poprica/RICA/Clothes/BRABLACKT.png
+#begin Sprites/Poprica/BACKGROUND/LIVINGROOM.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -368,9 +368,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/BRABLACKT.png
+/build:Sprites/Poprica/BACKGROUND/LIVINGROOM.png
 
-#begin Sprites/Poprica/RICA/Clothes/BRADARKRED.png
+#begin Sprites/Poprica/RICA/ANGRY.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -380,9 +380,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/BRADARKRED.png
+/build:Sprites/Poprica/RICA/ANGRY.png
 
-#begin Sprites/Poprica/RICA/Clothes/BRARED.png
+#begin Sprites/Poprica/RICA/BLUSH.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -392,9 +392,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/BRARED.png
+/build:Sprites/Poprica/RICA/BLUSH.png
 
-#begin Sprites/Poprica/RICA/Clothes/DRESSBLUE.png
+#begin Sprites/Poprica/RICA/BRABLACKT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -404,9 +404,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/DRESSBLUE.png
+/build:Sprites/Poprica/RICA/BRABLACKT.png
 
-#begin Sprites/Poprica/RICA/Clothes/DRESSRUINED.png
+#begin Sprites/Poprica/RICA/BRADARKRED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -416,9 +416,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/DRESSRUINED.png
+/build:Sprites/Poprica/RICA/BRADARKRED.png
 
-#begin Sprites/Poprica/RICA/Clothes/DRESSWHITE.png
+#begin Sprites/Poprica/RICA/BRARED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -428,9 +428,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/DRESSWHITE.png
+/build:Sprites/Poprica/RICA/BRARED.png
 
-#begin Sprites/Poprica/RICA/Clothes/PANTSBLACKT.png
+#begin Sprites/Poprica/RICA/DRESSBLUE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -440,9 +440,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/PANTSBLACKT.png
+/build:Sprites/Poprica/RICA/DRESSBLUE.png
 
-#begin Sprites/Poprica/RICA/Clothes/PANTSDARKRED.png
+#begin Sprites/Poprica/RICA/DRESSRUINED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -452,9 +452,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/PANTSDARKRED.png
+/build:Sprites/Poprica/RICA/DRESSRUINED.png
 
-#begin Sprites/Poprica/RICA/Clothes/PANTSRED.png
+#begin Sprites/Poprica/RICA/DRESSWHITE.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -464,9 +464,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/PANTSRED.png
+/build:Sprites/Poprica/RICA/DRESSWHITE.png
 
-#begin Sprites/Poprica/RICA/Clothes/TANGABLACKT.png
+#begin Sprites/Poprica/RICA/HAPPY.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -476,9 +476,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/TANGABLACKT.png
+/build:Sprites/Poprica/RICA/HAPPY.png
 
-#begin Sprites/Poprica/RICA/Clothes/TANGADARKRED.png
+#begin Sprites/Poprica/RICA/NORMALM.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -488,9 +488,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/TANGADARKRED.png
+/build:Sprites/Poprica/RICA/NORMALM.png
 
-#begin Sprites/Poprica/RICA/Clothes/TANGARED.png
+#begin Sprites/Poprica/RICA/NORMALP.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -500,9 +500,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Clothes/TANGARED.png
+/build:Sprites/Poprica/RICA/NORMALP.png
 
-#begin Sprites/Poprica/RICA/Moods/ANGRY.png
+#begin Sprites/Poprica/RICA/PANTSBLACKT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -512,9 +512,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Moods/ANGRY.png
+/build:Sprites/Poprica/RICA/PANTSBLACKT.png
 
-#begin Sprites/Poprica/RICA/Moods/BLUSH.png
+#begin Sprites/Poprica/RICA/PANTSDARKRED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -524,9 +524,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Moods/BLUSH.png
+/build:Sprites/Poprica/RICA/PANTSDARKRED.png
 
-#begin Sprites/Poprica/RICA/Moods/HAPPY.png
+#begin Sprites/Poprica/RICA/PANTSRED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -536,9 +536,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Moods/HAPPY.png
+/build:Sprites/Poprica/RICA/PANTSRED.png
 
-#begin Sprites/Poprica/RICA/Moods/NORMAL.png
+#begin Sprites/Poprica/RICA/SAD.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -548,9 +548,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Moods/NORMAL.png
+/build:Sprites/Poprica/RICA/SAD.png
 
-#begin Sprites/Poprica/RICA/Moods/SAD.png
+#begin Sprites/Poprica/RICA/SURPRISED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -560,9 +560,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Moods/SAD.png
+/build:Sprites/Poprica/RICA/SURPRISED.png
 
-#begin Sprites/Poprica/RICA/Moods/SURPRISED.png
+#begin Sprites/Poprica/RICA/TANGABLACKT.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -572,9 +572,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Moods/SURPRISED.png
+/build:Sprites/Poprica/RICA/TANGABLACKT.png
 
-#begin Sprites/Poprica/RICA/Poses/NORMAL.png
+#begin Sprites/Poprica/RICA/TANGADARKRED.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -584,7 +584,19 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Sprites/Poprica/RICA/Poses/NORMAL.png
+/build:Sprites/Poprica/RICA/TANGADARKRED.png
+
+#begin Sprites/Poprica/RICA/TANGARED.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Poprica/RICA/TANGARED.png
 
 #begin Sprites/UI/CURSOR.png
 /importer:TextureImporter
@@ -657,18 +669,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/LOAD.png
-
-#begin Sprites/UI/MAINMENU.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Sprites/UI/MAINMENU.png
 
 #begin Sprites/UI/MONEY.png
 /importer:TextureImporter

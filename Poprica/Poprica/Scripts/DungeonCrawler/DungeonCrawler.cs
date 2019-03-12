@@ -23,7 +23,7 @@ namespace DungeonCrawler
         
         public DungeonCrawler() : base(Poprica.SceneType.DUNGEONCRAWLER)
         {
-            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[(int)Poprica.ImageType.DUNGEONCRAWLER].Count()];
+            AllImages = new Poprica.Image[Poprica.Maps.ImageMap[Poprica.ImageType.DUNGEONCRAWLER].Length];   //(int)Poprica.ImageType.DUNGEONCRAWLER].Count()];
 
             InitImages();
         }
@@ -36,7 +36,7 @@ namespace DungeonCrawler
             Poprica.Image img;
             Rectangle rect = new Rectangle(Point.Zero, Point.Zero);
 
-            for(int i = 0; i < Poprica.Maps.ImageMap[(int)Poprica.ImageType.DUNGEONCRAWLER].Count(); i++)
+            for(int i = 0; i < Poprica.Maps.ImageMap[Poprica.ImageType.DUNGEONCRAWLER].Length; i++) //(int)Poprica.ImageType.DUNGEONCRAWLER].Count(); i++)
             {
                 img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, i, rect);
                 AllImages[i] = img;
@@ -77,7 +77,7 @@ namespace DungeonCrawler
                     rect = new Rectangle(Poprica.MathFunctions.ImagePos(0), new Point((int)(width / (Math.Pow(2, 0))), (int)(height / (Math.Pow(2, 0)))));
 
                     //Abfrage ob Img nicht vllt ConstructionSign sein sollte
-                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
+                    img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.WALL, rect);   //ToDo set WALL to NONE
                     this.Images.Add(img);
                     
                     break;
@@ -115,7 +115,7 @@ namespace DungeonCrawler
 
                     if (orientation + current.Orientation == Vector3.Zero)
                     {
-                        imageNum = (int) ImageType.TRCOSSMAIN;
+                        imageNum = (int) ImageType.TCROSSMAIN;
                     }
                     else
                     {

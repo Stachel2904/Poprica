@@ -91,12 +91,12 @@ namespace Poprica
                     newRect.Location = new Point((int) (newRect.Location.X * PopricaGame.Main.CalcCurrentScale().X), (int) (newRect.Location.Y * PopricaGame.Main.CalcCurrentScale().Y));
                     
                     //Todo add pose
-                    SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.POSES, (int)PoseType.NORMAL, newRect, waifu.Value.Name.ToString()));  //add Waifu to Images list   
-                    SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.MOOD, (int)waifu.Value.Mood, newRect, waifu.Value.Name.ToString()));
+                    //SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.POSES, (int)PoseType.NORMAL, newRect, waifu.Value.Name.ToString()));  //add Waifu to Images list   
+                    //SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.MOOD, (int)waifu.Value.Mood, newRect, waifu.Value.Name.ToString()));
 
                     for (int i = 0; i < waifu.Value.Clothes.Count; i++)
                     {
-                        SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.CLOTHES, (int)waifu.Value.Clothes[i], newRect, waifu.Value.Name.ToString()));
+                        //SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.CLOTHES, (int)waifu.Value.Clothes[i], newRect, waifu.Value.Name.ToString()));
                     }
                 }
             }

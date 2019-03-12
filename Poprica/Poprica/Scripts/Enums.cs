@@ -39,25 +39,39 @@ namespace Poprica
         MENU,
         ICONS,
         BACKGROUND,
-        POSES,
-        MOOD,
-        CLOTHES,
+        RICA,
         DUNGEONCRAWLER
     }
 
     public enum UIImageType
     {
-        PLAY,
-        LOAD,
-        OPTIONS,
+        CURSOR,
         HELP,
-        PATREON,
-        QUIT,
-        PLAYERINFO,
-        MONEY,
-        SAVE,
+        ICON,
         INVENTORY,
-        BUTTON,
+        LOAD,
+        MAINMENU,
+        MONEY,
+        OPTIONS,
+        PATREON,
+        PLAY,
+        PLAYERINFO,
+        PopricaLogo,
+        QUIT,
+        SAVE,
+        SMARTPHONE,
+        UIButton
+        //PLAY,
+        //LOAD,
+        //OPTIONS,
+        //HELP,
+        //PATREON,
+        //QUIT,
+        //PLAYERINFO,
+        //MONEY,
+        //SAVE,
+        //INVENTORY,
+        //BUTTON,
     }
 
     public enum IconImageType
@@ -67,9 +81,10 @@ namespace Poprica
 
     public enum LocationType
     {
-        NONE,
         LIVINGROOM,
-        BEDROOM
+        BEDROOM,
+
+        NONE
     }
 
     public enum DungeonCrawlerImageType

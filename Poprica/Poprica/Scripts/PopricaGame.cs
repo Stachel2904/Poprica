@@ -49,7 +49,7 @@ namespace Poprica
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-
+            ContentLoader.Main.LoadContent();
         }
 
         /// <summary>
