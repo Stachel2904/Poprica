@@ -29,6 +29,9 @@ namespace Poprica
 
         private Keys[] lastPressedKeys = new Keys[] { };
 
+        private bool mouseAlreadyPressed = false;
+        private bool keyAlreadyPressed;
+
         private InputManager()
         {
 
@@ -41,17 +44,24 @@ namespace Poprica
         {
             #region MouseInput
             MouseState mouseState = Mouse.GetState();
-
-            if (mouseState.LeftButton == ButtonState.Pressed)
+            
+            if (mouseState.LeftButton == ButtonState.Pressed && !mouseAlreadyPressed)
             {
                 ButtonManager.Main.CheckButtonClick(mouseState.Position);
+                mouseAlreadyPressed = true;
             }
+
+            if (mouseState.LeftButton == ButtonState.Released && mouseAlreadyPressed)
+            {
+                mouseAlreadyPressed = false;
+            }
+            
             #endregion
 
             #region KeyboardInput
             Keys[] pressedKeys = Keyboard.GetState().GetPressedKeys();
 
-            bool keyAlreadyPressed;
+            
 
             for (int i = 0; i < pressedKeys.Length; i++)
             {

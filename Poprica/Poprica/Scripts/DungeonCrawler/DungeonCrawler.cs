@@ -143,8 +143,23 @@ namespace DungeonCrawler
 
                 CheckTileForAdditionalImage(current, i);//6-i);
             }
+        }
 
-            LoadPlayerInfo();
+        /// <summary>
+        /// Adds the DungeonCrawler UI Buttons of navigation, iktem usage and combatsystem
+        /// </summary>
+        private void AddButtons()
+        {
+            Poprica.ButtonType[] menuButtons = Poprica.Maps.MenuButtonMap[Poprica.MenuType.DUNGEONCRAWLERNAVIGATION];
+            Poprica.Button[] createdButtons = Poprica.ButtonManager.Main.CreateButtons(menuButtons, Poprica.MenuType.DUNGEONCRAWLERNAVIGATION);
+
+            for (int i = 0; i < createdButtons.Length; i++)
+            {
+                int imgIndex = (int)((UI)Enum.Parse(typeof(UI), createdButtons[i].Type.ToString()));
+
+                this.Images.Add(new Poprica.Image(Poprica.ImageType.DCUI, imgIndex, createdButtons[i].Rect));
+                //this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
+            }
         }
 
         public override void Update()
@@ -154,6 +169,10 @@ namespace DungeonCrawler
 
             //if moved or game size changed
             this.LoadImages();
+
+            this.LoadPlayerInfo();
+
+            this.AddButtons();
 
             Player.Main.UpdateInventory();
 

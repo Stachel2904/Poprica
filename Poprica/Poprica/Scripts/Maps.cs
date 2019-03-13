@@ -25,6 +25,20 @@ namespace Poprica
             { ButtonType.MONEY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
             { ButtonType.SAVE, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
             { ButtonType.INVENTORY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
+            { ButtonType.FORWARD, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 0 }) },
+            { ButtonType.RIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 1 }) },
+            { ButtonType.BACK, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 2 }) },
+            { ButtonType.LEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 3 }) },
+            { ButtonType.TURNRIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 5 }) },
+            { ButtonType.TURNLEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 4 }) },
+        };
+
+        /// <summary>
+        /// Maps ActionTypes to Actions.
+        /// </summary>
+        public static Dictionary<ActionType, ActionEvent> ActionButtonMap { get; } = new Dictionary<ActionType, ActionEvent>()
+        {
+
         };
 
         /// <summary>
@@ -70,6 +84,19 @@ namespace Poprica
                     ButtonType.SAVE,
                     ButtonType.INVENTORY
                 }
+            },
+            //DC Navigation
+            {
+                MenuType.DUNGEONCRAWLERNAVIGATION,
+                new ButtonType[]
+                {
+                    ButtonType.FORWARD,
+                    ButtonType.RIGHT,
+                    ButtonType.BACK,
+                    ButtonType.LEFT,
+                    ButtonType.TURNRIGHT,
+                    ButtonType.TURNLEFT
+                }
             }
         };
 
@@ -105,6 +132,19 @@ namespace Poprica
                     new Rectangle(3520, 145, 80, 95),
                     new Rectangle(3618, 145, 120, 95)
                 }
+            },
+            // DC Navigation
+            {
+                MenuType.DUNGEONCRAWLERNAVIGATION,
+                new Rectangle[]
+                {
+                    new Rectangle(1880, 1890, 80, 80),
+                    new Rectangle(1970, 1980, 80, 80),
+                    new Rectangle(1880, 2070, 80, 80),
+                    new Rectangle(1790, 1980, 80, 80),
+                    new Rectangle(1970, 1890, 80, 80),
+                    new Rectangle(1790, 1890, 80, 80)
+                }
             }
 
         };
@@ -128,6 +168,16 @@ namespace Poprica
                 "Sprites/UI/MONEY",
                 "Sprites/UI/SAVE",
                 "Sprites/UI/INVENTORY",
+            },
+            //DungeonCrawler UI
+            new string[]
+            {
+                "Sprites/DC/UI/FORWARD",
+                "Sprites/DC/UI/RIGHT",
+                "Sprites/DC/UI/BACK",
+                "Sprites/DC/UI/LEFT",
+                "Sprites/DC/UI/TURNLEFT",
+                "Sprites/DC/UI/TURNRIGHT"
             },
             //Menu
             new String[]
@@ -227,7 +277,11 @@ namespace Poprica
 
         public static Dictionary<PositionType, Rectangle> DialogueEntityPositions { get; } = new Dictionary<PositionType, Rectangle>
         {
-            { PositionType.RIGHT, new Rectangle(2800, 300, 520, 2000)}
+            { PositionType.RIGHT, new Rectangle(2800, 300, 520, 2000)},
+            { PositionType.MIDDLERIGHT, new Rectangle(2500, 300, 520, 2000)},
+            { PositionType.MIDDLE, new Rectangle(2200, 300, 520, 2000)},
+            { PositionType.MIDDLELEFT, new Rectangle(1900, 300, 520, 2000)},
+            { PositionType.LEFT, new Rectangle(1600, 300, 520, 2000)}
         };
 
         /// <summary>

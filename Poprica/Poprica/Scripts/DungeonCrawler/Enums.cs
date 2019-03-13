@@ -130,6 +130,16 @@ namespace DungeonCrawler
         CHEST
     }
 
+    public enum UI
+    {
+        FORWARD,
+        RIGHT,
+        BACK,
+        LEFT,
+        TURNRIGHT,
+        TURNLEFT
+    }
+
     public static class EnumManagement
     {
         /// <summary>

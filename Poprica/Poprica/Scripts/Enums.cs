@@ -36,6 +36,7 @@ namespace Poprica
     public enum ImageType
     {
         UI,
+        DCUI,
         MENU,
         ICONS,
         BACKGROUND,
@@ -176,7 +177,13 @@ namespace Poprica
         QUIT,
         MONEY,
         SAVE,
-        INVENTORY
+        INVENTORY,
+        FORWARD,
+        RIGHT,
+        BACK,
+        LEFT,
+        TURNRIGHT,
+        TURNLEFT
     }
 
     public enum AnimationState
@@ -207,6 +214,7 @@ namespace Poprica
         OPTIONS,
         HELP,
         PLAYERINFO,
+        DUNGEONCRAWLERNAVIGATION,
 
     }
 }

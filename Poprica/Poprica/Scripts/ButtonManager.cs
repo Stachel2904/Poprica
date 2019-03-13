@@ -97,7 +97,7 @@ namespace Poprica
         }
 
         /// <summary>
-        /// Checks if there is a Button on this position and calls the method lonked to that Button.
+        /// Checks if there is a Button on this position and calls the method linked to that Button.
         /// </summary>
         /// <param name="position">The position the click was.</param>
         public void CheckButtonClick(Point position)
