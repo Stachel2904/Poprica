@@ -75,7 +75,7 @@ namespace Poprica
             Images.Add(playerInfo);
 
 
-            //put to ButtonManager?!
+            //ggf. mehr als nur PlayerInfo
             ButtonType[] menuButtons = Maps.MenuButtonMap[MenuType.PLAYERINFO];
 
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, MenuType.PLAYERINFO);

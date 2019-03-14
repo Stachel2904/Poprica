@@ -58,6 +58,8 @@ namespace Poprica
         MONEY,
         SAVE,
         INVENTORY,
+        TALK,
+        LEAVE,
         BUTTON,
     }
 
@@ -178,6 +180,8 @@ namespace Poprica
         MONEY,
         SAVE,
         INVENTORY,
+        TALK,
+        LEAVE,
         FORWARD,
         RIGHT,
         BACK,

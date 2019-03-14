@@ -16,10 +16,12 @@ namespace Poprica
         public LocationType Location { get; set; }
 
         private List<DialogueEntity> dialogueEntities;
+        private bool IsActionActive;
 
         public Place(LocationType type) : base(SceneType.PLACE)
         {
             Location = type;
+            IsActionActive = false;
             
         }
 
@@ -28,11 +30,10 @@ namespace Poprica
             base.LoadImages();
 
             Images.Add(new Image(ImageType.BACKGROUND, (int)Location, (new Rectangle(0, 0, width, height))));
-
-            LoadPlayerInfo(); //and other UI stuff
+            
         }
 
-        private DialogueEntityName[] GetAllWaifus()
+        public DialogueEntityName[] GetAllWaifus()
         {
 
             return null;
@@ -64,11 +65,60 @@ namespace Poprica
             return false;
         }
 
+        private void AddButtons()
+        {
+            ButtonType[] locationButtons = Maps.LocationButtonMap[Location];
+            Button[] createdButtons = ButtonManager.Main.CreateButtons(locationButtons, Location);
+
+            for (int i = 0; i < createdButtons.Length; i++)
+            {
+                int imgIndex = (int)((UIImageType)Enum.Parse(typeof(UIImageType), createdButtons[i].Type.ToString()));
+
+                this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
+                //this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
+            }
+
+            if (IsActionActive)
+            {
+                //add ActionBtns
+            }
+        }
+
+        ///// <summary>
+        ///// Starts a dialogue, with the given DialogueEnities in eventArgs.
+        ///// </summary>
+        ///// <param name="eventArgs">Holds int values of DialogueEnities.</param>
+        //public void StartDialogue(int[] eventArgs)
+        //{
+        //    DialogueEntityName[] entities = new DialogueEntityName[eventArgs.Length];
+
+        //    for (int i = 0; i < eventArgs.Length; i++)
+        //    {
+        //        entities[i] = (DialogueEntityName)eventArgs[i];
+        //    }
+
+        //    Console.WriteLine("Starte Dialog");
+        //    //DialogueManager.Main.LoadNewDialogue(entities, ActionType.TALK);
+        //}
+
+        ///// <summary>
+        ///// Leaves the Place, goes back to previous Place.
+        ///// </summary>
+        ///// <param name="eventArgs">Not used currently.</param>
+        //public void Leave(int[] eventArgs)
+        //{
+        //    Console.WriteLine("Verlasse dieses Drecksloch");
+        //}
+
         public override void Update()
         {
             base.Update();
 
-            LoadImages();
+            this.LoadImages();
+
+            this.LoadPlayerInfo();
+
+            this.AddButtons();
         }
     }
 }

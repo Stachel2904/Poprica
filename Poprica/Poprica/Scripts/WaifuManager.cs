@@ -61,6 +61,50 @@ namespace Poprica
         }
 
         /// <summary>
+        /// Gets the names of all DialogueEntities at a Location.
+        /// </summary>
+        /// <param name="location">Location of which you want the Names.</param>
+        /// <returns>Returns DialogueEntityNames as int array.</returns>
+        public int[] GetEnities(LocationType location = LocationType.NONE)
+        {
+            List<int> names = new List<int>();
+
+            if (location != LocationType.NONE)
+            {
+                foreach(KeyValuePair<DialogueEntityName, Waifu> waifu in waifus)
+                {
+                    if (waifu.Value.Location == location)
+                    {
+                        names.Add((int)waifu.Key);
+                    }
+                }
+            }
+            else
+            {
+                try
+                {
+                    location = (SceneManager.Main.CurrentScene as Place).Location;
+
+                    foreach (KeyValuePair<DialogueEntityName, Waifu> waifu in waifus)
+                    {
+                        if (waifu.Value.Location == location)
+                        {
+                            names.Add((int)waifu.Key);
+                        }
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Scene ist kein Place!");
+                }
+            }
+
+            int[] ret = names.ToArray();
+
+            return ret;
+        }
+
+        /// <summary>
         /// Get the location of a Waifu.
         /// </summary>
         /// <param name="name">The name of the Waifu, which location you want.</param>

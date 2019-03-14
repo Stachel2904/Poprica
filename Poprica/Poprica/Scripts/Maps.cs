@@ -25,6 +25,11 @@ namespace Poprica
             { ButtonType.MONEY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
             { ButtonType.SAVE, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
             { ButtonType.INVENTORY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
+
+            { ButtonType.TALK, new ActionEvent(new System.Action<int[]>(Actions.Talk), WaifuManager.Main.GetEnities()) },
+            { ButtonType.LEAVE, new ActionEvent(new System.Action<int[]>(Actions.Leave), new int[]{}) },
+
+            //Should not be there!!
             { ButtonType.FORWARD, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 0 }) },
             { ButtonType.RIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 1 }) },
             { ButtonType.BACK, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 2 }) },
@@ -33,21 +38,6 @@ namespace Poprica
             { ButtonType.TURNLEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 4 }) },
         };
 
-        /// <summary>
-        /// Maps ActionTypes to Actions.
-        /// </summary>
-        public static Dictionary<ActionType, ActionEvent> ActionButtonMap { get; } = new Dictionary<ActionType, ActionEvent>()
-        {
-
-        };
-
-        /// <summary>
-        /// Maps DialogueEntityNames to SceneTypes.
-        /// </summary>
-        public static Dictionary<DialogueEntityName, SceneType> SceneMap { get; } = new Dictionary<DialogueEntityName, SceneType>()
-        {
-            
-        };
 
         /// <summary>
         /// Maps MenuTypes to ButtonsTypes.
@@ -150,6 +140,34 @@ namespace Poprica
         };
 
         /// <summary>
+        /// Maps ActionTypes to Actions.
+        /// </summary>
+        public static Dictionary<ActionType, ActionEvent> ActionButtonMap { get; } = new Dictionary<ActionType, ActionEvent>()
+        {
+
+        };
+
+        public static Dictionary<LocationType, ButtonType[]> LocationButtonMap { get; } = new Dictionary<LocationType, ButtonType[]>
+        {
+            {
+                LocationType.LIVINGROOM,
+                new ButtonType[]
+                {
+                    ButtonType.TALK,
+                    ButtonType.LEAVE,
+                }
+            },
+        };
+
+        /// <summary>
+        /// Maps DialogueEntityNames to SceneTypes.
+        /// </summary>
+        public static Dictionary<DialogueEntityName, SceneType> SceneMap { get; } = new Dictionary<DialogueEntityName, SceneType>()
+        {
+            
+        };
+        
+        /// <summary>
         /// Maps string in 2D-array Minigame as x-Axis and ImageType as y-Axis  
         /// </summary>
         public static string[][] ImageMap { get; } = new string[][]
@@ -168,6 +186,10 @@ namespace Poprica
                 "Sprites/UI/MONEY",
                 "Sprites/UI/SAVE",
                 "Sprites/UI/INVENTORY",
+                "Sprites/UI/TALK",
+                "Sprites/UI/LEAVE"
+
+
             },
             //DungeonCrawler UI
             new string[]

@@ -27,12 +27,13 @@ namespace Poprica
 
         private Dictionary<Button, Action> actionButtons;
         private Button[] menuButtons;
+        private Button[] locationButtons;
 
         private Vector2 currentScale;
 
         private ButtonManager()
         {
-
+            
         }
 
         /// <summary>
@@ -49,12 +50,40 @@ namespace Poprica
         /// <summary>
         /// Create a Button for each Location.
         /// </summary>
-        /// <param name="locations">The Locations linked to the Buttons</param>
-        public void CreateButtons(LocationType[] locations)
+        /// <param name="location">The Locations linked to the Buttons</param>
+        public Button[] CreateButtons(ButtonType[] buttons, LocationType location)
         {
             currentScale = PopricaGame.Main.CalcCurrentScale();
 
+            List<Button> createdButtons = new List<Button>();
 
+            Rectangle rect = new Rectangle(10, 400, 300, 80);
+
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                switch (buttons[i])
+                {
+                    case ButtonType.TALK:
+                        if (WaifuManager.Main.GetEnities().Length == 0)
+                            continue;
+                        break;
+                    
+                    //ToDo add button conditions
+
+                }
+
+                int rectX = (int)(rect.Location.X * currentScale.X);
+                int rectY = (int)(rect.Location.Y * currentScale.Y);
+                int rectW = (int)(rect.Size.X); // * currentScale.X);
+                int rectH = (int)(rect.Size.Y); // * currentScale.Y);
+                
+                Button button = new Button(buttons[i], new Rectangle(rectX, rectY + (i * 90), rectW, rectH));
+                createdButtons.Add(button);
+            }
+
+            locationButtons = createdButtons.ToArray();
+
+            return locationButtons;
         }
 
         /// <summary>
@@ -81,7 +110,7 @@ namespace Poprica
 
                 //Console.WriteLine("new: " + rectX);
 
-                Button button = new Button(buttons[i], new Rectangle(rectX, rectY, rectW, rectH)); //insert scale
+                Button button = new Button(buttons[i], new Rectangle(rectX, rectY, rectW, rectH));
                 createdButtons.Add(button);
             }
 
@@ -102,7 +131,7 @@ namespace Poprica
         /// <param name="position">The position the click was.</param>
         public void CheckButtonClick(Point position)
         {
-            if (menuButtons.Length > 0)
+            if (menuButtons != null && menuButtons.Length > 0)
             {
                 for (int i = 0; i < menuButtons.Length; i++)
                 {
@@ -114,7 +143,21 @@ namespace Poprica
                     }
                 }
             }
-            else
+            
+            if (locationButtons != null && locationButtons.Length > 0)
+            {
+                for (int i = 0; i < locationButtons.Length; i++)
+                {
+                    Button checkedButton = locationButtons[i];
+
+                    if (CheckPointInRect(position, checkedButton.Rect))
+                    {
+                        Call(checkedButton.Type);
+                    }
+                }
+            }
+            
+            if (actionButtons != null)
             {
                 foreach (KeyValuePair<Button, Action> element in actionButtons)
                 {

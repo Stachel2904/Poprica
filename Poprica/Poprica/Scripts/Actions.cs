@@ -33,14 +33,27 @@ namespace Poprica
 
         }
 
-        private static void Sleep()
+        public static void Sleep(int[] eventArgs)
         {
 
         }
 
-        private static void Talk()
+        public static void Talk(int[] eventArgs)
         {
+            DialogueEntityName[] entities = new DialogueEntityName[eventArgs.Length];
 
+            for (int i = 0; i < eventArgs.Length; i++)
+            {
+                entities[i] = (DialogueEntityName)eventArgs[i];
+            }
+
+            Console.WriteLine("Starte Dialog");
+            //DialogueManager.Main.LoadNewDialogue(entities, ActionType.TALK);
+        }
+
+        public static void Leave(int[] eventArgs)
+        {
+            Menu.LoadNewScene(new int[] { (int)SceneType.MENU, (int)MenuType.MAINMENU });
         }
     }
 }
