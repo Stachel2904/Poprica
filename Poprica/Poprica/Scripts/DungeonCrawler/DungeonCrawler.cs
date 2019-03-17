@@ -173,7 +173,7 @@ namespace DungeonCrawler
             this.LoadPlayerInfo();
 
             this.AddButtons();
-
+            
             Player.Main.UpdateInventory();
 
             Vector3 playerPos = Player.Main.Location;

@@ -79,7 +79,7 @@ namespace Poprica
             ButtonType[] menuButtons = Maps.MenuButtonMap[MenuType.PLAYERINFO];
 
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, MenuType.PLAYERINFO);
-
+            
             for (int i = 0; i < createdButtons.Length; i++)
             {
                 int imgIndex = (int)((UIImageType)Enum.Parse(typeof(UIImageType), createdButtons[i].Type.ToString()));

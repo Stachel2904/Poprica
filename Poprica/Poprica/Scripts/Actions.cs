@@ -40,6 +40,9 @@ namespace Poprica
 
         public static void Talk(int[] eventArgs)
         {
+            if (eventArgs == null)
+                return;
+
             DialogueEntityName[] entities = new DialogueEntityName[eventArgs.Length];
 
             for (int i = 0; i < eventArgs.Length; i++)
@@ -48,6 +51,7 @@ namespace Poprica
             }
 
             Console.WriteLine("Starte Dialog");
+            //ToDo
             //DialogueManager.Main.LoadNewDialogue(entities, ActionType.TALK);
         }
 

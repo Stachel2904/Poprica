@@ -59,13 +59,18 @@ namespace Poprica
 
             Rectangle rect = new Rectangle(10, 400, 300, 80);
 
+            int continueCount = 0;
+
             for (int i = 0; i < buttons.Length; i++)
             {
                 switch (buttons[i])
                 {
                     case ButtonType.TALK:
                         if (WaifuManager.Main.GetEnities().Length == 0)
+                        {
+                            continueCount++;
                             continue;
+                        }
                         break;
                     
                     //ToDo add button conditions
@@ -74,10 +79,10 @@ namespace Poprica
 
                 int rectX = (int)(rect.Location.X * currentScale.X);
                 int rectY = (int)(rect.Location.Y * currentScale.Y);
-                int rectW = (int)(rect.Size.X); // * currentScale.X);
-                int rectH = (int)(rect.Size.Y); // * currentScale.Y);
+                int rectW = (int)(rect.Size.X);
+                int rectH = (int)(rect.Size.Y);
                 
-                Button button = new Button(buttons[i], new Rectangle(rectX, rectY + (i * 90), rectW, rectH));
+                Button button = new Button(buttons[i], new Rectangle(rectX, rectY + ((i - continueCount) * 90), rectW, rectH));
                 createdButtons.Add(button);
             }
 
@@ -105,8 +110,8 @@ namespace Poprica
 
                 int rectX = (int) (rect.Location.X * currentScale.X);
                 int rectY = (int) (rect.Location.Y * currentScale.Y);
-                int rectW = (int) (rect.Size.X); // * currentScale.X);
-                int rectH = (int)(rect.Size.Y); // * currentScale.Y);
+                int rectW = (int) (rect.Size.X);
+                int rectH = (int)(rect.Size.Y);
 
                 //Console.WriteLine("new: " + rectX);
 
@@ -114,8 +119,20 @@ namespace Poprica
                 createdButtons.Add(button);
             }
 
+            Button[] ret = createdButtons.ToArray();
+
+            if (menuButtons != null)
+            {
+                for (int i = 0; i < menuButtons.Length; i++)
+                {
+                    if (!createdButtons.Contains(menuButtons[i]))
+                        createdButtons.Add(menuButtons[i]);
+                }
+            }
+
             menuButtons = createdButtons.ToArray();
-            return menuButtons;
+
+            return ret;
         }
 
         private void Call(ButtonType clickedButton)
@@ -133,6 +150,8 @@ namespace Poprica
         {
             if (menuButtons != null && menuButtons.Length > 0)
             {
+                Console.WriteLine("Bin da menu");
+
                 for (int i = 0; i < menuButtons.Length; i++)
                 {
                     Button checkedButton = menuButtons[i];
@@ -146,6 +165,8 @@ namespace Poprica
             
             if (locationButtons != null && locationButtons.Length > 0)
             {
+                Console.WriteLine("Bin da loc");
+
                 for (int i = 0; i < locationButtons.Length; i++)
                 {
                     Button checkedButton = locationButtons[i];

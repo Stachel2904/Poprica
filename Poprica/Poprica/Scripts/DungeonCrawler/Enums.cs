@@ -137,7 +137,8 @@ namespace DungeonCrawler
         BACK,
         LEFT,
         TURNRIGHT,
-        TURNLEFT
+        TURNLEFT,
+
     }
 
     public static class EnumManagement

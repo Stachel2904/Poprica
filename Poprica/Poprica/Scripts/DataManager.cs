@@ -29,6 +29,5 @@ namespace Poprica
 
             return array;
         }
-
     }
 }

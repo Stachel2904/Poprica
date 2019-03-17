@@ -79,28 +79,25 @@ namespace Poprica
                     }
                 }
             }
-            else
+            else if (SceneManager.Main.CurrentScene != null)
             {
-                try
+                if (SceneManager.Main.CurrentScene.SceneCategory == SceneType.PLACE)
                 {
                     location = (SceneManager.Main.CurrentScene as Place).Location;
-
+                    
                     foreach (KeyValuePair<DialogueEntityName, Waifu> waifu in waifus)
                     {
                         if (waifu.Value.Location == location)
                         {
+
                             names.Add((int)waifu.Key);
                         }
                     }
                 }
-                catch
-                {
-                    Console.WriteLine("Scene ist kein Place!");
-                }
             }
 
             int[] ret = names.ToArray();
-
+            
             return ret;
         }
 

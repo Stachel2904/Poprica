@@ -34,8 +34,8 @@ namespace Poprica
             { ButtonType.RIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 1 }) },
             { ButtonType.BACK, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 2 }) },
             { ButtonType.LEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 3 }) },
-            { ButtonType.TURNRIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 5 }) },
-            { ButtonType.TURNLEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 4 }) },
+            { ButtonType.TURNLEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 5 }) },
+            { ButtonType.TURNRIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 4 }) },
         };
 
 
@@ -198,8 +198,8 @@ namespace Poprica
                 "Sprites/DC/UI/RIGHT",
                 "Sprites/DC/UI/BACK",
                 "Sprites/DC/UI/LEFT",
-                "Sprites/DC/UI/TURNLEFT",
-                "Sprites/DC/UI/TURNRIGHT"
+                "Sprites/DC/UI/TURNRIGHT",
+                "Sprites/DC/UI/TURNLEFT"
             },
             //Menu
             new String[]
