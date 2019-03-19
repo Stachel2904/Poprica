@@ -36,6 +36,7 @@ namespace Poprica
             { ButtonType.LEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 3 }) },
             { ButtonType.TURNLEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 5 }) },
             { ButtonType.TURNRIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 4 }) },
+
             { ButtonType.RESCUE, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Inventory.Main.UseItem), null) }
         };
 
@@ -139,15 +140,10 @@ namespace Poprica
             }
 
         };
-
+        
         /// <summary>
-        /// Maps ActionTypes to Actions.
+        /// Maps Buttontypes to a LocationType.
         /// </summary>
-        public static Dictionary<ActionType, ActionEvent> ActionButtonMap { get; } = new Dictionary<ActionType, ActionEvent>()
-        {
-
-        };
-
         public static Dictionary<LocationType, ButtonType[]> LocationButtonMap { get; } = new Dictionary<LocationType, ButtonType[]>
         {
             {

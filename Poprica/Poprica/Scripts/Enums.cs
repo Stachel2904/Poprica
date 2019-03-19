@@ -174,24 +174,34 @@ namespace Poprica
 
     public enum ButtonType
     {
+        //Main Menu
         PLAY,
         LOAD,
         OPTIONS,
         HELP,
         PATREON,
         QUIT,
+
+        //PlayerInfo
         MONEY,
         SAVE,
         INVENTORY,
+
+        //Location Buttons
         TALK,
         LEAVE,
+
+        //DC Navigation Buttons
         FORWARD,
         RIGHT,
         BACK,
         LEFT,
         TURNRIGHT,
         TURNLEFT,
-        RESCUE
+
+        //DC Action Buttons
+        RESCUE,
+
     }
 
     public enum AnimationState

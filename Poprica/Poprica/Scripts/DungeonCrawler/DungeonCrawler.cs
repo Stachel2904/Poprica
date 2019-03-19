@@ -182,9 +182,6 @@ namespace DungeonCrawler
                 this.Images.Add(new Poprica.Image(Poprica.ImageType.DCUI, imgIndex, createdButtons[i].Rect));
                 //this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
             }
-
-            //ToDo add ActionButtons
-
         }
 
         public override void Update()
@@ -192,6 +189,7 @@ namespace DungeonCrawler
             //height = Poprica.PopricaGame.Main.gameHeight;
             //width = Poprica.PopricaGame.Main.gameWidth;
 
+            //ToDo
             //if moved or game size changed
             this.LoadImages();
 

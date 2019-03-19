@@ -28,9 +28,11 @@ namespace DungeonCrawler
             {
                 foreach (Item item in Inventory.Main.Items.Keys)
                 {
-                    if (item.Category ==  ItemCategory.BASICITEM)
+                    if (item.Category == ItemCategory.BASICITEM && (item as BasicItem).Type == BasicItemType.KEY)
                     {
-                        if ((item as BasicItem).Type == BasicItemType.KEY)
+                        Tile prisonerTile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X + Player.Main.Rotation.X, Player.Main.Location.Y + Player.Main.Rotation.Y));
+
+                        if (prisonerTile.Event >= EventType.RICA)
                         {
                             //actionButtons.Add(Poprica.ButtonType.RESCUE);
                             actions.Add(new Poprica.Action(Poprica.ActionType.RESCUE, null));
@@ -51,7 +53,7 @@ namespace DungeonCrawler
             CreateActions(_event);
         }
 
-        public static void Rescue(BasicItem key)
+        public static bool Rescue(BasicItem key)
         {
             Tile tile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X, Player.Main.Location.Y));
             Tile prisonerTile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X + Player.Main.Rotation.X, Player.Main.Location.Y + Player.Main.Rotation.Y));
@@ -64,7 +66,11 @@ namespace DungeonCrawler
                 //ToDo change to dynamic Waifu
                 Poprica.WaifuManager.Main.UnlockWaifu(DecodeEventTypeToWaifuName(type));
                 Console.WriteLine("Waifu auf Tasche");
+
+                return true;
             }
+
+            return false;
         }
 
         private static Poprica.DialogueEntityName DecodeEventTypeToWaifuName(EventType type)
