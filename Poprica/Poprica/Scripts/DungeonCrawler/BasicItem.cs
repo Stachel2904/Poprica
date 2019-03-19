@@ -23,6 +23,8 @@ namespace DungeonCrawler
             if (Type == BasicItemType.KEY)
             {
                 GamePlay.Rescue(this);
+
+                Inventory.Main.Items.Remove(this);
             }
         }
     }

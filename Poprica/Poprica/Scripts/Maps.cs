@@ -36,6 +36,7 @@ namespace Poprica
             { ButtonType.LEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 3 }) },
             { ButtonType.TURNLEFT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 5 }) },
             { ButtonType.TURNRIGHT, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 4 }) },
+            { ButtonType.RESCUE, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Inventory.Main.UseItem), null) }
         };
 
 
@@ -199,7 +200,9 @@ namespace Poprica
                 "Sprites/DC/UI/BACK",
                 "Sprites/DC/UI/LEFT",
                 "Sprites/DC/UI/TURNRIGHT",
-                "Sprites/DC/UI/TURNLEFT"
+                "Sprites/DC/UI/TURNLEFT",
+
+                "Sprites/DC/UI/RESCUE",
             },
             //Menu
             new String[]
@@ -290,8 +293,8 @@ namespace Poprica
                 "Sprites/DC/CORNERRIGHTPERSPECTIVE",
 
                 "Sprites/DC/KEY",
+                "Sprites/DC/CHEST",
                 "Sprites/DC/RICA",
-                "Sprites/DC/CHEST"
             }
         };
 

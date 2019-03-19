@@ -20,9 +20,27 @@ namespace DungeonCrawler
         /// <summary>
         /// Creates possible Actions for current DungeonTile
         /// </summary>
-        public static void CreateActions(EventType _event)
+        public static Poprica.Action[] CreateActions(EventType _event)
         {
-            //creates actions and buttons?
+            List<Poprica.Action> actions = new List<Poprica.Action>();
+
+            if (_event == EventType.RESCUE)
+            {
+                foreach (Item item in Inventory.Main.Items.Keys)
+                {
+                    if (item.Category ==  ItemCategory.BASICITEM)
+                    {
+                        if ((item as BasicItem).Type == BasicItemType.KEY)
+                        {
+                            //actionButtons.Add(Poprica.ButtonType.RESCUE);
+                            actions.Add(new Poprica.Action(Poprica.ActionType.RESCUE, null));
+                        }
+                    }
+                }
+                
+            }
+
+            return actions.ToArray();
         }
 
         /// <summary>
@@ -36,16 +54,16 @@ namespace DungeonCrawler
         public static void Rescue(BasicItem key)
         {
             Tile tile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X, Player.Main.Location.Y));
-
-            if (tile.Event == EventType.RESCUE)
+            Tile prisonerTile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X + Player.Main.Rotation.X, Player.Main.Location.Y + Player.Main.Rotation.Y));
+            
+            if (tile.Event == EventType.RESCUE && prisonerTile.Event >= EventType.RICA)
             {
-                Tile prisonerTile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X + Player.Main.Rotation.X, Player.Main.Location.Y + Player.Main.Rotation.Y));
                 EventType type = prisonerTile.Event;
                 prisonerTile.Event = EventType.PRISON;
 
                 //ToDo change to dynamic Waifu
                 Poprica.WaifuManager.Main.UnlockWaifu(DecodeEventTypeToWaifuName(type));
-                Console.WriteLine("Rica auf Tasche");
+                Console.WriteLine("Waifu auf Tasche");
             }
         }
 

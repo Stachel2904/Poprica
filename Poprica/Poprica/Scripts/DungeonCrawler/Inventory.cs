@@ -63,6 +63,7 @@ namespace DungeonCrawler
         {
             if (!Items.ContainsKey(item))
             {
+                //ToDo
                 //nur zum Debuggen schwalalalalalalala
                 if (item.Category == ItemCategory.BASICITEM)
                 {

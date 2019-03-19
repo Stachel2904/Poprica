@@ -36,15 +36,45 @@ namespace Poprica
             
         }
 
+        public void Clear()
+        {
+            actionButtons = new Dictionary<Button, Action>();
+
+            menuButtons = null;
+
+            locationButtons = null;
+        }
+
         /// <summary>
         /// Create a Button for each Action.
         /// </summary>
         /// <param name="actions">The Actions linked to the Buttons</param>
-        public void CreateButtons(Action[] actions)
+        public Button[] CreateButtons(Action[] actions)
         {
             currentScale = PopricaGame.Main.CalcCurrentScale();
 
+            Dictionary<Button, Action> createdButtons = new Dictionary<Button, Action>();
 
+            Rectangle rect = new Rectangle(10, 400, 300, 80);
+
+            for (int i = 0; i < actions.Length; i++)
+            {
+                int rectX = (int)(rect.Location.X * currentScale.X);
+                int rectY = (int)(rect.Location.Y * currentScale.Y);
+                int rectW = (int)(rect.Size.X);
+                int rectH = (int)(rect.Size.Y);
+
+                ButtonType type = (ButtonType) Enum.Parse(typeof(ButtonType), actions[i].Type.ToString());
+
+                Button button = new Button(type, new Rectangle(rectX, rectY + (i * 90), rectW, rectH));
+                createdButtons.Add(button, actions[i]);
+            }
+
+            actionButtons = createdButtons;
+
+            Button[] buttons = createdButtons.Keys.ToArray();
+
+            return buttons;
         }
 
         /// <summary>
@@ -63,6 +93,8 @@ namespace Poprica
 
             for (int i = 0; i < buttons.Length; i++)
             {
+                //ToDo
+                //nicht so optimal, dass der ButtonManager prüft ob der Button angezeigt werden soll oder?
                 switch (buttons[i])
                 {
                     case ButtonType.TALK:
@@ -150,8 +182,6 @@ namespace Poprica
         {
             if (menuButtons != null && menuButtons.Length > 0)
             {
-                Console.WriteLine("Bin da menu");
-
                 for (int i = 0; i < menuButtons.Length; i++)
                 {
                     Button checkedButton = menuButtons[i];
@@ -159,14 +189,13 @@ namespace Poprica
                     if(CheckPointInRect(position, checkedButton.Rect))
                     {
                         Call(checkedButton.Type);
+                        break;
                     }
                 }
             }
             
             if (locationButtons != null && locationButtons.Length > 0)
             {
-                Console.WriteLine("Bin da loc");
-
                 for (int i = 0; i < locationButtons.Length; i++)
                 {
                     Button checkedButton = locationButtons[i];
@@ -174,6 +203,7 @@ namespace Poprica
                     if (CheckPointInRect(position, checkedButton.Rect))
                     {
                         Call(checkedButton.Type);
+                        break;
                     }
                 }
             }
@@ -182,7 +212,13 @@ namespace Poprica
             {
                 foreach (KeyValuePair<Button, Action> element in actionButtons)
                 {
+                    Button checkedButton = element.Key;
 
+                    if (CheckPointInRect(position, checkedButton.Rect))
+                    {
+                        Call(checkedButton.Type);
+                        break;
+                    }
                 }
             }
         }

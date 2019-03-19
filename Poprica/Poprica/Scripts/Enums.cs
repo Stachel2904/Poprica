@@ -118,7 +118,10 @@ namespace Poprica
 
     public enum ActionType
     {
-        TALK
+        TALK,
+        
+        //DC
+        RESCUE
     }
 
     public enum DialogueElementType
@@ -187,7 +190,8 @@ namespace Poprica
         BACK,
         LEFT,
         TURNRIGHT,
-        TURNLEFT
+        TURNLEFT,
+        RESCUE
     }
 
     public enum AnimationState

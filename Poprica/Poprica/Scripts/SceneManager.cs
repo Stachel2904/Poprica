@@ -55,6 +55,8 @@ namespace Poprica
         {
             RessourceManager.Main.UnloadCache();
 
+            ButtonManager.Main.Clear();
+
             if (cache)
             {
                 PreviousScenes.Add(CurrentScene);
@@ -84,6 +86,8 @@ namespace Poprica
         private void LoadScene(Scene oldScene)
         {
             RessourceManager.Main.UnloadCache();
+
+            ButtonManager.Main.Clear();
 
             PreviousScenes = new List<Scene>();
 

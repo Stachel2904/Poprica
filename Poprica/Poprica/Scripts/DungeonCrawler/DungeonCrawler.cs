@@ -146,9 +146,9 @@ namespace DungeonCrawler
         }
 
         /// <summary>
-        /// Adds the DungeonCrawler UI Buttons of navigation, iktem usage and combatsystem
+        /// Adds the DungeonCrawler UI Buttons of navigation, item usage and combatsystem
         /// </summary>
-        private void AddButtons()
+        private void AddMenuButtons()
         {
             Poprica.ButtonType[] menuButtons = Poprica.Maps.MenuButtonMap[Poprica.MenuType.DUNGEONCRAWLERNAVIGATION];
             Poprica.Button[] createdButtons = Poprica.ButtonManager.Main.CreateButtons(menuButtons, Poprica.MenuType.DUNGEONCRAWLERNAVIGATION);
@@ -162,6 +162,31 @@ namespace DungeonCrawler
             }
         }
 
+        /// <summary>
+        /// Adds the DungeonCrawler Buttons for actions, like free Rica, etc.
+        /// </summary>
+        private void AddActionButtons()
+        {
+            Tile tile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X, Player.Main.Location.Y));
+
+            //List<Poprica.ButtonType> actionButtons = new List<Poprica.ButtonType>();
+
+            Poprica.Action[] actions = GamePlay.CreateActions(tile.Event);
+
+            Poprica.Button[] createdButtons = Poprica.ButtonManager.Main.CreateButtons(actions);
+
+            for (int i = 0; i < createdButtons.Length; i++)
+            {
+                int imgIndex = (int)((UI)Enum.Parse(typeof(UI), createdButtons[i].Type.ToString()));
+
+                this.Images.Add(new Poprica.Image(Poprica.ImageType.DCUI, imgIndex, createdButtons[i].Rect));
+                //this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
+            }
+
+            //ToDo add ActionButtons
+
+        }
+
         public override void Update()
         {
             //height = Poprica.PopricaGame.Main.gameHeight;
@@ -172,7 +197,9 @@ namespace DungeonCrawler
 
             this.LoadPlayerInfo();
 
-            this.AddButtons();
+            this.AddMenuButtons();
+
+            this.AddActionButtons();
             
             Player.Main.UpdateInventory();
 

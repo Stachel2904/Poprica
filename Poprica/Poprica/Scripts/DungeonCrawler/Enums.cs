@@ -48,10 +48,13 @@ namespace DungeonCrawler
     public enum EventType
     {
         NONE,
-        RICA,
+        
         CHEST,
         RESCUE,
         PRISON,
+
+        RICA,
+        //other Waifus
     }
 
     public enum EnemyType
@@ -126,8 +129,8 @@ namespace DungeonCrawler
         CORNERRIGHTPERSPECTIVE,
 
         KEY,
+        CHEST,
         RICA,
-        CHEST
     }
 
     public enum UI
@@ -139,6 +142,7 @@ namespace DungeonCrawler
         TURNRIGHT,
         TURNLEFT,
 
+        RESCUE
     }
 
     public static class EnumManagement
