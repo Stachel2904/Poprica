@@ -47,7 +47,7 @@ namespace DungeonCrawler
         private Dungeon(int floor = 0)
         {
             FloorCount = floor;
-            Floor = Poprica.DataManager.LoadJson<Floor>(new string[] { FloorMap[FloorCount]})[0];
+            Floor = Poprica.DataManager.LoadJsons<Floor>(new string[] { FloorMap[FloorCount]})[0];
         }
 
         /// <summary>

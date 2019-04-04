@@ -114,6 +114,7 @@
     <Compile Include="Scripts\TimeManager.cs" />
     <Compile Include="Scripts\UserInterface.cs" />
     <Compile Include="Scripts\Waifu.cs" />
+    <Compile Include="Scripts\WaifuCollection.cs" />
     <Compile Include="Scripts\WaifuStats.cs" />
     <Compile Include="Scripts\RessourceManager.cs" />
     <Compile Include="Scripts\SceneManager.cs" />
@@ -139,6 +140,11 @@
     <None Include="Content\Json\DC\Floortest.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Content\Json\SaveGames\0\floor.json" />
+    <None Include="Content\Json\SaveGames\0\gameData.json" />
+    <None Include="Content\Json\SaveGames\0\inventory.json" />
+    <None Include="Content\Json\SaveGames\0\player.json" />
+    <None Include="Content\Json\SaveGames\0\waifuData.json" />
     <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\x86\Debug\Poprica.csproj.CoreCompileInputs.cache" />
     <None Include="obj\x86\Debug\Poprica.csprojAssemblyReference.cache" />

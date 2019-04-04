@@ -1,0 +1,19 @@
+{
+  "RICA": {
+    "Stats": {
+      "Affection": 10,
+      "Obedience": 10,
+      "Hornyness": 10,
+      "Stamina": 10
+    },
+    "Memories": [],
+    "Locked": true,
+    "Mood": 0,
+    "Pose": 0,
+    "Clothes": [],
+    "Name": 1,
+    "Location": 0,
+    "Type": 0,
+    "Position": 0
+  }
+}

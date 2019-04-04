@@ -61,7 +61,11 @@ namespace Poprica
             #region KeyboardInput
             Keys[] pressedKeys = Keyboard.GetState().GetPressedKeys();
 
-            
+            if (pressedKeys.Length > 0 && SceneManager.Main.CurrentScene.SceneCategory == SceneType.WAIFUCOLLECTION)
+            {
+                ActionEvent triggeredEvent = Maps.InputMaps[(int)SceneType.WAIFUCOLLECTION][Keys.Enter];
+                triggeredEvent.method.Invoke(triggeredEvent.args);
+            }
 
             for (int i = 0; i < pressedKeys.Length; i++)
             {

@@ -52,7 +52,7 @@ namespace DungeonCrawler
 
             Vector3 playerPos = Player.Main.Location;
             Vector3 orientation = Player.Main.Rotation;
-
+            
             for (int i = 6; i >= 0; i--)
             {
                 Tile current = null;
@@ -72,14 +72,14 @@ namespace DungeonCrawler
                 Rectangle rect = new Rectangle(Poprica.MathFunctions.ImagePos(i), new Point((int)(width / (Math.Pow(2, i))), (int)(height / (Math.Pow(2, i)))));
 
                 //If wall is in front of the player ... stops seeing Tiles behind the wall
-                if (!Player.Main.Allowed(DirectionType.FORWARD) ) //&& GetTileInFront(entryPoint, orientation) != )
+                if (!Player.Main.Allowed(DirectionType.FORWARD)) //&& GetTileInFront(entryPoint, orientation) != )
                 {
                     rect = new Rectangle(Poprica.MathFunctions.ImagePos(0), new Point((int)(width / (Math.Pow(2, 0))), (int)(height / (Math.Pow(2, 0)))));
 
                     //Abfrage ob Img nicht vllt ConstructionSign sein sollte
                     img = new Poprica.Image(Poprica.ImageType.DUNGEONCRAWLER, (int)ImageType.NONE, rect);
                     this.Images.Add(img);
-                    
+
                     break;
                 }
 

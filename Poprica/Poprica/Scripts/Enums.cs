@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Poprica
 {
+    public enum GameOptions
+    {
+        FULLSCREEN,
+        WINDOW,
+
+    }
+
     public enum InputType
     {
 
@@ -29,6 +36,8 @@ namespace Poprica
         PLACE,
         MENU,
         SHOP,
+
+        WAIFUCOLLECTION,
 
         DUNGEONCRAWLER
     }
@@ -54,12 +63,24 @@ namespace Poprica
         HELP,
         PATREON,
         QUIT,
+
+        PREVIOUS,
+        FULLSCREEN,
+        WINDOW,
+
         PLAYERINFO,
         MONEY,
         SAVE,
         INVENTORY,
+
         TALK,
+
+        LIVINGROOM,
+        BEDROOM,
+        BEDROOMRICA,
+
         LEAVE,
+
         BUTTON,
     }
 
@@ -71,8 +92,10 @@ namespace Poprica
     public enum LocationType
     {
         NONE,
+        COLLECTIONSCREEN,
         LIVINGROOM,
-        BEDROOM
+        BEDROOM,
+        BEDROOMRICA,
     }
 
     public enum DungeonCrawlerImageType
@@ -187,8 +210,18 @@ namespace Poprica
         SAVE,
         INVENTORY,
 
+        //Options
+        PREVIOUS,
+        FULLSCREEN,
+        WINDOW,
+
         //Location Buttons
         TALK,
+        
+        LIVINGROOM,
+        BEDROOM,
+        BEDROOMRICA,
+
         LEAVE,
 
         //DC Navigation Buttons

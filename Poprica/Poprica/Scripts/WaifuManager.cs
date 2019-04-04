@@ -20,6 +20,7 @@ namespace Poprica
                 {
                     main = new WaifuManager();
                 }
+
                 return main;
             }
         }
@@ -29,6 +30,7 @@ namespace Poprica
         private List<Waifu> party;
 
         public DialogueEntityName SelectedWaifu { get; set; }
+        public DialogueEntityName LastUnlockedWaifu { get; set; }
 
         private WaifuManager()
         {
@@ -58,6 +60,30 @@ namespace Poprica
         public Waifu GetWaifu(DialogueEntityName name)
         {
             return waifus[name];
+        }
+
+        public DialogueEntityName GetFirstWaifuInParty()
+        {
+            if (true)
+                return DialogueEntityName.RICA;
+        }
+
+        /// <summary>
+        /// Returns all Waifus which are stored in private Dictionary.
+        /// </summary>
+        /// <returns>Dictionary of Waifus.</returns>
+        public Dictionary<DialogueEntityName, Waifu> GetWaifus()
+        {
+            return waifus;
+        }
+
+        /// <summary>
+        /// Sets the waifus Dictionary.
+        /// </summary>
+        /// <param name="waifus">New Dictionary of DialofEntityNames and Waifus.</param>
+        public void SetWaifus(Dictionary<DialogueEntityName, Waifu> _waifus)
+        {
+            main.waifus = new Dictionary<DialogueEntityName, Waifu>(_waifus);
         }
 
         /// <summary>
@@ -118,10 +144,14 @@ namespace Poprica
         public void UnlockWaifu(DialogueEntityName name)
         {
             waifus[name].Locked = false;
+
+            LastUnlockedWaifu = name;
         }
 
         public void RenderWaifus()
         {
+            //ToDo
+            //change to iterrate through party
             foreach(KeyValuePair<DialogueEntityName, Waifu> waifu in waifus)
             {
                 if(waifu.Value.Location == (SceneManager.Main.CurrentScene as Place).Location && !waifu.Value.Locked)
@@ -134,7 +164,7 @@ namespace Poprica
                     //Todo add pose
                     SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.POSES, (int)PoseType.NORMAL, newRect, waifu.Value.Name.ToString()));  //add Waifu to Images list   
                     SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.MOOD, (int)waifu.Value.Mood, newRect, waifu.Value.Name.ToString()));
-
+                    
                     for (int i = 0; i < waifu.Value.Clothes.Count; i++)
                     {
                         SceneManager.Main.CurrentScene.Images.Add(new Image(ImageType.CLOTHES, (int)waifu.Value.Clothes[i], newRect, waifu.Value.Name.ToString()));

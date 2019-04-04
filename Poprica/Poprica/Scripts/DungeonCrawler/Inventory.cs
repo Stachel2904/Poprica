@@ -25,6 +25,10 @@ namespace DungeonCrawler
 
                 return main;
             }
+            set
+            {
+                main = value;
+            }
         }
         #endregion
 
@@ -32,7 +36,7 @@ namespace DungeonCrawler
 
         public Item ActiveItem { get; set; }
 
-        private Inventory()
+        public Inventory()
         {
             Items = new Dictionary<Item, int>();
             ActiveItem = null;
@@ -123,6 +127,7 @@ namespace DungeonCrawler
         {
             if (ActiveItem != null)
             {
+                Console.WriteLine("Check!");
                 ActiveItem.Use();
             }
         }

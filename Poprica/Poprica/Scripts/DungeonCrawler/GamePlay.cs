@@ -53,6 +53,11 @@ namespace DungeonCrawler
             CreateActions(_event);
         }
 
+        /// <summary>
+        /// Starts rescue-logic and load Waifu-Collection-Scene.
+        /// </summary>
+        /// <param name="key">Key which is used to rescue.</param>
+        /// <returns>True, if rescue was succesful.</returns>
         public static bool Rescue(BasicItem key)
         {
             Tile tile = Dungeon.Main.Floor.GetTile(new Vector2(Player.Main.Location.X, Player.Main.Location.Y));

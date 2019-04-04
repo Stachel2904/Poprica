@@ -43,10 +43,10 @@ namespace DungeonCrawler
         /// </summary>
         public int Health { get; set; }
 
-        private Player()
+        public Player()
         {
-            Location = (Poprica.Progress.DungeonPos == null) ? Poprica.Progress.DungeonPos : Dungeon.Main.Floor.DefaultEntryPoint;
-            Rotation = (Poprica.Progress.DungeonRot == null) ? Poprica.Progress.DungeonRot : new Vector3(0, -1, 0);
+            Location = Dungeon.Main.Floor.DefaultEntryPoint;
+            Rotation = new Vector3(0, -1, 0);
 
         }
 
@@ -196,7 +196,7 @@ namespace DungeonCrawler
             {
                 index = ((int)dir - 1 > 0) ? (int)dir - 1 : 3;
             }
-
+            
             if (!current.Walls[index])
                 return true;
             else
@@ -226,6 +226,23 @@ namespace DungeonCrawler
             {
                 Inventory.Main.Additem(items[i]);
             }
+        }
+
+        public Dictionary<string, Vector3> GetPlayerDict()
+        {
+            Dictionary<string, Vector3> player = new Dictionary<string, Vector3>()
+            {
+                {
+                    "Location",
+                    this.Location
+                },
+                {
+                    "Rotation",
+                    this.Rotation
+                }
+            };
+
+            return player;
         }
     }
 }

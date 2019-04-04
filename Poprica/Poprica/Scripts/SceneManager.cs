@@ -77,6 +77,9 @@ namespace Poprica
                 case SceneType.PLACE:
                     CurrentScene = new Place((LocationType)newScene);
                     break;
+                case SceneType.WAIFUCOLLECTION:
+                    CurrentScene = new WaifuCollection();
+                    break;
                 case SceneType.DUNGEONCRAWLER:
                     CurrentScene = new DungeonCrawler.DungeonCrawler();
                     break;

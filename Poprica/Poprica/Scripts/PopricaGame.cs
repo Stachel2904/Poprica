@@ -159,6 +159,28 @@ namespace Poprica
             base.Draw(gameTime);
         }
 
+        /// <summary>
+        /// Sets some ame options from Buttons.
+        /// </summary>
+        /// <param name="eventArgs">List of to chenged options.</param>
+        public static void SetGameOptions(int[] eventArgs)
+        {
+            for (int i = 0; i < eventArgs.Length; i++)
+            {
+                switch ((GameOptions)eventArgs[i])
+                {
+                    case GameOptions.FULLSCREEN:
+                        PopricaGame.Main.graphics.IsFullScreen = true;
+                        break;
+                    case GameOptions.WINDOW:
+                        PopricaGame.Main.graphics.IsFullScreen = false;
+                        break;
+                }
+
+                PopricaGame.Main.graphics.ApplyChanges();
+            }
+        }
+
         public Vector2 CalcCurrentScale()
         {
             try

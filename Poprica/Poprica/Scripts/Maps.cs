@@ -17,17 +17,25 @@ namespace Poprica
         {
             { ButtonType.PLAY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM })},
             //{ ButtonType.STARTDUNGEONCRAWLER, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER})},
-            { ButtonType.LOAD, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.LOADSAVEGAME})},
+            { ButtonType.LOAD, new ActionEvent(new System.Action<int[]>(Menu.Load), new int[]{ }) },
             { ButtonType.OPTIONS, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})},
             { ButtonType.PATREON, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER}) },//new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})}, //insert Funkt for Website
             { ButtonType.HELP, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.HELP})},
             { ButtonType.QUIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})},
+
             { ButtonType.MONEY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
-            { ButtonType.SAVE, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
+            { ButtonType.SAVE, new ActionEvent(new System.Action<int[]>(Menu.Save), new int[]{ }) },
             { ButtonType.INVENTORY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
+
+            { ButtonType.PREVIOUS, new ActionEvent(new System.Action<int[]>(Menu.Back), new int[]{}) },
+            { ButtonType.FULLSCREEN, new ActionEvent(new System.Action<int[]>(PopricaGame.SetGameOptions), new int[]{(int)GameOptions.FULLSCREEN}) },
+            { ButtonType.WINDOW, new ActionEvent(new System.Action<int[]>(PopricaGame.SetGameOptions), new int[]{(int)GameOptions.WINDOW}) },
 
             { ButtonType.TALK, new ActionEvent(new System.Action<int[]>(Actions.Talk), WaifuManager.Main.GetEnities()) },
             { ButtonType.LEAVE, new ActionEvent(new System.Action<int[]>(Actions.Leave), new int[]{}) },
+            { ButtonType.BEDROOM, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.BEDROOM }) },
+            { ButtonType.BEDROOMRICA, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.BEDROOMRICA }) },
+            { ButtonType.LIVINGROOM, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
 
             //Should not be there!!
             { ButtonType.FORWARD, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move), new int[]{ 0 }) },
@@ -59,6 +67,7 @@ namespace Poprica
                     ButtonType.QUIT
                 }
             },
+
             //LOADGAME
             {
                 MenuType.LOADSAVEGAME,
@@ -67,6 +76,28 @@ namespace Poprica
 
                 }
             },
+
+            //OPTIONS
+            {
+                MenuType.OPTIONS,
+                new ButtonType[]
+                {
+                    ButtonType.PREVIOUS,
+                    ButtonType.FULLSCREEN,
+                    ButtonType.WINDOW
+                }
+            },
+
+            //PAUSEMENU
+            {
+                MenuType.PAUSEMENU,
+                new ButtonType[]
+                {
+                    ButtonType.PREVIOUS,
+                    ButtonType.SAVE
+                }
+            },
+
             //PLAYERINFO
             {
                 MenuType.PLAYERINFO,
@@ -77,6 +108,7 @@ namespace Poprica
                     ButtonType.INVENTORY
                 }
             },
+
             //DC Navigation
             {
                 MenuType.DUNGEONCRAWLERNAVIGATION,
@@ -107,6 +139,7 @@ namespace Poprica
                     new Rectangle(2640, 1500, 200, 160)
                 }
             },
+
             //Loadgame
             {
                 MenuType.LOADSAVEGAME,
@@ -115,6 +148,28 @@ namespace Poprica
 
                 }
             },
+
+            //Options
+            {
+                MenuType.OPTIONS,
+                new Rectangle[]
+                {
+                    new Rectangle(50, 50, 100, 100),
+                    new Rectangle(1000, 900, 300, 80),
+                    new Rectangle(1600, 900, 300, 80)
+                }
+            },
+
+            //PauseMenu
+            {
+                MenuType.PAUSEMENU,
+                new Rectangle[]
+                {
+                    new Rectangle(50, 50, 100, 100),
+                    new Rectangle(1920, 1080, 80, 95)
+                }
+            },
+
             //PlayerInfo
             {
                 MenuType.PLAYERINFO,
@@ -125,6 +180,7 @@ namespace Poprica
                     new Rectangle(3618, 145, 120, 95)
                 }
             },
+
             // DC Navigation
             {
                 MenuType.DUNGEONCRAWLERNAVIGATION,
@@ -151,9 +207,29 @@ namespace Poprica
                 new ButtonType[]
                 {
                     ButtonType.TALK,
+                    ButtonType.BEDROOM,
+                    ButtonType.BEDROOMRICA,
                     ButtonType.LEAVE,
                 }
             },
+            {
+                LocationType.BEDROOM,
+                new ButtonType[]
+                {
+                    ButtonType.TALK,
+                    ButtonType.LIVINGROOM,
+                    ButtonType.LEAVE
+                }
+            },
+            {
+                LocationType.BEDROOMRICA,
+                new ButtonType[]
+                {
+                    ButtonType.TALK,
+                    ButtonType.LIVINGROOM,
+                    ButtonType.LEAVE
+                }
+            }
         };
 
         /// <summary>
@@ -179,14 +255,22 @@ namespace Poprica
                 "Sprites/UI/PATREON",
                 "Sprites/UI/QUIT",
 
+                "Sprites/UI/PREVIOUS",
+                "Sprites/UI/FULLSCREEN",
+                "Sprites/UI/WINDOW",
+
                 "Sprites/UI/PLAYERINFO",
                 "Sprites/UI/MONEY",
                 "Sprites/UI/SAVE",
                 "Sprites/UI/INVENTORY",
+
                 "Sprites/UI/TALK",
-                "Sprites/UI/LEAVE"
 
+                "Sprites/UI/LIVINGROOM",
+                "Sprites/UI/BEDROOM",
+                "Sprites/UI/BEDROOMRICA",
 
+                "Sprites/UI/LEAVE",
             },
             //DungeonCrawler UI
             new string[]
@@ -204,10 +288,10 @@ namespace Poprica
             new String[]
             {
                 "Sprites/UI/MAINMENU",
-                //PAUSEMENU
-                //LOADSAVEGAME
-                //OPTIONS
-                //HELP
+                "Sprites/UI/PAUSEMENU",
+                "LOADSAVEGAME",
+                "Sprites/UI/OPTIONSMENU",
+                "Sprites/UI/HELP"
             },
             //Icons
             new string[]
@@ -218,7 +302,10 @@ namespace Poprica
             new string[]
             {
                 "",
-                "Sprites/Poprica/LIVINGROOM"
+                "Sprites/Poprica/COLLECTIONSCREEN",
+                "Sprites/Poprica/LIVINGROOM",
+                "Sprites/Poprica/BEDROOM",
+                "Sprites/Poprica/BEDROOMRICA",
             },
             //Poses
             new string[]
@@ -346,12 +433,13 @@ namespace Poprica
 
         };
 
-        public static Dictionary<Keys, ActionEvent>[] InputMaps { get; } = new Dictionary<Keys, ActionEvent>[]
+        public static Dictionary<Keys, ActionEvent>[] InputMaps { get; set; } = new Dictionary<Keys, ActionEvent>[]
         {
             //Place Input
             new Dictionary<Keys, ActionEvent>
             {
                 { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.MAINMENU})},
+                { Keys.P, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.PAUSEMENU})},
                 { Keys.F, new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetMood), new int[]{(int)MoodType.HAPPY}) },
                 { Keys.T, new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetClothes), new int[]{}) }
 
@@ -369,10 +457,17 @@ namespace Poprica
                 { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.MAINMENU})}
             },
 
+            //WAIFUCOLLECTION INPUT
+            new Dictionary<Keys, ActionEvent>
+            {
+                { Keys.Enter, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER }) }
+            },
+
             //DungeonCrawler Input
             new Dictionary<Keys, ActionEvent>
             {
                 { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.MAINMENU})},
+                { Keys.P, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.PAUSEMENU})},
                 { Keys.W, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.FORWARD)})},
                 { Keys.A, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.TURNLEFT)})},
                 { Keys.S, new ActionEvent(new System.Action<int[]>(DungeonCrawler.Player.Main.Move),new int[]{((int)DungeonCrawler.DirectionType.BACKWARD)})},

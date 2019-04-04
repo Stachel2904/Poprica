@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace Poprica
 {
@@ -45,9 +46,10 @@ namespace Poprica
         /// <summary>
         /// Navigate back to the previous Menu.
         /// </summary>
-        public void Back()
+        /// <param name="eventArgs">Arguments which describe the previous scene.</param>
+        public static void Back(int[] eventArgs)
         {
-
+            SceneManager.Main.ReturnToPreviousScene();
         }
 
         /// <summary>
@@ -55,12 +57,16 @@ namespace Poprica
         /// </summary>
         public static void Exit(int[] eventArgs)
         {
-            PopricaGame.MainState = GameState.EXIT;
+            if (SceneManager.Main.CurrentScene.SceneCategory == SceneType.MENU && (SceneManager.Main.CurrentScene as Menu).Type == MenuType.MAINMENU)
+                PopricaGame.MainState = GameState.EXIT;
+            else
+                SceneManager.Main.ReturnToPreviousScene();
         }
 
         /// <summary>
-        /// Start a new Scene from ButtonClick
+        /// Starts a new Scene from a Buttonclick.
         /// </summary>
+        /// <param name="eventArgs">Arguments which describe the new scene.</param>
         public static void LoadNewScene(int[] eventArgs)
         {
             switch ((SceneType)eventArgs[0])
@@ -68,8 +74,11 @@ namespace Poprica
                 case SceneType.DUNGEONCRAWLER:
                     SceneManager.Main.LoadScene(SceneType.DUNGEONCRAWLER);
                     break;
+                case SceneType.WAIFUCOLLECTION:
+                    SceneManager.Main.LoadScene(SceneType.WAIFUCOLLECTION);
+                    break;
                 default:
-                    SceneManager.Main.LoadScene((SceneType)eventArgs[0], eventArgs[1]);
+                    SceneManager.Main.LoadScene((SceneType)eventArgs[0], eventArgs[1], true);
                     break;
             }
         }
@@ -85,17 +94,22 @@ namespace Poprica
         /// <summary>
         /// Calls the Save-fct. from Progress.
         /// </summary>
-        public void Save()
+        public static void Save(int[] eventArgs)
         {
-
+            Progress.Save();
         }
 
         /// <summary>
         /// Calls the Load-fct. from Progress.
         /// </summary>
-        public void Load()
+        public static void Load(int[] eventArgs)
         {
+            Progress.Load();
 
+            //ToDo
+            //refresh complete InputMaps
+            Maps.InputMaps[0][Microsoft.Xna.Framework.Input.Keys.F] = new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetMood), new int[] { (int)MoodType.HAPPY });
+            Maps.InputMaps[0][Microsoft.Xna.Framework.Input.Keys.T] = new ActionEvent(new System.Action<int[]>(WaifuManager.Main.GetWaifu(DialogueEntityName.RICA).SetClothes), new int[] { });
         }
 
         /// <summary>

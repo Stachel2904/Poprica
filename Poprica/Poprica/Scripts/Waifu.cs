@@ -87,6 +87,8 @@ namespace Poprica
         /// <param name="eventArgs"></param>
         public void SetClothes(int[] eventArgs)
         {
+            
+
             if (Clothes.Count != 0)
             {
                 Clothes = new List<ClothesType>();

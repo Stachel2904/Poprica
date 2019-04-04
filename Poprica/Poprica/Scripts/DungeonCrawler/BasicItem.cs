@@ -23,7 +23,14 @@ namespace DungeonCrawler
             if (Type == BasicItemType.KEY)
             {
                 if (GamePlay.Rescue(this))
+                {
                     Inventory.Main.Items.Remove(this);
+
+                    if (Inventory.Main.ActiveItem == this)
+                        Inventory.Main.ActiveItem = null;
+
+                    Poprica.SceneManager.Main.LoadScene(Poprica.SceneType.WAIFUCOLLECTION);
+                }
             }
         }
     }
