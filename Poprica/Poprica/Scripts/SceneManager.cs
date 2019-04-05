@@ -109,7 +109,8 @@ namespace Poprica
                 Image drawedImage = CurrentScene.Images[i];
 
                 string pathToImage = "";
-                Maps.ImageMap.TryGetImage(drawedImage.Type, drawedImage.Index, drawedImage.WaifuName, out pathToImage);
+                if (!Maps.ImageMap.TryGetImage(drawedImage.Type, drawedImage.Index, drawedImage.WaifuName, out pathToImage))
+                    Console.WriteLine("SHIT!");
                 
                 RessourceManager.Main.Draw(pathToImage, drawedImage.Rect, null, Color.White);
             }

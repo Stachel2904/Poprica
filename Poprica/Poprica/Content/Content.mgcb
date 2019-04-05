@@ -706,6 +706,18 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/Poprica/RICA/Poses/NORMAL.png
 
+#begin Sprites/UI/BAR.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/BAR.png
+
 #begin Sprites/UI/BEDROOM.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -873,6 +885,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/UI/MONEY.png
+
+#begin Sprites/UI/NEEDLE.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/UI/NEEDLE.png
 
 #begin Sprites/UI/OPTIONS.png
 /importer:TextureImporter

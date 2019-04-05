@@ -16,12 +16,26 @@ namespace Poprica
         /// </summary>
         public MenuType Type { get; set; }
 
+        //[STAThread]
+        //static void Main()
+        //{
+        //    Application.Run(new Menu(MenuType.OPTIONS));
+        //}
+
+        Slider slider;
+
+
         public Menu(MenuType type) : base(SceneType.MENU)
         {
             Type = type;
 
-            LoadImages();
+            if (Type == MenuType.OPTIONS)
+            {
+                slider = new Slider(900, 400, 400, 50);
+            }
 
+            LoadImages();
+            LoadButtonsAndSliders();
         }
 
         public override void LoadImages()
@@ -33,7 +47,7 @@ namespace Poprica
             
         }
 
-        public void LoadButtonsAndTrackbars()
+        public void LoadButtonsAndSliders()
         {
             ButtonType[] menuButtons = Maps.MenuButtonMap[Type];
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, Type);
@@ -48,19 +62,14 @@ namespace Poprica
 
             if (Type == MenuType.OPTIONS)
             {
-                TrackBar bar = new TrackBar();
-                bar.Location = new System.Drawing.Point(1500, 1080);
-                bar.Size = new System.Drawing.Size(224, 45);
-                bar.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+                Image[] sliderImgs = slider.GetImages();
+
+                this.Images.Add(sliderImgs[0]);
+                this.Images.Add(sliderImgs[1]);
             }
+            
         }
-
-        private void trackBar1_Scroll(object sender, System.EventArgs e)
-        {
-            // Display the trackbar value in the text box.
-            Console.WriteLine("FUCK YEAH");
-        }
-
+        
         /// <summary>
         /// Navigate back to the previous Menu.
         /// </summary>
@@ -163,8 +172,18 @@ namespace Poprica
             base.Update();
 
             LoadImages();
-            LoadButtonsAndTrackbars();
+            LoadButtonsAndSliders();
 
+            if (slider != null)
+            {
+                slider.Scroll += s_Scroll;
+            }
+
+        }
+
+        public void s_Scroll(object sender, ScrollEventArgs e)
+        {
+            Console.WriteLine("Scrolle");
         }
     }
 }

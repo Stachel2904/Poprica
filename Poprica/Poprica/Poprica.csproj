@@ -109,6 +109,7 @@
     <Compile Include="Scripts\Progress.cs" />
     <Compile Include="Scripts\Scene.cs" />
     <Compile Include="Scripts\Shop.cs" />
+    <Compile Include="Scripts\Slider.cs" />
     <Compile Include="Scripts\SpeakerProberties.cs" />
     <Compile Include="Scripts\Statement.cs" />
     <Compile Include="Scripts\TextObject.cs" />

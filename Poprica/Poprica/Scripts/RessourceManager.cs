@@ -63,7 +63,7 @@ namespace Poprica
                 renderer.End();
             }
 
-            renderer.GraphicsDevice.Clear(Color.Black);
+            renderer.GraphicsDevice.Clear(Color.White);
             renderer.Begin();
         }
 

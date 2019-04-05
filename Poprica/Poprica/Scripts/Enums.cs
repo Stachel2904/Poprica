@@ -81,6 +81,9 @@ namespace Poprica
 
         LEAVE,
 
+        BAR,
+        NEEDLE,
+
         BUTTON,
     }
 

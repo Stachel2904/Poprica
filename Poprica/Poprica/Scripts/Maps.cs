@@ -271,6 +271,9 @@ namespace Poprica
                 "Sprites/UI/BEDROOMRICA",
 
                 "Sprites/UI/LEAVE",
+
+                "Sprites/UI/BAR",
+                "Sprites/UI/NEEDLE"
             },
             //DungeonCrawler UI
             new string[]
@@ -448,7 +451,8 @@ namespace Poprica
             //Menu Input
             new Dictionary<Keys, ActionEvent>
             {
-                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})}
+                { Keys.Escape, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})},
+                { Keys.K, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})}
             },
 
             //Shop Input

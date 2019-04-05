@@ -41,6 +41,8 @@ namespace Poprica
 
         public int Textspeed { get; set; }
         public int MusicVolume { get; set; }
+
+        private TrackBar bar;
         
         public PopricaGame()
         {
@@ -94,6 +96,7 @@ namespace Poprica
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             SpriteBatch spriteBatch = new SpriteBatch(this.GraphicsDevice);
+            
 
             //Give Spritebatch and ContentManager to RessourceManager
             RessourceManager.Main.Init(this.Content, spriteBatch);
@@ -146,8 +149,15 @@ namespace Poprica
                     this.Exit();
                     break;
             }
-
+            
             base.Update(gameTime);
+        }
+
+
+        private void trackBar_Scroll(object sender, System.EventArgs e)
+        {
+            // Display the trackbar value in the text box.
+            Console.WriteLine("FUCK YEAH");
         }
 
         /// <summary>
