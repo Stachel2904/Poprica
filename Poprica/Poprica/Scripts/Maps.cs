@@ -19,8 +19,8 @@ namespace Poprica
             //{ ButtonType.STARTDUNGEONCRAWLER, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER})},
             { ButtonType.LOAD, new ActionEvent(new System.Action<int[]>(Menu.Load), new int[]{ }) },
             { ButtonType.OPTIONS, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})},
-            { ButtonType.PATREON, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER}) },//new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.OPTIONS})}, //insert Funkt for Website
-            { ButtonType.HELP, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.HELP})},
+            { ButtonType.PATREON, new ActionEvent(new System.Action<int[]>(Menu.LoadPatreon), new int[]{ }) }, //insert Funkt for Website
+            { ButtonType.HELP, new ActionEvent( new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.DUNGEONCRAWLER}) },//new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.MENU, (int)MenuType.HELP})},
             { ButtonType.QUIT, new ActionEvent(new System.Action<int[]>(Menu.Exit), new int[]{})},
 
             { ButtonType.MONEY, new ActionEvent(new System.Action<int[]>(Menu.LoadNewScene), new int[]{(int)SceneType.PLACE, (int) LocationType.LIVINGROOM }) },
@@ -166,7 +166,7 @@ namespace Poprica
                 new Rectangle[]
                 {
                     new Rectangle(50, 50, 100, 100),
-                    new Rectangle(1920, 1080, 80, 95)
+                    new Rectangle(1820, 1600, 200, 200)
                 }
             },
 

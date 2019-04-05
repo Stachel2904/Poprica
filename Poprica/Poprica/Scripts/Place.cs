@@ -120,5 +120,14 @@ namespace Poprica
 
             this.AddButtons();
         }
+
+        /// <summary>
+        /// Returns amount of Money of the Main Player.
+        /// </summary>
+        /// <returns>Int which represents amount of Money.</returns>
+        protected override int GetMoney()
+        {
+            return Poprica.Player.Main.Money;
+        }
     }
 }

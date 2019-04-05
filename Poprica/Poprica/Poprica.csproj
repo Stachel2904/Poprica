@@ -103,6 +103,7 @@
     <Compile Include="Scripts\MiniGame.cs" />
     <Compile Include="Scripts\Moment.cs" />
     <Compile Include="Scripts\Place.cs" />
+    <Compile Include="Scripts\Player.cs" />
     <Compile Include="Scripts\PopricaGame.cs" />
     <Compile Include="Scripts\Program.cs" />
     <Compile Include="Scripts\Progress.cs" />

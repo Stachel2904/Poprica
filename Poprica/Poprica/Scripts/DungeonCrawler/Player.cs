@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace DungeonCrawler
 {
-    public sealed class Player
+    public sealed class Player : Poprica.Player
     {
 
         #region Singleton
@@ -43,11 +43,31 @@ namespace DungeonCrawler
         /// </summary>
         public int Health { get; set; }
 
-        public Player()
+        /// <summary>
+        /// Holds the amount of DungeonMoney of the player object.
+        /// </summary>
+        public int DungeonMoney { get; set; }
+
+        private Player() : base()
         {
             Location = Dungeon.Main.Floor.DefaultEntryPoint;
             Rotation = new Vector3(0, -1, 0);
+            Health = 100;
+            DungeonMoney = 0;
+        }
 
+        public void SetPlayer()
+        {
+
+        }
+
+        /// <summary>
+        /// Adds a given amount of money ontop of the current DungeonM.oney.
+        /// </summary>
+        /// <param name="amount">Amount which is to add.</param>
+        public override void GetMoney(int amount)
+        {
+            DungeonMoney += amount;
         }
 
         /// <summary>
@@ -60,15 +80,17 @@ namespace DungeonCrawler
             
             if (!Allowed(direction))
                 return;
-
+            
             switch (direction)
             {
                 #region Move
                 case DirectionType.FORWARD:
                     this.Location += this.Rotation;
+                    Poprica.TimeManager.Main.IncreaseTime(10);
                     break;
                 case DirectionType.BACKWARD:
                     this.Location -= this.Rotation;
+                    Poprica.TimeManager.Main.IncreaseTime(10);
                     break;
                 case DirectionType.RIGHT:
                     if (this.Rotation.Y < 0)
@@ -87,6 +109,7 @@ namespace DungeonCrawler
                     {
                         this.Location += Vector3.Down;
                     }
+                    Poprica.TimeManager.Main.IncreaseTime(10);
                     break;
                 case DirectionType.LEFT:
                     if (this.Rotation.Y < 0)
@@ -105,6 +128,7 @@ namespace DungeonCrawler
                     {
                         this.Location += Vector3.Up;
                     }
+                    Poprica.TimeManager.Main.IncreaseTime(10);
                     break;
                 #endregion
                 #region Rotation

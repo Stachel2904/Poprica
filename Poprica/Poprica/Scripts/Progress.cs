@@ -93,7 +93,7 @@ namespace Poprica
         }
 
         #region Main
-        public static DateTime DateTime;
+        public static DateTime DateTime = DateTime.Now;
         public static Dictionary<DialogueEntityName, Waifu> waifus;
         #endregion
 

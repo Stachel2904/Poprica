@@ -126,7 +126,7 @@ namespace Poprica
                 case GameState.DEFAULT:
                     //Start the Frame
                     RessourceManager.Main.Start();
-
+                    
                     //Check for input and call methods from there
                     InputManager.Main.CheckInput();
 

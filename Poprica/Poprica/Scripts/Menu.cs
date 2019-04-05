@@ -84,6 +84,15 @@ namespace Poprica
         }
 
         /// <summary>
+        /// Starts a webbrowser and opens the Patreon Website.
+        /// </summary>
+        /// <param name="eventArgs">Does nothing.</param>
+        public static void LoadPatreon(int[] eventArgs)
+        {
+            System.Diagnostics.Process.Start("https://www.patreon.com/");
+        }
+
+        /// <summary>
         /// Opens the menu specific options.
         /// </summary>
         public void Options()

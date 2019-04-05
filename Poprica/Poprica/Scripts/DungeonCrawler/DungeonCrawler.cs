@@ -189,6 +189,12 @@ namespace DungeonCrawler
             //height = Poprica.PopricaGame.Main.gameHeight;
             //width = Poprica.PopricaGame.Main.gameWidth;
 
+            if (Poprica.TimeManager.Main.DateTime.TimeOfDay >= new TimeSpan(20, 0, 0))
+            {
+                Player.Main.Location = Dungeon.Main.Floor.DefaultEntryPoint;
+                Player.Main.Rotation = new Vector3(0, -1, 0);
+            }
+
             //ToDo
             //if moved or game size changed
             this.LoadImages();
@@ -553,6 +559,15 @@ namespace DungeonCrawler
                     Images.Add(Img);
                 }
             }
+        }
+
+        /// <summary>
+        /// Returns amount of DungeonMoney of DungeonCrawler Player.
+        /// </summary>
+        /// <returns>Int which represents amount of DungeonMoney.</returns>
+        protected override int GetMoney()
+        {
+            return Player.Main.DungeonMoney;
         }
     }
 }

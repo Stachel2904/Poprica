@@ -116,7 +116,7 @@ namespace Poprica
 
             for (int i = 0; i < CurrentScene.Texts.Count(); i++)
             {
-                RessourceManager.Main.DrawText(CurrentScene.Texts[i]);
+                RessourceManager.Main.DrawText(CurrentScene.Texts[i], false, false);
             }
         }
 

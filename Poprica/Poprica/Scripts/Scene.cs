@@ -86,6 +86,18 @@ namespace Poprica
 
                 this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
             }
+
+            //writes current time into HUD
+            Texts.Add(new TextObject(TimeManager.Main.DateTime.ToShortTimeString(), new Rectangle((int) (3520 * scale.X), (int) (70 * scale.Y), 500, 100), (scale.X >= .6) ? 2 : 1));
+            Texts.Add(new TextObject(TimeManager.Main.DateTime.ToShortDateString(), new Rectangle((int)(3490 * scale.X), (int)(100 * scale.Y), 500, 100), (scale.X >= .6) ? 2 : 1));
+
+            //writes current Mone into HUD
+            Texts.Add(new TextObject(SceneManager.Main.CurrentScene.GetMoney() + " P", new Rectangle((int) (3420 * scale.X), (int) (212 * scale.Y), 100, 100), (scale.X >= .6) ? 2 : 1));
+        }
+
+        protected virtual int GetMoney()
+        {
+            return Player.Main.Money;
         }
     }
 }
