@@ -22,7 +22,7 @@ namespace Poprica
         //    Application.Run(new Menu(MenuType.OPTIONS));
         //}
 
-        Slider slider;
+        public Slider slider;
 
 
         public Menu(MenuType type) : base(SceneType.MENU)
@@ -31,7 +31,8 @@ namespace Poprica
 
             if (Type == MenuType.OPTIONS)
             {
-                slider = new Slider(900, 400, 400, 50);
+                Vector2 scale = PopricaGame.Main.CalcCurrentScale();
+                slider = new Slider((int) (1600 * scale.X), (int) (1300 * scale.Y), 400, 50);
             }
 
             LoadImages();

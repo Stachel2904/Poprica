@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +12,13 @@ namespace Poprica
     {
 
         private Rectangle rectBar;
-        private Rectangle rectNeedle;
+        public Rectangle rectNeedle;
         private Image barImg;
         private Image needleImg;
         private int min;
         private int max;
         private float stepSize;
+        public bool isMoved;
 
         public Point Location
         {
@@ -46,6 +48,8 @@ namespace Poprica
 
         public Slider(Point loc, Point size)
         {
+            min = 0;
+            max = 100;
             Value = (max - min) / 2;
             stepSize = 100 / size.X;
 
@@ -58,11 +62,13 @@ namespace Poprica
 
         public Slider(int rectX, int rectY, int rectW, int rectH)
         {
+            min = 0;
+            max = 100;
             Value = (max - min) / 2;
             stepSize = 100 / rectH;
 
             rectBar = new Rectangle(rectX, rectY, rectW, rectH);
-            rectNeedle = new Rectangle(rectX + (int)(Value * stepSize), rectY - (int)(rectH / 2 + 10), 20, 20);
+            rectNeedle = new Rectangle(rectX + (int)(Value * stepSize), rectY + (int)(rectH / 2 + 10) / 2, 20, 20);
 
             barImg = new Image(ImageType.UI, (int)UIImageType.BAR, rectBar);
             needleImg = new Image(ImageType.UI, (int)UIImageType.NEEDLE, rectNeedle);
@@ -77,7 +83,27 @@ namespace Poprica
             };
         }
 
+        public void OnMouseDown()
+        {
+            isMoved = true;
+        }
 
+        public void OnMouseMove(Point mouse)
+        {
+            if (isMoved)
+            {
+                if (mouse.X > rectBar.X && mouse.X < (rectBar.X + rectBar.Width) * PopricaGame.Main.CalcCurrentScale().X)
+                {
+                    rectNeedle.Location = new Point(Mouse.GetState().Position.X, rectNeedle.Location.Y);
+                    needleImg.Rect = rectNeedle;
+                }
+            }
+        }
+
+        public void OnMouseUp()
+        {
+            isMoved = false;
+        }
 
     }
 

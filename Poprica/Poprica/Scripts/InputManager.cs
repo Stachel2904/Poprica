@@ -55,8 +55,10 @@ namespace Poprica
             {
                 mouseAlreadyPressed = false;
             }
-            
+
             #endregion
+
+            ButtonManager.Main.CheckSlider();
 
             #region KeyboardInput
             Keys[] pressedKeys = Keyboard.GetState().GetPressedKeys();

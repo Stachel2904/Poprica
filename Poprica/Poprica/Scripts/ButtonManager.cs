@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace Poprica
 {
@@ -220,6 +221,28 @@ namespace Poprica
                         break;
                     }
                 }
+            }
+        }
+
+        public void CheckSlider()
+        {
+            Scene menu = SceneManager.Main.CurrentScene;
+
+            if (menu.SceneCategory == SceneType.MENU && (menu as Menu).Type == MenuType.OPTIONS)
+            {
+                MouseState state = Mouse.GetState();
+
+                if (CheckPointInRect(state.Position, (menu as Menu).slider.rectNeedle))
+                {
+                    if (state.LeftButton == ButtonState.Pressed)
+                        (menu as Menu).slider.OnMouseDown();
+                }
+
+                if (state.LeftButton == ButtonState.Released)
+                    (menu as Menu).slider.OnMouseUp();
+
+                if (state.LeftButton == ButtonState.Pressed && (menu as Menu).slider.isMoved)
+                    (menu as Menu).slider.OnMouseMove(state.Position);
             }
         }
 
