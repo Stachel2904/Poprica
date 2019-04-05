@@ -35,12 +35,12 @@ namespace Poprica
         /// The State of the Game.
         /// </summary>
         public static GameState MainState { get; set; }
-
-        public static int maxGameHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
-        public static int maxGameWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
-
+        
         public int gameHeight { get { return Window.ClientBounds.Height; } }
         public int gameWidth { get { return Window.ClientBounds.Width; } }
+
+        public int Textspeed { get; set; }
+        public int MusicVolume { get; set; }
         
         public PopricaGame()
         {

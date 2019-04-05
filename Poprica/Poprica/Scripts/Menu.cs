@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using System.Windows.Forms;
 
 namespace Poprica
 {
@@ -30,7 +31,10 @@ namespace Poprica
 
             Images.Add(new Image(ImageType.MENU, (int)Type, new Rectangle(0, 0, width, height)));
             
+        }
 
+        public void LoadButtonsAndTrackbars()
+        {
             ButtonType[] menuButtons = Maps.MenuButtonMap[Type];
             Button[] createdButtons = ButtonManager.Main.CreateButtons(menuButtons, Type);
 
@@ -41,6 +45,20 @@ namespace Poprica
                 this.Images.Add(new Image(ImageType.UI, imgIndex, createdButtons[i].Rect));
                 //this.Texts.Add(new TextObject(Maps.MenuButtonText[(int)createdButtons[i].Type], createdButtons[i].Rect));
             }
+
+            if (Type == MenuType.OPTIONS)
+            {
+                TrackBar bar = new TrackBar();
+                bar.Location = new System.Drawing.Point(1500, 1080);
+                bar.Size = new System.Drawing.Size(224, 45);
+                bar.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            }
+        }
+
+        private void trackBar1_Scroll(object sender, System.EventArgs e)
+        {
+            // Display the trackbar value in the text box.
+            Console.WriteLine("FUCK YEAH");
         }
 
         /// <summary>
@@ -145,6 +163,8 @@ namespace Poprica
             base.Update();
 
             LoadImages();
+            LoadButtonsAndTrackbars();
+
         }
     }
 }
