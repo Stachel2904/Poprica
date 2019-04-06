@@ -32,7 +32,7 @@ namespace Poprica
             if (Type == MenuType.OPTIONS)
             {
                 Vector2 scale = PopricaGame.Main.CalcCurrentScale();
-                slider = new Slider((int) (1600 * scale.X), (int) (1300 * scale.Y), 400, 50);
+                slider = new Slider(1600, 1300, 400, 50);
             }
 
             LoadImages();
@@ -63,6 +63,10 @@ namespace Poprica
 
             if (Type == MenuType.OPTIONS)
             {
+                slider.Scale(PopricaGame.Main.CalcCurrentScale());
+
+                PopricaGame.Main.MusicVolume = slider.Value;
+
                 Image[] sliderImgs = slider.GetImages();
 
                 this.Images.Add(sliderImgs[0]);

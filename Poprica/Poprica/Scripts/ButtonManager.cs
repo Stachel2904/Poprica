@@ -232,7 +232,7 @@ namespace Poprica
             {
                 MouseState state = Mouse.GetState();
 
-                if (CheckPointInRect(state.Position, (menu as Menu).slider.rectNeedle))
+                if (CheckPointInRect(state.Position, (menu as Menu).slider.needleRect))
                 {
                     if (state.LeftButton == ButtonState.Pressed)
                         (menu as Menu).slider.OnMouseDown();

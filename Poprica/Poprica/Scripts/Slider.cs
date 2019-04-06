@@ -11,8 +11,10 @@ namespace Poprica
     public class Slider
     {
 
-        private Rectangle rectBar;
-        public Rectangle rectNeedle;
+        private Rectangle barRect;
+        public Rectangle needleRect;
+        private Rectangle initBarRect;
+        private Rectangle initNeedleRect;
         private Image barImg;
         private Image needleImg;
         private int min;
@@ -24,54 +26,46 @@ namespace Poprica
         {
             get
             {
-                return rectBar.Location;
+                return barRect.Location;
             }
             set
             {
-                rectBar.Location = value;
+                barRect.Location = value;
             }
         }
         public Point Size
         {
             get
             {
-                return rectBar.Size;
+                return barRect.Size;
             }
             set
             {
-                rectBar.Size = value;
+                barRect.Size = value;
             }
         }
         public int Value { get; set; }
 
         public event EventHandler<ScrollEventArgs> Scroll;
-
-        public Slider(Point loc, Point size)
-        {
-            min = 0;
-            max = 100;
-            Value = (max - min) / 2;
-            stepSize = 100 / size.X;
-
-            rectBar = new Rectangle(loc, size);
-            rectNeedle = new Rectangle(loc.X + (int) (Value*stepSize), loc.Y - (int) (size.Y / 2 + 10), 20, 20);
-
-            barImg = new Image( ImageType.UI, (int) UIImageType.BAR, rectBar);
-            needleImg = new Image(ImageType.UI, (int) UIImageType.NEEDLE, rectNeedle);
-        }
-
+        
         public Slider(int rectX, int rectY, int rectW, int rectH)
         {
+
+            Vector2 scale = PopricaGame.Main.CalcCurrentScale();
+
             min = 0;
             max = 100;
             Value = (max - min) / 2;
-            stepSize = 100 / rectH;
+            stepSize = (rectW * scale.X) / max;
 
-            rectBar = new Rectangle(rectX, rectY, rectW, rectH);
-            rectNeedle = new Rectangle(rectX + (int)(Value * stepSize), rectY + (int)(rectH / 2 + 10) / 2, 20, 20);
+            initBarRect = new Rectangle(rectX, rectY, rectW, rectH);
+            initNeedleRect = new Rectangle(rectX, rectY - (int)(rectH / 2) + 40, 20, 20);
 
-            barImg = new Image(ImageType.UI, (int)UIImageType.BAR, rectBar);
-            needleImg = new Image(ImageType.UI, (int)UIImageType.NEEDLE, rectNeedle);
+            barRect = new Rectangle((int) (rectX * scale.X), (int) (rectY * scale.Y), rectW, rectH);
+            needleRect = new Rectangle((int) (barRect.X + (Value * stepSize)) - 10, (int) (barRect.Y + barRect.Height/2) + 40, 20 , 20 );
+            
+            barImg = new Image(ImageType.UI, (int)UIImageType.BAR, barRect);
+            needleImg = new Image(ImageType.UI, (int)UIImageType.NEEDLE, needleRect);
         }
 
         public Image[] GetImages()
@@ -92,10 +86,16 @@ namespace Poprica
         {
             if (isMoved)
             {
-                if (mouse.X > rectBar.X && mouse.X < (rectBar.X + rectBar.Width) * PopricaGame.Main.CalcCurrentScale().X)
+                if (mouse.X > barRect.X  && mouse.X < (barRect.X + ( barRect.Width * PopricaGame.Main.CalcCurrentScale().X)))
                 {
-                    rectNeedle.Location = new Point(Mouse.GetState().Position.X, rectNeedle.Location.Y);
-                    needleImg.Rect = rectNeedle;
+                    Vector2 scale = PopricaGame.Main.CalcCurrentScale();
+                    
+                    needleRect.Location = new Point((int) mouse.X, needleRect.Location.Y);
+                    needleImg.Rect = needleRect;
+
+                    Value = (int) ((needleRect.X  - barRect.X) / stepSize);
+
+                    Console.WriteLine(Value);
                 }
             }
         }
@@ -103,6 +103,17 @@ namespace Poprica
         public void OnMouseUp()
         {
             isMoved = false;
+        }
+
+        public void Scale(Vector2 scale)
+        {
+            stepSize = (initBarRect.Width * scale.X) / max;
+
+            barRect = new Rectangle((int) (initBarRect.X * scale.X), (int) (initBarRect.Y * scale.Y), initBarRect.Width , initBarRect.Height);
+            needleRect = new Rectangle((int) ((initNeedleRect.X * scale.X) + Value * stepSize) - 10, (int) (initNeedleRect.Y * scale.Y), 20, 20);
+            
+            barImg.Rect = barRect;
+            needleImg.Rect = needleRect;
         }
 
     }
@@ -113,17 +124,3 @@ namespace Poprica
 
     }
 }
-
-
-//            if (SceneManager.Main.CurrentScene.SceneCategory == SceneType.MENU && (SceneManager.Main.CurrentScene as Menu).Type == MenuType.OPTIONS)
-//            {
-//                bar = new TrackBar();
-//                this.Window.
-
-//                this.ClientSize = new System.Drawing.Size(400, 400);
-//                this.Controls.AddRange(new System.Windows.Forms.Control[] { this.bar });
-
-//                bar.Location = new System.Drawing.Point(50, 10);
-//                bar.Size = new System.Drawing.Size(224, 45);
-//                bar.Scroll += new System.EventHandler(this.trackBar_Scroll);
-//}
